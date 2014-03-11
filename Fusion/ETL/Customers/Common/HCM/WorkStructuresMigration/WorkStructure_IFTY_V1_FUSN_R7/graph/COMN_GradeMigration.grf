@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="Nagaraju M" created="Fri Mar 07 10:07:11 GST 2014" guiVersion="3.5.0" id="1394177546327" licenseType="Community" modified="Tue Mar 11 15:54:05 IST 2014" modifiedBy="Acer" name="COMN_GRADE_MIGRATION" revision="1.12" showComponentDetails="true">
+<Global>
+<Metadata id="Metadata0" previewAttachment="${DATAIN_DIR}/Grade.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="Grade.csv" name="Grade_IFTY_V1" previewAttachment="${DATAIN_DIR}/Grade.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="both" quotedStrings="false" recordDelimiter="\r\n" skipSourceRows="1" type="delimited">
+<Field label="*Start Date" name="Start_Date" type="string"/>
+<Field label="End Date " name="End_Date" type="string"/>
+<Field label="Country " name="Country" type="string"/>
+<Field label="*Grade Code" name="Grade_Code" type="string"/>
+<Field label="*Grade Name" name="Grade_Name" type="string"/>
+<Field label="*Grade Frequency" name="Grade_Frequency" type="string"/>
+<Field label="Grade Rate Type" name="Grade_Rate_Type" type="string"/>
+<Field label="*Currency" name="Currency" type="string"/>
+<Field label="Minimum" name="Minimum" type="number"/>
+<Field label="Midpoint" name="Midpoint" type="number"/>
+<Field label="Maximum" name="Maximum" type="number"/>
+<Field eofAsDelimiter="true" label="Status" name="Status" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata1" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="Grades_FUSN_R7" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\r\n" recordSize="-1" type="delimited">
+<Field eofAsDelimiter="false" label="Effective Start Date" name="Effective_Start_Date" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="* Grade Set" name="Grade_Set" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="* Grade Name" name="Grade_Name" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="* Grade Code" name="Grade_Code" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="* Grade Status" name="Grade_Status" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Legislative Data Group" name="Legislative_Data_Group" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Rate Name" name="Rate_Name" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Rate Type" name="Rate_Type" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Rate Status" name="Rate_Status" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Frequency" name="Frequency" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Annualization Factor" name="Annualization_Factor" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="Currency" name="Currency" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Minimum" name="Minimum" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="Maximum" name="Maximum" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="Midpoint" name="Midpoint" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="Value" name="Value" nullable="true" shift="0" size="0" type="string"/>
+</Record>
+</Metadata>
+<GraphParameters>
+<GraphParameterFile fileURL="workspace.prm"/>
+</GraphParameters>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMWork StructuresV1.xlsx" guiName="Read Grades" guiX="32" guiY="170" id="READ_GRADES" sheetName="Grades" skipRows="5" type="XLS_READER"/>
+<Node enabled="enabled" guiName="Transform Grades" guiX="268" guiY="170" id="TRANSFORM_GRADES" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.Grade_Set = 'Common Set';
+	$out.0.Grade_Name = $in.0.Grade_Name;
+	$out.0.Grade_Code = $in.0.Grade_Code;
+	$out.0.Grade_Status = $in.0.Status;
+	$out.0.Legislative_Data_Group = 'USA (ZELTIQ Inc) LDG';
+	$out.0.Rate_Name = 'ZLTQ SAL GRT';
+	$out.0.Rate_Type = 'Salary';
+	$out.0.Rate_Status = 'Active';
+	$out.0.Frequency = $in.0.Grade_Frequency;
+	$out.0.Currency = $in.0.Currency;
+	$out.0.Minimum = $in.0.Minimum;
+	$out.0.Maximum = $in.0.Maximum;
+	$out.0.Midpoint = $in.0.Midpoint;
+	$out.0.Annualization_Factor = 1;
+	$out.0.Effective_Start_Date = '01/01/00';
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" fileURL="${DATAOUT_DIR}/FusionHCMWorkStructures_R7.xls" firstDataRow="2" guiName="Write Grades" guiX="521" guiY="157" id="WRITE_GRADES" namesRow="1" sheetName="Grades" type="XLS_WRITER"/>
+<Edge fromNode="READ_GRADES:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="TRANSFORM_GRADES:0"/>
+<Edge debugMode="true" fromNode="TRANSFORM_GRADES:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" metadata="Metadata1" outPort="Port 0 (out)" toNode="WRITE_GRADES:0"/>
+</Phase>
+</Graph>
