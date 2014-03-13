@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Graph author="Acer" created="Tue Mar 11 11:43:59 IST 2014" guiVersion="3.5.0" id="1394518678394" licenseType="Community" modified="Tue Mar 11 18:02:47 IST 2014" modifiedBy="Acer" name="COMN_EmployeeMigration" revision="1.35" showComponentDetails="true">
+<Graph author="Acer" created="Tue Mar 11 11:43:59 IST 2014" guiVersion="3.5.0" id="1394518678394" licenseType="Community" modified="Thu Mar 13 11:10:28 GST 2014" modifiedBy="Nagaraju M" name="COMN_EmployeeMigration" revision="1.37" showComponentDetails="true">
 <Global>
 <Metadata id="Metadata2">
 <Record fieldDelimiter="|" name="Address_INTY_V1" recordDelimiter="\r\n" type="delimited">
-<Field format="" label="Current employee number" name="Current_employee_number" type="string"/>
+<Field label="Current employee number" name="Current_employee_number" type="string"/>
 <Field label="*Effective start date " name="Effective_start_date" type="string"/>
-<Field format="" label="Effective end date " name="Effective_end_date" type="string"/>
+<Field label="Effective end date " name="Effective_end_date" type="string"/>
 <Field label="Address Type [LOV]" name="Address_Type_LOV" type="string"/>
 <Field label="*Address Line 1" name="Address_Line_1" type="string"/>
 <Field label="Address Line 2" name="Address_Line_2" type="string"/>
@@ -15,18 +15,18 @@
 <Field label="State" name="State" type="string"/>
 <Field label="Postal Code " name="Postal_Code" type="string"/>
 <Field label="Province" name="Province" type="string"/>
-<Field format="" label="County" name="County" type="string"/>
+<Field label="County" name="County" type="string"/>
 <Field label="*Country [LOV]" name="Country_LOV" type="string"/>
 </Record>
 </Metadata>
 <Metadata id="Metadata3">
 <Record fieldDelimiter="|" name="Email_INTY_V1" recordDelimiter="\r\n" type="delimited">
-<Field format="" label="Current Employee Number " name="Current_Employee_Number" type="string"/>
+<Field label="Current Employee Number " name="Current_Employee_Number" type="string"/>
 <Field label="Type [LOV]" name="Type_LOV" type="string"/>
 <Field label="Primary (E-mail) [LOV]" name="Primary_E_mail_LOV" type="string"/>
 <Field label="E-mail" name="E_mail" type="string"/>
 <Field label="From Date" name="From_Date" type="string"/>
-<Field format="" label="To date " name="To_date" type="string"/>
+<Field label="To date " name="To_date" type="string"/>
 </Record>
 </Metadata>
 <Metadata id="Metadata1">
@@ -531,7 +531,14 @@ function integer transform() {
 	$out.0.E_Mail_1 = $in.0.E_Mail_1;
 	$out.0.ColumnHW = $in.0.ColumnHW;
 	$out.0.Load_Status = $in.0.Load_Status;
-	$out.0.Business_Unit = replace($in.0.Country,'US','USA Inc.');
+	if ($in.0.Country == "US ")
+	{
+		$out.0.Business_Unit = "USA Inc.";
+	}
+	else
+	{
+		$out.0.Business_Unit = "UK Inc.";
+	}
 
 	return ALL;
 }
