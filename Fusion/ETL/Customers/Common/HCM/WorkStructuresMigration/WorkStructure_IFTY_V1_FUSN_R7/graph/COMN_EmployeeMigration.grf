@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Graph author="Acer" created="Tue Mar 11 11:43:59 IST 2014" guiVersion="3.5.0" id="1394518678394" licenseType="Community" modified="Thu Mar 13 11:10:28 GST 2014" modifiedBy="Nagaraju M" name="COMN_EmployeeMigration" revision="1.37" showComponentDetails="true">
+<Graph author="Acer" created="Tue Mar 11 11:43:59 IST 2014" guiVersion="3.5.0" id="1394518678394" licenseType="Community" modified="Thu Mar 13 14:42:29 IST 2014" modifiedBy="Acer" name="COMN_EmployeeMigration" revision="1.59" showComponentDetails="true">
 <Global>
 <Metadata id="Metadata2">
 <Record fieldDelimiter="|" name="Address_INTY_V1" recordDelimiter="\r\n" type="delimited">
@@ -17,6 +17,37 @@
 <Field label="Province" name="Province" type="string"/>
 <Field label="County" name="County" type="string"/>
 <Field label="*Country [LOV]" name="Country_LOV" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata4">
+<Record fieldDelimiter="|" name="Assignments_INTY_V1" recordDelimiter="\r\n" type="delimited">
+<Field label="Current employee number " name="Current_employee_number" type="string"/>
+<Field label="*Assignment reference number " name="Assignment_reference_number" type="string"/>
+<Field label="Primary Assignment [LOV]" name="Primary_Assignment_LOV" type="string"/>
+<Field label="Start " name="Start" type="string"/>
+<Field label="End " name="End" type="string"/>
+<Field label="Action [LOV]" name="Action_LOV" type="string"/>
+<Field label="Action reason [LOV]" name="Action_reason_LOV" type="string"/>
+<Field label="Business Unit [LOV]" name="Business_Unit_LOV" type="string"/>
+<Field format="" label="Job Code [LOV]" name="Job_Code_LOV" type="string"/>
+<Field label="Grades [LOV]" name="Grades_LOV" type="string"/>
+<Field label="Department [LOV]" name="Department_LOV" type="string"/>
+<Field label="Work Location  Code [LOV]" name="Work_Location_Code_LOV" type="string"/>
+<Field label="Working at Home [LOV]" name="Working_at_Home_LOV" type="string"/>
+<Field label="Working as a Manager (YES/NO)  [LOV]" name="Working_as_a_Manager_YES_NO_LOV" type="string"/>
+<Field label="Normal Working hours " name="Normal_Working_hours" type="string"/>
+<Field label="Manager Effective Date " name="Manager_Effective_Date" type="string"/>
+<Field label="Manager Employee Number " name="Manager_Employee_Number" type="string"/>
+<Field label="Assignment Status [LOV]" name="Assignment_Status_LOV" type="string"/>
+<Field label="Worker Type [LOV]" name="Worker_Type_LOV" type="string"/>
+<Field label="Person Types  [LOV]" name="Person_Types_LOV" type="string"/>
+<Field label="Assignment Category [LOV]" name="Assignment_Category_LOV" type="string"/>
+<Field label="*FTE" name="FTE" type="string"/>
+<Field label="*Headcount" name="Headcount" type="string"/>
+<Field label="Termination Date " name="Termination_Date" type="string"/>
+<Field label="Notification Date " name="Notification_Date" type="string"/>
+<Field label="Termination Reason [LOV]" name="Termination_Reason_LOV" type="string"/>
+<Field label="Discretionary Title " name="Discretionary_Title" type="string"/>
 </Record>
 </Metadata>
 <Metadata id="Metadata3">
@@ -266,7 +297,7 @@
 </Record>
 </Metadata>
 <Metadata id="Metadata0" previewAttachmentCharset="ISO-8859-1">
-<Record fieldDelimiter="|" name="Employee_INTY_V1" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\r\n" type="delimited">
+<Record fieldDelimiter="|" name="Person_INTY_V1" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\r\n" type="delimited">
 <Field label="* Legal Employer [LOV] " name="Legal_Employer_LOV" type="string"/>
 <Field label="*Enterprise Start Date" name="Enterprise_Start_Date" type="string"/>
 <Field label="Enterprise Seniority Date" name="Enterprise_Seniority_Date" type="string"/>
@@ -295,274 +326,23 @@
 <Dictionary/>
 </Global>
 <Phase number="0">
-<Node enabled="enabled" guiName="Joiners Email" guiX="584" guiY="127" id="JOINERS_EMAIL" joinKey="$Person_Number=$Current_Employee_Number" type="EXT_HASH_JOIN">
-<attr name="transform"><![CDATA[//#CTL2
-
-// Transforms input record into output record.
-function integer transform() {
-	$out.0.E_Mail_Type = $in.1.Type_LOV;
-	$out.0.Person_Number = $in.0.Person_Number;
-	$out.0.Country = $in.0.Country;
-	$out.0.Global_Title = $in.0.Global_Title;
-	$out.0.Global_First_Name = $in.0.Global_First_Name;
-	$out.0.Global_Middle_Names = $in.0.Global_Middle_Names;
-	$out.0.Global_Last_Name = $in.0.Global_Last_Name;
-	$out.0.Global_Prefix = $in.0.Global_Prefix;
-	$out.0.Global_Suffix = $in.0.Global_Suffix;
-	$out.0.Global_Honors = $in.0.Global_Honors;
-	$out.0.Global_Known_As = $in.0.Global_Known_As;
-	$out.0.Global_Previous_Last_Name = $in.0.Global_Previous_Last_Name;
-	$out.0.Local_Name_Language = $in.0.Local_Name_Language;
-	$out.0.Local_Title = $in.0.Local_Title;
-	$out.0.Local_First_Name = $in.0.Local_First_Name;
-	$out.0.Local_Middle_Names = $in.0.Local_Middle_Names;
-	$out.0.Local_Last_Name = $in.0.Local_Last_Name;
-	$out.0.Local_Prefix = $in.0.Local_Prefix;
-	$out.0.Local_Suffix = $in.0.Local_Suffix;
-	$out.0.Local_Honors = $in.0.Local_Honors;
-	$out.0.Local_Known_As = $in.0.Local_Known_As;
-	$out.0.Local_Previous_Last_Name = $in.0.Local_Previous_Last_Name;
-	$out.0.Address_Type = $in.0.Address_Type;
-	$out.0.Country_1 = $in.0.Country_1;
-	$out.0.Gender = $in.0.Gender;
-	$out.0.Ethnicity = $in.0.Ethnicity;
-	$out.0.Address_Line_1 = $in.0.Address_Line_1;
-	$out.0.Address_Line_2 = $in.0.Address_Line_2;
-	$out.0.Address_Line_3 = $in.0.Address_Line_3;
-	$out.0.Address_Line_4 = $in.0.Address_Line_4;
-	$out.0.Legal_Employer = $in.0.Legal_Employer;
-	$out.0.Work_Relationship_Start_Date = $in.0.Work_Relationship_Start_Date;
-	$out.0.Enterprise_Seniority_Date = $in.0.Enterprise_Seniority_Date;
-	$out.0.Legal_Employer_Seniority_Date = $in.0.Legal_Employer_Seniority_Date;
-	$out.0.Person_Attribute_1 = $in.0.Person_Attribute_1;
-	$out.0.Date_of_Birth = $in.0.Date_of_Birth;
-	$out.0.Town_or_City = $in.0.Town_or_City;
-	$out.0.Region_1 = $in.0.Region_1;
-	$out.0.Postal_Code = $in.0.Postal_Code;
-	$out.0.Region_3 = $in.0.Region_3;
-	$out.0.E_Mail = $in.1.E_mail;
-	$out.0.Frequency = $in.0.Frequency;
-	$out.0.Worker_Type = $in.0.Worker_Type;
-	$out.0.Action = $in.0.Action;
-	$out.0.Legislation = $in.0.Legislation;
-	$out.0.Region_2 = $in.0.Region_2;
-	$out.0.Phone_Type_1 = $in.0.Phone_Type_1;
-	$out.0.Country_Code_1 = $in.0.Country_Code_1;
-	$out.0.Area_Code_1 = $in.0.Area_Code_1;
-	$out.0.Phone_Number_1 = $in.0.Phone_Number_1;
-	$out.0.Phone_Type_2 = $in.0.Phone_Type_2;
-	$out.0.Country_Code_2 = $in.0.Country_Code_2;
-	$out.0.Area_Code_2 = $in.0.Area_Code_2;
-	$out.0.Phone_Number_2 = $in.0.Phone_Number_2;
-	$out.0.Marital_Status = $in.0.Marital_Status;
-	$out.0.Religion = $in.0.Religion;
-	$out.0.Highest_Education_Level = $in.0.Highest_Education_Level;
-	$out.0.Person_Legislative_Information_1 = $in.0.Person_Legislative_Information_1;
-	$out.0.Person_Legislative_Information_2 = $in.0.Person_Legislative_Information_2;
-	$out.0.Person_Legislative_Information_3 = $in.0.Person_Legislative_Information_3;
-	$out.0.Person_Legislative_Information_4 = $in.0.Person_Legislative_Information_4;
-	$out.0.Person_Legislative_Information_5 = $in.0.Person_Legislative_Information_5;
-	$out.0.Person_Legislative_Information_6 = $in.0.Person_Legislative_Information_6;
-	$out.0.Person_Legislative_Information_7 = $in.0.Person_Legislative_Information_7;
-	$out.0.Person_Legislative_Information_8 = $in.0.Person_Legislative_Information_8;
-	$out.0.Person_Legislative_Information_9 = $in.0.Person_Legislative_Information_9;
-	$out.0.Person_Legislative_Information_10 = $in.0.Person_Legislative_Information_10;
-	$out.0.Person_Legislative_Information_Number_1 = $in.0.Person_Legislative_Information_Number_1;
-	$out.0.Contact_Type = $in.0.Contact_Type;
-	$out.0.Emergency_Contact = $in.0.Emergency_Contact;
-	$out.0.Title = $in.0.Title;
-	$out.0.First_Name = $in.0.First_Name;
-	$out.0.Middle_Names = $in.0.Middle_Names;
-	$out.0.Last_Name = $in.0.Last_Name;
-	$out.0.Prefix = $in.0.Prefix;
-	$out.0.Suffix = $in.0.Suffix;
-	$out.0.Honors = $in.0.Honors;
-	$out.0.Known_As = $in.0.Known_As;
-	$out.0.Previous_Last_Name = $in.0.Previous_Last_Name;
-	$out.0.Phone_Type = $in.0.Phone_Type;
-	$out.0.Country_Code = $in.0.Country_Code;
-	$out.0.Area_Code = $in.0.Area_Code;
-	$out.0.Phone_Number = $in.0.Phone_Number;
-	$out.0.National_ID_Country = $in.0.National_ID_Country;
-	$out.0.National_ID_Type = $in.0.National_ID_Type;
-	$out.0.National_ID = $in.0.National_ID;
-	$out.0.Correspondence_Language = $in.0.Correspondence_Language;
-	$out.0.Visa_Country = $in.0.Visa_Country;
-	$out.0.Visa_Type = $in.0.Visa_Type;
-	$out.0.Visa_Category = $in.0.Visa_Category;
-	$out.0.Visa_Number = $in.0.Visa_Number;
-	$out.0.Visa_Status = $in.0.Visa_Status;
-	$out.0.Visa_Issue_Date = $in.0.Visa_Issue_Date;
-	$out.0.Visa_Expiration_Date = $in.0.Visa_Expiration_Date;
-	$out.0.Passport_Country = $in.0.Passport_Country;
-	$out.0.Passport_Type = $in.0.Passport_Type;
-	$out.0.Passport_Number = $in.0.Passport_Number;
-	$out.0.Passport_Issuing_Authority = $in.0.Passport_Issuing_Authority;
-	$out.0.Passport_Issue_Date = $in.0.Passport_Issue_Date;
-	$out.0.Passport_Expiration_Date = $in.0.Passport_Expiration_Date;
-	$out.0.Nationality = $in.0.Nationality;
-	$out.0.From_Date = $in.0.From_Date;
-	$out.0.To_Date = $in.0.To_Date;
-	$out.0.Nationality_Status = $in.0.Nationality_Status;
-	$out.0.Person_DFF_Context = $in.0.Person_DFF_Context;
-	$out.0.Person_Attribute_Number_1 = $in.0.Person_Attribute_Number_1;
-	$out.0.Person_Attribute_Date_1 = $in.0.Person_Attribute_Date_1;
-	$out.0.Person_Attribute_Date_2 = $in.0.Person_Attribute_Date_2;
-	$out.0.Person_Attribute_2 = $in.0.Person_Attribute_2;
-	$out.0.Person_Attribute_3 = $in.0.Person_Attribute_3;
-	$out.0.Person_Attribute_4 = $in.0.Person_Attribute_4;
-	$out.0.Person_Attribute_5 = $in.0.Person_Attribute_5;
-	$out.0.Person_Attribute_6 = $in.0.Person_Attribute_6;
-	$out.0.Worker_Number = $in.0.Worker_Number;
-	$out.0.On_Military_Service = $in.0.On_Military_Service;
-	$out.0.Termination_Action = $in.0.Termination_Action;
-	$out.0.Termination_Reason = $in.0.Termination_Reason;
-	$out.0.Termination_Date = $in.0.Termination_Date;
-	$out.0.Work_Relationship_DDF_Context = $in.0.Work_Relationship_DDF_Context;
-	$out.0.Work_Relationship_Legislative_Information_Number_1 = $in.0.Work_Relationship_Legislative_Information_Number_1;
-	$out.0.Work_Relationship_Legislative_Information_Date_1 = $in.0.Work_Relationship_Legislative_Information_Date_1;
-	$out.0.Work_Relationship_Legislative_Information_Date_2 = $in.0.Work_Relationship_Legislative_Information_Date_2;
-	$out.0.Work_Relationship_Legislative_Information_Date_3 = $in.0.Work_Relationship_Legislative_Information_Date_3;
-	$out.0.Work_Relationship_Legislative_Information_1 = $in.0.Work_Relationship_Legislative_Information_1;
-	$out.0.Work_Relationship_Legislative_Information_2 = $in.0.Work_Relationship_Legislative_Information_2;
-	$out.0.Work_Relationship_Legislative_Information_3 = $in.0.Work_Relationship_Legislative_Information_3;
-	$out.0.Work_Relationship_Legislative_Information_4 = $in.0.Work_Relationship_Legislative_Information_4;
-	$out.0.Work_Relationship_Legislative_Information_5 = $in.0.Work_Relationship_Legislative_Information_5;
-	$out.0.Work_Relationship_Legislative_Information_6 = $in.0.Work_Relationship_Legislative_Information_6;
-	$out.0.Work_Relationship_DFF_Context = $in.0.Work_Relationship_DFF_Context;
-	$out.0.Work_Relationship_Attribute_Number_1 = $in.0.Work_Relationship_Attribute_Number_1;
-	$out.0.Work_Relationship_Attribute_Date_1 = $in.0.Work_Relationship_Attribute_Date_1;
-	$out.0.Work_Relationship_Attribute_Date_2 = $in.0.Work_Relationship_Attribute_Date_2;
-	$out.0.Work_Relationship_Attribute_1 = $in.0.Work_Relationship_Attribute_1;
-	$out.0.Work_Relationship_Attribute_2 = $in.0.Work_Relationship_Attribute_2;
-	$out.0.Work_Relationship_Attribute_3 = $in.0.Work_Relationship_Attribute_3;
-	$out.0.Work_Relationship_Attribute_4 = $in.0.Work_Relationship_Attribute_4;
-	$out.0.Work_Relationship_Attribute_5 = $in.0.Work_Relationship_Attribute_5;
-	$out.0.Work_Relationship_Attribute_6 = $in.0.Work_Relationship_Attribute_6;
-	$out.0.Action_Reason = $in.0.Action_Reason;
-	$out.0.Assignment_Name = $in.0.Assignment_Name;
-	$out.0.Assignment_Number = $in.0.Assignment_Number;
-	$out.0.Assignment_Status = $in.0.Assignment_Status;
-	$out.0.Person_Type = $in.0.Person_Type;
-	$out.0.Contract_Type = $in.0.Contract_Type;
-	$out.0.Contract_Duration = $in.0.Contract_Duration;
-	$out.0.Duration_Unit_of_Measure = $in.0.Duration_Unit_of_Measure;
-	$out.0.Projected_End_Date = $in.0.Projected_End_Date;
-	$out.0.Contract_DDF_Context = $in.0.Contract_DDF_Context;
-	$out.0.Contract_Legislative_Information_Number_1 = $in.0.Contract_Legislative_Information_Number_1;
-	$out.0.Contract_Legislative_Information_Number_2 = $in.0.Contract_Legislative_Information_Number_2;
-	$out.0.Contract_Legislative_Information_Number_3 = $in.0.Contract_Legislative_Information_Number_3;
-	$out.0.Contract_Legislative_Information_Number_4 = $in.0.Contract_Legislative_Information_Number_4;
-	$out.0.Contract_Legislative_Information_Date_1 = $in.0.Contract_Legislative_Information_Date_1;
-	$out.0.Contract_Legislative_Information_Date_2 = $in.0.Contract_Legislative_Information_Date_2;
-	$out.0.Contract_Legislative_Information_Date_3 = $in.0.Contract_Legislative_Information_Date_3;
-	$out.0.Contract_Legislative_Information_1 = $in.0.Contract_Legislative_Information_1;
-	$out.0.Contract_Legislative_Information_2 = $in.0.Contract_Legislative_Information_2;
-	$out.0.Contract_Legislative_Information_3 = $in.0.Contract_Legislative_Information_3;
-	$out.0.Contract_Legislative_Information_4 = $in.0.Contract_Legislative_Information_4;
-	$out.0.Contract_Legislative_Information_5 = $in.0.Contract_Legislative_Information_5;
-	$out.0.Contract_Legislative_Information_6 = $in.0.Contract_Legislative_Information_6;
-	$out.0.Contract_DFF_Context = $in.0.Contract_DFF_Context;
-	$out.0.Contract_Attribute_Number_1 = $in.0.Contract_Attribute_Number_1;
-	$out.0.Contract_Attribute_Date_1 = $in.0.Contract_Attribute_Date_1;
-	$out.0.Contract_Attribute_Date_2 = $in.0.Contract_Attribute_Date_2;
-	$out.0.Contract_Attribute_1 = $in.0.Contract_Attribute_1;
-	$out.0.Contract_Attribute_2 = $in.0.Contract_Attribute_2;
-	$out.0.Contract_Attribute_3 = $in.0.Contract_Attribute_3;
-	$out.0.Contract_Attribute_4 = $in.0.Contract_Attribute_4;
-	$out.0.Contract_Attribute_5 = $in.0.Contract_Attribute_5;
-	$out.0.Contract_Attribute_6 = $in.0.Contract_Attribute_6;
-	$out.0.Position_Code = $in.0.Position_Code;
-	$out.0.Job_Code = $in.0.Job_Code;
-	$out.0.Grade_Code = $in.0.Grade_Code;
-	$out.0.Department = $in.0.Department;
-	$out.0.Reporting_Establishment = $in.0.Reporting_Establishment;
-	$out.0.Location_Code = $in.0.Location_Code;
-	$out.0.Working_at_Home = $in.0.Working_at_Home;
-	$out.0.Worker_Category = $in.0.Worker_Category;
-	$out.0.Assignment_Category = $in.0.Assignment_Category;
-	$out.0.Working_as_a_Manager = $in.0.Working_as_a_Manager;
-	$out.0.Hourly_Paid_or_Salaried = $in.0.Hourly_Paid_or_Salaried;
-	$out.0.Working_Hours = $in.0.Working_Hours;
-	$out.0.FTE = $in.0.FTE;
-	$out.0.Headcount = $in.0.Headcount;
-	$out.0.Start_Time = $in.0.Start_Time;
-	$out.0.End_Time = $in.0.End_Time;
-	$out.0.Line_Manager_E_Mail = $in.0.Line_Manager_E_Mail;
-	$out.0.Probation_Period = $in.0.Probation_Period;
-	$out.0.Probation_Period_Unit_of_Measure = $in.0.Probation_Period_Unit_of_Measure;
-	$out.0.Notice_Period = $in.0.Notice_Period;
-	$out.0.Notice_Period_UOM = $in.0.Notice_Period_UOM;
-	$out.0.Retirement_Age = $in.0.Retirement_Age;
-	$out.0.Retirement_Date = $in.0.Retirement_Date;
-	$out.0.Bargaining_Unit = $in.0.Bargaining_Unit;
-	$out.0.Union_Member = $in.0.Union_Member;
-	$out.0.Default_Expense_Account_ID = $in.0.Default_Expense_Account_ID;
-	$out.0.Expense_Check_Send_to_Address = $in.0.Expense_Check_Send_to_Address;
-	$out.0.People_Group_ID = $in.0.People_Group_ID;
-	$out.0.Assignment_DDF_Context = $in.0.Assignment_DDF_Context;
-	$out.0.Assignment_Legislative_Information_Number_1 = $in.0.Assignment_Legislative_Information_Number_1;
-	$out.0.Assignment_Legislative_Information_Number_2 = $in.0.Assignment_Legislative_Information_Number_2;
-	$out.0.Assignment_Legislative_Information_Number_3 = $in.0.Assignment_Legislative_Information_Number_3;
-	$out.0.Assignment_Legislative_Information_Number_4 = $in.0.Assignment_Legislative_Information_Number_4;
-	$out.0.Assignment_Legislative_Information_Date_1 = $in.0.Assignment_Legislative_Information_Date_1;
-	$out.0.Assignment_Legislative_Information_Date_2 = $in.0.Assignment_Legislative_Information_Date_2;
-	$out.0.Assignment_Legislative_Information_1 = $in.0.Assignment_Legislative_Information_1;
-	$out.0.Assignment_Legislative_Information_2 = $in.0.Assignment_Legislative_Information_2;
-	$out.0.Assignment_Legislative_Information_3 = $in.0.Assignment_Legislative_Information_3;
-	$out.0.Assignment_Legislative_Information_4 = $in.0.Assignment_Legislative_Information_4;
-	$out.0.Assignment_Legislative_Information_5 = $in.0.Assignment_Legislative_Information_5;
-	$out.0.Assignment_Legislative_Information_6 = $in.0.Assignment_Legislative_Information_6;
-	$out.0.Assignment_DFF_Context = $in.0.Assignment_DFF_Context;
-	$out.0.Assignment_Attribute_Number_1 = $in.0.Assignment_Attribute_Number_1;
-	$out.0.Assignment_Attribute_Date_1 = $in.0.Assignment_Attribute_Date_1;
-	$out.0.Assignment_Attribute_Date_2 = $in.0.Assignment_Attribute_Date_2;
-	$out.0.Assignment_Attribute_1 = $in.0.Assignment_Attribute_1;
-	$out.0.Assignment_Attribute_2 = $in.0.Assignment_Attribute_2;
-	$out.0.Assignment_Attribute_3 = $in.0.Assignment_Attribute_3;
-	$out.0.Assignment_Attribute_4 = $in.0.Assignment_Attribute_4;
-	$out.0.Assignment_Attribute_5 = $in.0.Assignment_Attribute_5;
-	$out.0.Assignment_Attribute_6 = $in.0.Assignment_Attribute_6;
-	$out.0.Salary_Basis = $in.0.Salary_Basis;
-	$out.0.Salary_Amount = $in.0.Salary_Amount;
-	$out.0.Generate_user_account = $in.0.Generate_user_account;
-	$out.0.User_Name = $in.0.User_Name;
-	$out.0.Send_user_name_and_password = $in.0.Send_user_name_and_password;
-	$out.0.E_Mail_1 = $in.0.E_Mail_1;
-	$out.0.ColumnHW = $in.0.ColumnHW;
-	$out.0.Load_Status = $in.0.Load_Status;
-	if ($in.0.Country == "US ")
-	{
-		$out.0.Business_Unit = "USA Inc.";
-	}
-	else
-	{
-		$out.0.Business_Unit = "UK Inc.";
-	}
-
-	return ALL;
-}
-
-// Called during component initialization.
-// function boolean init() {}
-
-// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
-// required by the transform. All resources allocated within this method should be released
-// by the postExecute() method.
-// function void preExecute() {}
-
-// Called only if transform() throws an exception.
-// function integer transformOnError(string errorMessage, string stackTrace) {}
-
-// Called during each graph run after the entire transform was executed. Should be used to free any resources
-// allocated within the preExecute() method.
-// function void postExecute() {}
-
-// Called to return a user-defined error message when an error occurs.
-// function string getMessage() {}
-]]></attr>
+<Node enabled="enabled" guiName="Filter Address" guiX="270" guiY="143" id="FILTER_ADDRESS" type="EXT_FILTER">
+<attr name="filterExpression"><![CDATA[//#CTL2
+NOT isnull($in.0.Current_employee_number)]]></attr>
 </Node>
-<Node enabled="enabled" guiName="Joiners Employee and Address" guiX="313" guiY="79" id="JOINERS_EMPLOYEE_AND_ADDRESS" joinKey="$Current_employee_Number=$Current_employee_number" type="EXT_HASH_JOIN">
+<Node enabled="enabled" guiName="Filter Assignments" guiX="270" guiY="343" id="FILTER_ASSIGNMENTS" type="EXT_FILTER">
+<attr name="filterExpression"><![CDATA[//#CTL2
+NOT isnull($in.0.Current_employee_number)]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Filter Email" guiX="270" guiY="238" id="FILTER_EMAIL" type="EXT_FILTER">
+<attr name="filterExpression"><![CDATA[//#CTL2
+NOT isnull($in.0.Current_Employee_Number)]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Filter Person" guiX="261" guiY="51" id="FILTER_PERSON" type="EXT_FILTER">
+<attr name="filterExpression"><![CDATA[//#CTL2
+NOT isnull($in.0.Current_employee_Number)]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Joiners Emp, Add,Email and Assignments" guiX="505" guiY="182" id="JOINERS_EMP_ADD_EMAIL_AND_ASSIGNMENTS" joinKey="$Current_employee_Number=$Current_employee_number#$Current_employee_Number=$Current_Employee_Number#$Current_employee_Number=$Current_employee_number" type="EXT_HASH_JOIN">
 <attr name="transform"><![CDATA[//#CTL2
 
 // Transforms input record into output record.
@@ -579,7 +359,7 @@ function integer transform() {
 	$out.0.Global_Middle_Names = $in.0.Middle_Name;
 	$out.0.Global_Known_As = $in.0.Preferred_Name;
 	$out.0.Global_Previous_Last_Name = $in.0.Previous_Last_Name;
-	$out.0.Ethnicity = $in.0.Ethnicity_LOV;
+	//$out.0.Ethnicity = $in.0.Ethnicity_LOV;
 	$out.0.Gender = $in.0.Gender_LOV;
 	$out.0.Date_of_Birth = $in.0.Date_Of_Birth;
 	$out.0.Address_Type = $in.1.Address_Type_LOV;
@@ -592,12 +372,38 @@ function integer transform() {
 	$out.0.Postal_Code = $in.1.Postal_Code;
 	$out.0.Region_3 = $in.1.Province;
 	$out.0.Country = $in.1.Country_LOV;
+	$out.0.E_Mail_Type = $in.2.Type_LOV;
+	$out.0.E_Mail = $in.2.E_mail;
 	$out.0.Worker_Type = 'Employee';
 	$out.0.Action = 'Hire';
 	$out.0.Legislation = $in.1.Country_LOV;
 	$out.0.Frequency = 'Weekly';
-	$out.0.Business_Unit = 'UK Ltd.';
-
+	$out.0.Job_Code = $in.3.Job_Code_LOV;
+	$out.0.Grade_Code = $in.3.Grades_LOV;
+	$out.0.Department = $in.3.Department_LOV;
+	$out.0.Working_as_a_Manager = $in.3.Working_as_a_Manager_YES_NO_LOV;
+	$out.0.Location_Code = $in.3.Work_Location_Code_LOV;
+	$out.0.Working_at_Home = $in.3.Working_at_Home_LOV;
+	$out.0.Working_Hours = $in.3.Normal_Working_hours;
+	$out.0.Assignment_Status = $in.3.Assignment_Status_LOV;
+	$out.0.Person_Type = $in.3.Person_Types_LOV;
+	$out.0.Assignment_Category = $in.3.Assignment_Category_LOV;
+	if ($in.1.Country_LOV == "US")
+	{
+		$out.0.Business_Unit = "USA Inc.";
+	}
+	else
+	{
+		$out.0.Business_Unit = "UK Ltd.";
+	}
+ if ($in.0.Ethnicity_LOV==null)
+	{
+		$out.0.Ethnicity = "Not disclosed";
+	}
+	else
+	{
+		$out.0.Ethnicity = $in.0.Ethnicity_LOV;
+	}
 	return ALL;
 }
 
@@ -620,14 +426,19 @@ function integer transform() {
 // function string getMessage() {}
 ]]></attr>
 </Node>
-<Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMEmployeesV1.xlsx" guiName="Read Address" guiX="97" guiY="153" id="READ_ADDRESS" sheetName="Address" skipRows="2" type="XLS_READER"/>
-<Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMEmployeesV1.xlsx" guiName="Read Email" guiX="347" guiY="219" id="READ_EMAIL" sheetName="Email" skipRows="5" type="XLS_READER"/>
-<Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMEmployeesV1.xlsx" guiName="Read Person" guiX="97" guiY="25" id="READ_PERSON" sheetName="Person" skipRows="5" type="XLS_READER"/>
-<Node enabled="enabled" fileURL="${DATAOUT_DIR}/FusionHCMEmployees_R7.xls" firstDataRow="2" guiName="Write Employee" guiX="786" guiY="142" id="WRITE_EMPLOYEE" namesRow="1" sheetName="Create Employee" type="XLS_WRITER"/>
-<Edge debugMode="false" fromNode="JOINERS_EMAIL:0" guiBendpoints="" guiRouter="Manhattan" id="Edge7" inPort="Port 0 (in)" metadata="Metadata1" outPort="Port 0 (out)" toNode="WRITE_EMPLOYEE:0"/>
-<Edge debugMode="true" fromNode="JOINERS_EMPLOYEE_AND_ADDRESS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge5" inPort="Port 0 (driver)" metadata="Metadata1" outPort="Port 0 (out)" toNode="JOINERS_EMAIL:0"/>
-<Edge fromNode="READ_ADDRESS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge3" inPort="Port 1 (slave)" metadata="Metadata2" outPort="Port 0 (out)" toNode="JOINERS_EMPLOYEE_AND_ADDRESS:1"/>
-<Edge fromNode="READ_EMAIL:0" guiBendpoints="" guiRouter="Manhattan" id="Edge6" inPort="Port 1 (slave)" metadata="Metadata3" outPort="Port 0 (out)" toNode="JOINERS_EMAIL:1"/>
-<Edge debugMode="false" fromNode="READ_PERSON:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (driver)" metadata="Metadata0" outPort="Port 0 (out)" toNode="JOINERS_EMPLOYEE_AND_ADDRESS:0"/>
+<Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMEmployeesV1.xlsx" guiName="Read Address" guiX="91" guiY="130" id="READ_ADDRESS" sheetName="Address" skipRows="2" type="XLS_READER"/>
+<Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMEmployeesV1.xlsx" guiName="Read Assignments" guiX="91" guiY="343" id="READ_ASSIGNMENTS" sheetName="Assignments" skipRows="6" type="XLS_READER"/>
+<Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMEmployeesV1.xlsx" guiName="Read Email" guiX="91" guiY="238" id="READ_EMAIL" sheetName="Email" skipRows="5" type="XLS_READER"/>
+<Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMEmployeesV1.xlsx" guiName="Read Person" guiX="91" guiY="25" id="READ_PERSON" sheetName="Person" skipRows="5" type="XLS_READER"/>
+<Node enabled="enabled" fileURL="${DATAOUT_DIR}/FusionHCMEmployees_R7.xls" firstDataRow="2" guiName="Write Employee" guiX="806" guiY="182" id="WRITE_EMPLOYEE" namesRow="1" sheetName="Create Employee" type="XLS_WRITER"/>
+<Edge fromNode="FILTER_ADDRESS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge11" inPort="Port 1 (slave)" metadata="Metadata2" outPort="Port 0 (accepted)" toNode="JOINERS_EMP_ADD_EMAIL_AND_ASSIGNMENTS:1"/>
+<Edge fromNode="FILTER_ASSIGNMENTS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge13" inPort="Port 3 (slave)" metadata="Metadata4" outPort="Port 0 (accepted)" toNode="JOINERS_EMP_ADD_EMAIL_AND_ASSIGNMENTS:3"/>
+<Edge fromNode="FILTER_EMAIL:0" guiBendpoints="" guiRouter="Manhattan" id="Edge12" inPort="Port 2 (slave)" metadata="Metadata3" outPort="Port 0 (accepted)" toNode="JOINERS_EMP_ADD_EMAIL_AND_ASSIGNMENTS:2"/>
+<Edge fromNode="FILTER_PERSON:0" guiBendpoints="" guiRouter="Manhattan" id="Edge10" inPort="Port 0 (driver)" metadata="Metadata0" outPort="Port 0 (accepted)" toNode="JOINERS_EMP_ADD_EMAIL_AND_ASSIGNMENTS:0"/>
+<Edge fromNode="JOINERS_EMP_ADD_EMAIL_AND_ASSIGNMENTS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge7" inPort="Port 0 (in)" metadata="Metadata1" outPort="Port 0 (out)" toNode="WRITE_EMPLOYEE:0"/>
+<Edge fromNode="READ_ADDRESS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge3" inPort="Port 0 (in)" metadata="Metadata2" outPort="Port 0 (out)" toNode="FILTER_ADDRESS:0"/>
+<Edge fromNode="READ_ASSIGNMENTS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge4" inPort="Port 0 (in)" metadata="Metadata4" outPort="Port 0 (out)" toNode="FILTER_ASSIGNMENTS:0"/>
+<Edge fromNode="READ_EMAIL:0" guiBendpoints="" guiRouter="Manhattan" id="Edge6" inPort="Port 0 (in)" metadata="Metadata3" outPort="Port 0 (out)" toNode="FILTER_EMAIL:0"/>
+<Edge debugMode="false" fromNode="READ_PERSON:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="FILTER_PERSON:0"/>
 </Phase>
 </Graph>
