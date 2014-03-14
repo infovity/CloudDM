@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Graph author="Acer" created="Tue Mar 11 11:43:59 IST 2014" guiVersion="3.5.0" id="1394518678394" licenseType="Community" modified="Fri Mar 14 15:31:12 IST 2014" modifiedBy="Acer" name="COMN_EmployeeMigration" revision="1.62" showComponentDetails="true">
+<Graph author="Acer" created="Tue Mar 11 11:43:59 IST 2014" guiVersion="3.5.0" id="1394518678394" licenseType="Community" modified="Fri Mar 14 15:53:09 IST 2014" modifiedBy="Acer" name="COMN_EmployeeMigration" revision="1.63" showComponentDetails="true">
 <Global>
 <Metadata id="Metadata2">
 <Record fieldDelimiter="|" name="Address_INTY_V1" recordDelimiter="\r\n" type="delimited">
@@ -339,10 +339,6 @@
 <Dictionary/>
 </Global>
 <Phase number="0">
-<Node enabled="enabled" guiName="ExtFilter" guiX="275" guiY="406" id="EXT_FILTER" type="EXT_FILTER">
-<attr name="filterExpression"><![CDATA[//#CTL2
-NOT isnull($in.0.Current_Employee_Number)]]></attr>
-</Node>
 <Node enabled="enabled" guiName="Filter Address" guiX="262" guiY="126" id="FILTER_ADDRESS" type="EXT_FILTER">
 <attr name="filterExpression"><![CDATA[//#CTL2
 NOT isnull($in.0.Current_employee_number)]]></attr>
@@ -358,6 +354,10 @@ NOT isnull($in.0.Current_Employee_Number)]]></attr>
 <Node enabled="enabled" guiName="Filter Person" guiX="264" guiY="22" id="FILTER_PERSON" type="EXT_FILTER">
 <attr name="filterExpression"><![CDATA[//#CTL2
 NOT isnull($in.0.Current_employee_Number)]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Filter Phones" guiX="275" guiY="406" id="FILTER_PHONES" type="EXT_FILTER">
+<attr name="filterExpression"><![CDATA[//#CTL2
+NOT isnull($in.0.Current_Employee_Number)]]></attr>
 </Node>
 <Node enabled="enabled" guiName="Joiners Emp, Add,Email and Assignments" guiX="505" guiY="182" id="JOINERS_EMP_ADD_EMAIL_AND_ASSIGNMENTS" joinKey="$Current_employee_Number=$Current_employee_number#$Current_employee_Number=$Current_Employee_Number#$Current_employee_Number=$Current_employee_number#$Current_employee_Number=$Current_Employee_Number" type="EXT_HASH_JOIN">
 <attr name="transform"><![CDATA[//#CTL2
@@ -463,16 +463,16 @@ function integer transform() {
 <Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMEmployeesV1.xlsx" guiName="Read Person" guiX="91" guiY="9" id="READ_PERSON" sheetName="Person" skipRows="5" type="XLS_READER"/>
 <Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMEmployeesV1.xlsx" guiName="Read Phones" guiX="93" guiY="406" id="READ_PHONES" sheetName="Phones" skipRows="5" type="XLS_READER"/>
 <Node enabled="enabled" fileURL="${DATAOUT_DIR}/FusionHCMEmployees_R7.xls" firstDataRow="2" guiName="Write Employee" guiX="806" guiY="182" id="WRITE_EMPLOYEE" namesRow="1" sheetName="Create Employee" type="XLS_WRITER"/>
-<Edge debugMode="false" fromNode="EXT_FILTER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 4 (slave)" metadata="Metadata5" outPort="Port 0 (accepted)" toNode="JOINERS_EMP_ADD_EMAIL_AND_ASSIGNMENTS:4"/>
 <Edge fromNode="FILTER_ADDRESS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge11" inPort="Port 1 (slave)" metadata="Metadata2" outPort="Port 0 (accepted)" toNode="JOINERS_EMP_ADD_EMAIL_AND_ASSIGNMENTS:1"/>
 <Edge fromNode="FILTER_ASSIGNMENTS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge13" inPort="Port 3 (slave)" metadata="Metadata4" outPort="Port 0 (accepted)" toNode="JOINERS_EMP_ADD_EMAIL_AND_ASSIGNMENTS:3"/>
 <Edge fromNode="FILTER_EMAIL:0" guiBendpoints="" guiRouter="Manhattan" id="Edge12" inPort="Port 2 (slave)" metadata="Metadata3" outPort="Port 0 (accepted)" toNode="JOINERS_EMP_ADD_EMAIL_AND_ASSIGNMENTS:2"/>
 <Edge fromNode="FILTER_PERSON:0" guiBendpoints="" guiRouter="Manhattan" id="Edge10" inPort="Port 0 (driver)" metadata="Metadata0" outPort="Port 0 (accepted)" toNode="JOINERS_EMP_ADD_EMAIL_AND_ASSIGNMENTS:0"/>
+<Edge debugMode="false" fromNode="FILTER_PHONES:0" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 4 (slave)" metadata="Metadata5" outPort="Port 0 (accepted)" toNode="JOINERS_EMP_ADD_EMAIL_AND_ASSIGNMENTS:4"/>
 <Edge fromNode="JOINERS_EMP_ADD_EMAIL_AND_ASSIGNMENTS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge7" inPort="Port 0 (in)" metadata="Metadata1" outPort="Port 0 (out)" toNode="WRITE_EMPLOYEE:0"/>
 <Edge fromNode="READ_ADDRESS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge3" inPort="Port 0 (in)" metadata="Metadata2" outPort="Port 0 (out)" toNode="FILTER_ADDRESS:0"/>
 <Edge fromNode="READ_ASSIGNMENTS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge4" inPort="Port 0 (in)" metadata="Metadata4" outPort="Port 0 (out)" toNode="FILTER_ASSIGNMENTS:0"/>
 <Edge fromNode="READ_EMAIL:0" guiBendpoints="" guiRouter="Manhattan" id="Edge6" inPort="Port 0 (in)" metadata="Metadata3" outPort="Port 0 (out)" toNode="FILTER_EMAIL:0"/>
 <Edge debugMode="false" fromNode="READ_PERSON:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="FILTER_PERSON:0"/>
-<Edge fromNode="READ_PHONES:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" metadata="Metadata5" outPort="Port 0 (out)" toNode="EXT_FILTER:0"/>
+<Edge fromNode="READ_PHONES:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" metadata="Metadata5" outPort="Port 0 (out)" toNode="FILTER_PHONES:0"/>
 </Phase>
 </Graph>
