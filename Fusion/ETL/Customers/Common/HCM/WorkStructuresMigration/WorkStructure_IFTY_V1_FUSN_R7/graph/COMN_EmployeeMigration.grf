@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Graph author="Acer" created="Tue Mar 11 11:43:59 IST 2014" guiVersion="3.5.0" id="1394518678394" licenseType="Community" modified="Fri Mar 14 14:55:56 IST 2014" modifiedBy="Acer" name="COMN_EmployeeMigration" revision="1.60" showComponentDetails="true">
+<Graph author="Acer" created="Tue Mar 11 11:43:59 IST 2014" guiVersion="3.5.0" id="1394518678394" licenseType="Community" modified="Fri Mar 14 15:31:12 IST 2014" modifiedBy="Acer" name="COMN_EmployeeMigration" revision="1.62" showComponentDetails="true">
 <Global>
 <Metadata id="Metadata2">
 <Record fieldDelimiter="|" name="Address_INTY_V1" recordDelimiter="\r\n" type="delimited">
@@ -320,29 +320,46 @@
 <Field name="Previous_paycheck_number" type="string"/>
 </Record>
 </Metadata>
+<Metadata id="Metadata5">
+<Record fieldDelimiter="|" name="Phone_INTY_V1" recordDelimiter="\r\n" type="delimited">
+<Field format="" label="Current Employee Number " name="Current_Employee_Number" type="string"/>
+<Field label="*Type  [LOV] " name="Type_LOV" type="string"/>
+<Field label="Primary (Phone) [LOV]" name="Primary_Phone_LOV" type="string"/>
+<Field label="Country Code [LOV]" name="Country_Code_LOV" type="string"/>
+<Field label="Area Code" name="Area_Code" type="string"/>
+<Field label="*Number" name="Number" type="string"/>
+<Field label="Extension" name="Extension" type="string"/>
+<Field label="From Date" name="From_Date" type="string"/>
+<Field label="To Date" name="To_Date" type="string"/>
+</Record>
+</Metadata>
 <GraphParameters>
 <GraphParameterFile fileURL="workspace.prm"/>
 </GraphParameters>
 <Dictionary/>
 </Global>
 <Phase number="0">
-<Node enabled="enabled" guiName="Filter Address" guiX="270" guiY="143" id="FILTER_ADDRESS" type="EXT_FILTER">
-<attr name="filterExpression"><![CDATA[//#CTL2
-NOT isnull($in.0.Current_employee_number)]]></attr>
-</Node>
-<Node enabled="enabled" guiName="Filter Assignments" guiX="270" guiY="343" id="FILTER_ASSIGNMENTS" type="EXT_FILTER">
-<attr name="filterExpression"><![CDATA[//#CTL2
-NOT isnull($in.0.Current_employee_number) AND ($in.0.Assignment_reference_number == "1")]]></attr>
-</Node>
-<Node enabled="enabled" guiName="Filter Email" guiX="270" guiY="238" id="FILTER_EMAIL" type="EXT_FILTER">
+<Node enabled="enabled" guiName="ExtFilter" guiX="275" guiY="406" id="EXT_FILTER" type="EXT_FILTER">
 <attr name="filterExpression"><![CDATA[//#CTL2
 NOT isnull($in.0.Current_Employee_Number)]]></attr>
 </Node>
-<Node enabled="enabled" guiName="Filter Person" guiX="261" guiY="51" id="FILTER_PERSON" type="EXT_FILTER">
+<Node enabled="enabled" guiName="Filter Address" guiX="262" guiY="126" id="FILTER_ADDRESS" type="EXT_FILTER">
+<attr name="filterExpression"><![CDATA[//#CTL2
+NOT isnull($in.0.Current_employee_number)]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Filter Assignments" guiX="271" guiY="317" id="FILTER_ASSIGNMENTS" type="EXT_FILTER">
+<attr name="filterExpression"><![CDATA[//#CTL2
+NOT isnull($in.0.Current_employee_number) AND ($in.0.Assignment_reference_number == "1")]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Filter Email" guiX="271" guiY="222" id="FILTER_EMAIL" type="EXT_FILTER">
+<attr name="filterExpression"><![CDATA[//#CTL2
+NOT isnull($in.0.Current_Employee_Number)]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Filter Person" guiX="264" guiY="22" id="FILTER_PERSON" type="EXT_FILTER">
 <attr name="filterExpression"><![CDATA[//#CTL2
 NOT isnull($in.0.Current_employee_Number)]]></attr>
 </Node>
-<Node enabled="enabled" guiName="Joiners Emp, Add,Email and Assignments" guiX="505" guiY="182" id="JOINERS_EMP_ADD_EMAIL_AND_ASSIGNMENTS" joinKey="$Current_employee_Number=$Current_employee_number#$Current_employee_Number=$Current_Employee_Number#$Current_employee_Number=$Current_employee_number" type="EXT_HASH_JOIN">
+<Node enabled="enabled" guiName="Joiners Emp, Add,Email and Assignments" guiX="505" guiY="182" id="JOINERS_EMP_ADD_EMAIL_AND_ASSIGNMENTS" joinKey="$Current_employee_Number=$Current_employee_number#$Current_employee_Number=$Current_Employee_Number#$Current_employee_Number=$Current_employee_number#$Current_employee_Number=$Current_Employee_Number" type="EXT_HASH_JOIN">
 <attr name="transform"><![CDATA[//#CTL2
 
 // Transforms input record into output record.
@@ -359,7 +376,6 @@ function integer transform() {
 	$out.0.Global_Middle_Names = $in.0.Middle_Name;
 	$out.0.Global_Known_As = $in.0.Preferred_Name;
 	$out.0.Global_Previous_Last_Name = $in.0.Previous_Last_Name;
-	//$out.0.Ethnicity = $in.0.Ethnicity_LOV;
 	$out.0.Gender = $in.0.Gender_LOV;
 	$out.0.Date_of_Birth = $in.0.Date_Of_Birth;
 	$out.0.Address_Type = $in.1.Address_Type_LOV;
@@ -388,7 +404,11 @@ function integer transform() {
 	$out.0.Assignment_Status = $in.3.Assignment_Status_LOV;
 	$out.0.Person_Type = $in.3.Person_Types_LOV;
 	$out.0.Assignment_Category = $in.3.Assignment_Category_LOV;
-	if ($in.1.Country_LOV == "US")
+	$out.0.Phone_Type_1 = $in.4.Type_LOV;
+	$out.0.Phone_Number_1 = $in.4.Number;
+	$out.0.Area_Code_1 = $in.4.Area_Code;
+	
+		if ($in.1.Country_LOV == "US")
 	{
 		$out.0.Business_Unit = "USA Inc.";
 	}
@@ -396,6 +416,7 @@ function integer transform() {
 	{
 		$out.0.Business_Unit = "UK Ltd.";
 	}
+	//
  if ($in.0.Ethnicity_LOV==null)
 	{
 		$out.0.Ethnicity = "Not disclosed";
@@ -404,6 +425,16 @@ function integer transform() {
 	{
 		$out.0.Ethnicity = $in.0.Ethnicity_LOV;
 	}
+	//
+	if ($in.4.Country_Code_LOV == "US")
+	{
+		$out.0.Country_Code_1 = "1";
+	}
+	else
+	{
+		$out.0.Country_Code_1 = "";
+	}
+	
 	return ALL;
 }
 
@@ -426,11 +457,13 @@ function integer transform() {
 // function string getMessage() {}
 ]]></attr>
 </Node>
-<Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMEmployeesV1.xlsx" guiName="Read Address" guiX="91" guiY="130" id="READ_ADDRESS" sheetName="Address" skipRows="2" type="XLS_READER"/>
-<Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMEmployeesV1.xlsx" guiName="Read Assignments" guiX="91" guiY="343" id="READ_ASSIGNMENTS" sheetName="Assignments" skipRows="6" type="XLS_READER"/>
-<Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMEmployeesV1.xlsx" guiName="Read Email" guiX="91" guiY="238" id="READ_EMAIL" sheetName="Email" skipRows="5" type="XLS_READER"/>
-<Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMEmployeesV1.xlsx" guiName="Read Person" guiX="91" guiY="25" id="READ_PERSON" sheetName="Person" skipRows="5" type="XLS_READER"/>
+<Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMEmployeesV1.xlsx" guiName="Read Address" guiX="93" guiY="107" id="READ_ADDRESS" sheetName="Address" skipRows="2" type="XLS_READER"/>
+<Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMEmployeesV1.xlsx" guiName="Read Assignments" guiX="91" guiY="304" id="READ_ASSIGNMENTS" sheetName="Assignments" skipRows="6" type="XLS_READER"/>
+<Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMEmployeesV1.xlsx" guiName="Read Email" guiX="93" guiY="209" id="READ_EMAIL" sheetName="Email" skipRows="5" type="XLS_READER"/>
+<Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMEmployeesV1.xlsx" guiName="Read Person" guiX="91" guiY="9" id="READ_PERSON" sheetName="Person" skipRows="5" type="XLS_READER"/>
+<Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMEmployeesV1.xlsx" guiName="Read Phones" guiX="93" guiY="406" id="READ_PHONES" sheetName="Phones" skipRows="5" type="XLS_READER"/>
 <Node enabled="enabled" fileURL="${DATAOUT_DIR}/FusionHCMEmployees_R7.xls" firstDataRow="2" guiName="Write Employee" guiX="806" guiY="182" id="WRITE_EMPLOYEE" namesRow="1" sheetName="Create Employee" type="XLS_WRITER"/>
+<Edge debugMode="false" fromNode="EXT_FILTER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 4 (slave)" metadata="Metadata5" outPort="Port 0 (accepted)" toNode="JOINERS_EMP_ADD_EMAIL_AND_ASSIGNMENTS:4"/>
 <Edge fromNode="FILTER_ADDRESS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge11" inPort="Port 1 (slave)" metadata="Metadata2" outPort="Port 0 (accepted)" toNode="JOINERS_EMP_ADD_EMAIL_AND_ASSIGNMENTS:1"/>
 <Edge fromNode="FILTER_ASSIGNMENTS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge13" inPort="Port 3 (slave)" metadata="Metadata4" outPort="Port 0 (accepted)" toNode="JOINERS_EMP_ADD_EMAIL_AND_ASSIGNMENTS:3"/>
 <Edge fromNode="FILTER_EMAIL:0" guiBendpoints="" guiRouter="Manhattan" id="Edge12" inPort="Port 2 (slave)" metadata="Metadata3" outPort="Port 0 (accepted)" toNode="JOINERS_EMP_ADD_EMAIL_AND_ASSIGNMENTS:2"/>
@@ -440,5 +473,6 @@ function integer transform() {
 <Edge fromNode="READ_ASSIGNMENTS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge4" inPort="Port 0 (in)" metadata="Metadata4" outPort="Port 0 (out)" toNode="FILTER_ASSIGNMENTS:0"/>
 <Edge fromNode="READ_EMAIL:0" guiBendpoints="" guiRouter="Manhattan" id="Edge6" inPort="Port 0 (in)" metadata="Metadata3" outPort="Port 0 (out)" toNode="FILTER_EMAIL:0"/>
 <Edge debugMode="false" fromNode="READ_PERSON:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="FILTER_PERSON:0"/>
+<Edge fromNode="READ_PHONES:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" metadata="Metadata5" outPort="Port 0 (out)" toNode="EXT_FILTER:0"/>
 </Phase>
 </Graph>
