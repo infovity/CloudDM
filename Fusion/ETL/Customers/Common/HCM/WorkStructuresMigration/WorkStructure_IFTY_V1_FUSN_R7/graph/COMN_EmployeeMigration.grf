@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="Acer" created="Tue Mar 11 11:43:59 IST 2014" guiVersion="3.5.0" id="1394518678394" licenseType="Community" modified="Thu Mar 13 14:42:29 IST 2014" modifiedBy="Acer" name="COMN_EmployeeMigration" revision="1.59" showComponentDetails="true">
+<Global>
+<Metadata id="Metadata2">
+<Record fieldDelimiter="|" name="Address_INTY_V1" recordDelimiter="\r\n" type="delimited">
+<Field label="Current employee number" name="Current_employee_number" type="string"/>
+<Field label="*Effective start date " name="Effective_start_date" type="string"/>
+<Field label="Effective end date " name="Effective_end_date" type="string"/>
+<Field label="Address Type [LOV]" name="Address_Type_LOV" type="string"/>
+<Field label="*Address Line 1" name="Address_Line_1" type="string"/>
+<Field label="Address Line 2" name="Address_Line_2" type="string"/>
+<Field label="Address Line 3" name="Address_Line_3" type="string"/>
+<Field label="Address Line 4" name="Address_Line_4" type="string"/>
+<Field label="City" name="City" type="string"/>
+<Field label="State" name="State" type="string"/>
+<Field label="Postal Code " name="Postal_Code" type="string"/>
+<Field label="Province" name="Province" type="string"/>
+<Field label="County" name="County" type="string"/>
+<Field label="*Country [LOV]" name="Country_LOV" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata4">
+<Record fieldDelimiter="|" name="Assignments_INTY_V1" recordDelimiter="\r\n" type="delimited">
+<Field label="Current employee number " name="Current_employee_number" type="string"/>
+<Field label="*Assignment reference number " name="Assignment_reference_number" type="string"/>
+<Field label="Primary Assignment [LOV]" name="Primary_Assignment_LOV" type="string"/>
+<Field label="Start " name="Start" type="string"/>
+<Field label="End " name="End" type="string"/>
+<Field label="Action [LOV]" name="Action_LOV" type="string"/>
+<Field label="Action reason [LOV]" name="Action_reason_LOV" type="string"/>
+<Field label="Business Unit [LOV]" name="Business_Unit_LOV" type="string"/>
+<Field format="" label="Job Code [LOV]" name="Job_Code_LOV" type="string"/>
+<Field label="Grades [LOV]" name="Grades_LOV" type="string"/>
+<Field label="Department [LOV]" name="Department_LOV" type="string"/>
+<Field label="Work Location  Code [LOV]" name="Work_Location_Code_LOV" type="string"/>
+<Field label="Working at Home [LOV]" name="Working_at_Home_LOV" type="string"/>
+<Field label="Working as a Manager (YES/NO)  [LOV]" name="Working_as_a_Manager_YES_NO_LOV" type="string"/>
+<Field label="Normal Working hours " name="Normal_Working_hours" type="string"/>
+<Field label="Manager Effective Date " name="Manager_Effective_Date" type="string"/>
+<Field label="Manager Employee Number " name="Manager_Employee_Number" type="string"/>
+<Field label="Assignment Status [LOV]" name="Assignment_Status_LOV" type="string"/>
+<Field label="Worker Type [LOV]" name="Worker_Type_LOV" type="string"/>
+<Field label="Person Types  [LOV]" name="Person_Types_LOV" type="string"/>
+<Field label="Assignment Category [LOV]" name="Assignment_Category_LOV" type="string"/>
+<Field label="*FTE" name="FTE" type="string"/>
+<Field label="*Headcount" name="Headcount" type="string"/>
+<Field label="Termination Date " name="Termination_Date" type="string"/>
+<Field label="Notification Date " name="Notification_Date" type="string"/>
+<Field label="Termination Reason [LOV]" name="Termination_Reason_LOV" type="string"/>
+<Field label="Discretionary Title " name="Discretionary_Title" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata3">
+<Record fieldDelimiter="|" name="Email_INTY_V1" recordDelimiter="\r\n" type="delimited">
+<Field label="Current Employee Number " name="Current_Employee_Number" type="string"/>
+<Field label="Type [LOV]" name="Type_LOV" type="string"/>
+<Field label="Primary (E-mail) [LOV]" name="Primary_E_mail_LOV" type="string"/>
+<Field label="E-mail" name="E_mail" type="string"/>
+<Field label="From Date" name="From_Date" type="string"/>
+<Field label="To date " name="To_date" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata1">
+<Record fieldDelimiter="|" name="Employee_FUSN_R7" recordDelimiter="\r\n" recordSize="-1" type="delimited">
+<Field eofAsDelimiter="false" label="Person Number" name="Person_Number" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="* Country" name="Country" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Global Title" name="Global_Title" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Global First Name" name="Global_First_Name" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Global Middle Names" name="Global_Middle_Names" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="* Global Last Name" name="Global_Last_Name" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Global Prefix" name="Global_Prefix" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Global Suffix" name="Global_Suffix" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Global Honors" name="Global_Honors" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Global Known As" name="Global_Known_As" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Global Previous Last Name" name="Global_Previous_Last_Name" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Local-Name Language" name="Local_Name_Language" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Local Title" name="Local_Title" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Local First Name" name="Local_First_Name" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Local Middle Names" name="Local_Middle_Names" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Local Last Name" name="Local_Last_Name" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Local Prefix" name="Local_Prefix" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Local Suffix" name="Local_Suffix" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Local Honors" name="Local_Honors" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Local Known As" name="Local_Known_As" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Local Previous Last Name" name="Local_Previous_Last_Name" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Address Type" name="Address_Type" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Country" name="Country_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Address Line 1" name="Address_Line_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Address Line 2" name="Address_Line_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Address Line 3" name="Address_Line_3" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Address Line 4" name="Address_Line_4" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Region 1" name="Region_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Region 2" name="Region_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Region 3" name="Region_3" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Town or City" name="Town_or_City" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Postal Code" name="Postal_Code" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Phone Type 1" name="Phone_Type_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Country Code 1" name="Country_Code_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Area Code 1" name="Area_Code_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Phone Number 1" name="Phone_Number_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Phone Type 2" name="Phone_Type_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Country Code 2" name="Country_Code_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Area Code 2" name="Area_Code_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Phone Number 2" name="Phone_Number_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="E-Mail Type" name="E_Mail_Type" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Legislation" name="Legislation" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Marital Status" name="Marital_Status" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Ethnicity" name="Ethnicity" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Religion" name="Religion" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Highest Education Level" name="Highest_Education_Level" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Gender" name="Gender" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Person Legislative Information 1" name="Person_Legislative_Information_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Person Legislative Information 2" name="Person_Legislative_Information_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Person Legislative Information 3" name="Person_Legislative_Information_3" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Person Legislative Information 4" name="Person_Legislative_Information_4" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Person Legislative Information 5" name="Person_Legislative_Information_5" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Person Legislative Information 6" name="Person_Legislative_Information_6" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Person Legislative Information 7" name="Person_Legislative_Information_7" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Person Legislative Information 8" name="Person_Legislative_Information_8" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Person Legislative Information 9" name="Person_Legislative_Information_9" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Person Legislative Information 10" name="Person_Legislative_Information_10" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Person Legislative Information Number 1" name="Person_Legislative_Information_Number_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contact Type" name="Contact_Type" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Emergency Contact" name="Emergency_Contact" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Title" name="Title" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="First Name" name="First_Name" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Middle Names" name="Middle_Names" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Last Name" name="Last_Name" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Prefix" name="Prefix" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Suffix" name="Suffix" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Honors" name="Honors" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Known As" name="Known_As" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Previous Last Name" name="Previous_Last_Name" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Phone Type" name="Phone_Type" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Country Code" name="Country_Code" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Area Code" name="Area_Code" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Phone Number" name="Phone_Number" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="National ID Country" name="National_ID_Country" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="National ID Type" name="National_ID_Type" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="National ID" name="National_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Date of Birth" name="Date_of_Birth" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Correspondence Language" name="Correspondence_Language" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Visa Country" name="Visa_Country" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Visa Type" name="Visa_Type" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Visa Category" name="Visa_Category" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Visa Number" name="Visa_Number" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Visa Status" name="Visa_Status" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Visa Issue Date" name="Visa_Issue_Date" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Visa Expiration Date" name="Visa_Expiration_Date" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Passport Country" name="Passport_Country" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Passport Type" name="Passport_Type" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Passport Number" name="Passport_Number" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Passport Issuing Authority" name="Passport_Issuing_Authority" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Passport Issue Date" name="Passport_Issue_Date" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Passport Expiration Date" name="Passport_Expiration_Date" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Nationality" name="Nationality" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="From Date" name="From_Date" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="To Date" name="To_Date" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Nationality Status" name="Nationality_Status" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Person DFF Context" name="Person_DFF_Context" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Person Attribute Number 1" name="Person_Attribute_Number_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Person Attribute Date 1" name="Person_Attribute_Date_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Person Attribute Date 2" name="Person_Attribute_Date_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Person Attribute 1" name="Person_Attribute_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Person Attribute 2" name="Person_Attribute_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Person Attribute 3" name="Person_Attribute_3" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Person Attribute 4" name="Person_Attribute_4" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Person Attribute 5" name="Person_Attribute_5" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Person Attribute 6" name="Person_Attribute_6" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="* Work Relationship Start Date" name="Work_Relationship_Start_Date" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Worker Number" name="Worker_Number" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="* Worker Type" name="Worker_Type" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="On Military Service" name="On_Military_Service" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Termination Action" name="Termination_Action" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Termination Reason" name="Termination_Reason" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Termination Date" name="Termination_Date" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="* Legal Employer" name="Legal_Employer" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Legal Employer Seniority Date" name="Legal_Employer_Seniority_Date" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Enterprise Seniority Date" name="Enterprise_Seniority_Date" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Work Relationship DDF Context" name="Work_Relationship_DDF_Context" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Work Relationship Legislative Information Number 1" name="Work_Relationship_Legislative_Information_Number_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Work Relationship Legislative Information Date 1" name="Work_Relationship_Legislative_Information_Date_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Work Relationship Legislative Information Date 2" name="Work_Relationship_Legislative_Information_Date_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Work Relationship Legislative Information Date 3" name="Work_Relationship_Legislative_Information_Date_3" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Work Relationship Legislative Information 1" name="Work_Relationship_Legislative_Information_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Work Relationship Legislative Information 2" name="Work_Relationship_Legislative_Information_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Work Relationship Legislative Information 3" name="Work_Relationship_Legislative_Information_3" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Work Relationship Legislative Information 4" name="Work_Relationship_Legislative_Information_4" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Work Relationship Legislative Information 5" name="Work_Relationship_Legislative_Information_5" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Work Relationship Legislative Information 6" name="Work_Relationship_Legislative_Information_6" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Work Relationship DFF Context" name="Work_Relationship_DFF_Context" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Work Relationship Attribute Number 1" name="Work_Relationship_Attribute_Number_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Work Relationship Attribute Date 1" name="Work_Relationship_Attribute_Date_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Work Relationship Attribute Date 2" name="Work_Relationship_Attribute_Date_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Work Relationship Attribute 1" name="Work_Relationship_Attribute_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Work Relationship Attribute 2" name="Work_Relationship_Attribute_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Work Relationship Attribute 3" name="Work_Relationship_Attribute_3" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Work Relationship Attribute 4" name="Work_Relationship_Attribute_4" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Work Relationship Attribute 5" name="Work_Relationship_Attribute_5" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Work Relationship Attribute 6" name="Work_Relationship_Attribute_6" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="* Action" name="Action" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Action Reason" name="Action_Reason" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignment Name" name="Assignment_Name" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignment Number" name="Assignment_Number" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="* Assignment Status" name="Assignment_Status" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="* Business Unit" name="Business_Unit" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="* Person Type" name="Person_Type" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contract Type" name="Contract_Type" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contract Duration" name="Contract_Duration" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Duration Unit of Measure" name="Duration_Unit_of_Measure" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Projected End Date" name="Projected_End_Date" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contract DDF Context" name="Contract_DDF_Context" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contract Legislative Information Number 1" name="Contract_Legislative_Information_Number_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contract Legislative Information Number 2" name="Contract_Legislative_Information_Number_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contract Legislative Information Number 3" name="Contract_Legislative_Information_Number_3" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contract Legislative Information Number 4" name="Contract_Legislative_Information_Number_4" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contract Legislative Information Date 1" name="Contract_Legislative_Information_Date_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contract Legislative Information Date 2" name="Contract_Legislative_Information_Date_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contract Legislative Information Date 3" name="Contract_Legislative_Information_Date_3" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contract Legislative Information 1" name="Contract_Legislative_Information_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contract Legislative Information 2" name="Contract_Legislative_Information_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contract Legislative Information 3" name="Contract_Legislative_Information_3" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contract Legislative Information 4" name="Contract_Legislative_Information_4" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contract Legislative Information 5" name="Contract_Legislative_Information_5" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contract Legislative Information 6" name="Contract_Legislative_Information_6" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contract DFF Context" name="Contract_DFF_Context" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contract Attribute Number 1" name="Contract_Attribute_Number_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contract Attribute Date 1" name="Contract_Attribute_Date_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contract Attribute Date 2" name="Contract_Attribute_Date_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contract Attribute 1" name="Contract_Attribute_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contract Attribute 2" name="Contract_Attribute_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contract Attribute 3" name="Contract_Attribute_3" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contract Attribute 4" name="Contract_Attribute_4" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contract Attribute 5" name="Contract_Attribute_5" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contract Attribute 6" name="Contract_Attribute_6" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Position Code" name="Position_Code" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Job Code" name="Job_Code" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Grade Code" name="Grade_Code" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Department" name="Department" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Reporting Establishment" name="Reporting_Establishment" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Location Code" name="Location_Code" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Working at Home" name="Working_at_Home" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Worker Category" name="Worker_Category" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignment Category" name="Assignment_Category" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Working as a Manager" name="Working_as_a_Manager" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Hourly Paid or Salaried" name="Hourly_Paid_or_Salaried" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Working Hours" name="Working_Hours" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Frequency" name="Frequency" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="FTE" name="FTE" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Headcount" name="Headcount" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Start Time" name="Start_Time" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="End Time" name="End_Time" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Line Manager E-Mail" name="Line_Manager_E_Mail" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Probation Period" name="Probation_Period" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Probation Period Unit of Measure" name="Probation_Period_Unit_of_Measure" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Notice Period" name="Notice_Period" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Notice Period UOM" name="Notice_Period_UOM" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Retirement Age" name="Retirement_Age" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Retirement Date" name="Retirement_Date" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Bargaining Unit" name="Bargaining_Unit" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Union Member" name="Union_Member" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Default Expense Account ID" name="Default_Expense_Account_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Expense Check Send-to Address" name="Expense_Check_Send_to_Address" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="People Group ID" name="People_Group_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignment DDF Context" name="Assignment_DDF_Context" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignment Legislative Information Number 1" name="Assignment_Legislative_Information_Number_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignment Legislative Information Number 2" name="Assignment_Legislative_Information_Number_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignment Legislative Information Number 3" name="Assignment_Legislative_Information_Number_3" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignment Legislative Information Number 4" name="Assignment_Legislative_Information_Number_4" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignment Legislative Information Date 1" name="Assignment_Legislative_Information_Date_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignment Legislative Information Date 2" name="Assignment_Legislative_Information_Date_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignment Legislative Information 1" name="Assignment_Legislative_Information_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignment Legislative Information 2" name="Assignment_Legislative_Information_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignment Legislative Information 3" name="Assignment_Legislative_Information_3" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignment Legislative Information 4" name="Assignment_Legislative_Information_4" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignment Legislative Information 5" name="Assignment_Legislative_Information_5" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignment Legislative Information 6" name="Assignment_Legislative_Information_6" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignment DFF Context" name="Assignment_DFF_Context" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignment Attribute Number 1" name="Assignment_Attribute_Number_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignment Attribute Date 1" name="Assignment_Attribute_Date_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignment Attribute Date 2" name="Assignment_Attribute_Date_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignment Attribute 1" name="Assignment_Attribute_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignment Attribute 2" name="Assignment_Attribute_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignment Attribute 3" name="Assignment_Attribute_3" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignment Attribute 4" name="Assignment_Attribute_4" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignment Attribute 5" name="Assignment_Attribute_5" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignment Attribute 6" name="Assignment_Attribute_6" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Salary Basis" name="Salary_Basis" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Salary Amount" name="Salary_Amount" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Generate user account" name="Generate_user_account" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="User Name" name="User_Name" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Send user name and password" name="Send_user_name_and_password" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="E-Mail" name="E_Mail_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="ColumnHW" name="ColumnHW" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Load Status" name="Load_Status" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="E-Mail" name="E_Mail" nullable="true" shift="0" size="0" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata0" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="Person_INTY_V1" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\r\n" type="delimited">
+<Field label="* Legal Employer [LOV] " name="Legal_Employer_LOV" type="string"/>
+<Field label="*Enterprise Start Date" name="Enterprise_Start_Date" type="string"/>
+<Field label="Enterprise Seniority Date" name="Enterprise_Seniority_Date" type="string"/>
+<Field label="*Legal Entity Start Date" name="Legal_Entity_Start_Date" type="string"/>
+<Field label="Legal Entity Seniority Date" name="Legal_Entity_Seniority_Date" type="string"/>
+<Field format="excel:d-mmm-yy" label="Current employee Number " name="Current_employee_Number" type="string"/>
+<Field format="excel:d-mmm-yy" label="Fusion Person Number " name="Fusion_Person_Number" type="string"/>
+<Field label="*Last Name" name="Last_Name" type="string"/>
+<Field label="*First Name" name="First_Name" type="string"/>
+<Field label="Suffix " name="Suffix" type="string"/>
+<Field label="Middle Name " name="Middle_Name" type="string"/>
+<Field format="excel:d-mmm-yy" label="Preferred Name " name="Preferred_Name" type="string"/>
+<Field label="Previous Last Name" name="Previous_Last_Name" type="string"/>
+<Field label="Ethnicity [LOV]" name="Ethnicity_LOV" type="string"/>
+<Field label="Marital Status [LOV]" name="Marital_Status_LOV" type="string"/>
+<Field label="Gender [LOV] " name="Gender_LOV" type="string"/>
+<Field label="Date of Death" name="Date_of_Death" type="string"/>
+<Field format="excel:d-mmm-yy" label="Correspondence Language" name="Correspondence_Language" type="string"/>
+<Field name="Date_Of_Birth" type="string"/>
+<Field name="Previous_paycheck_number" type="string"/>
+</Record>
+</Metadata>
+<GraphParameters>
+<GraphParameterFile fileURL="workspace.prm"/>
+</GraphParameters>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" guiName="Filter Address" guiX="270" guiY="143" id="FILTER_ADDRESS" type="EXT_FILTER">
+<attr name="filterExpression"><![CDATA[//#CTL2
+NOT isnull($in.0.Current_employee_number)]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Filter Assignments" guiX="270" guiY="343" id="FILTER_ASSIGNMENTS" type="EXT_FILTER">
+<attr name="filterExpression"><![CDATA[//#CTL2
+NOT isnull($in.0.Current_employee_number)]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Filter Email" guiX="270" guiY="238" id="FILTER_EMAIL" type="EXT_FILTER">
+<attr name="filterExpression"><![CDATA[//#CTL2
+NOT isnull($in.0.Current_Employee_Number)]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Filter Person" guiX="261" guiY="51" id="FILTER_PERSON" type="EXT_FILTER">
+<attr name="filterExpression"><![CDATA[//#CTL2
+NOT isnull($in.0.Current_employee_Number)]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Joiners Emp, Add,Email and Assignments" guiX="505" guiY="182" id="JOINERS_EMP_ADD_EMAIL_AND_ASSIGNMENTS" joinKey="$Current_employee_Number=$Current_employee_number#$Current_employee_Number=$Current_Employee_Number#$Current_employee_Number=$Current_employee_number" type="EXT_HASH_JOIN">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.Legal_Employer = $in.0.Legal_Employer_LOV;
+	$out.0.Work_Relationship_Start_Date = $in.0.Enterprise_Start_Date;
+	$out.0.Enterprise_Seniority_Date = $in.0.Enterprise_Seniority_Date;
+	$out.0.Legal_Employer_Seniority_Date = $in.0.Legal_Entity_Seniority_Date;
+	$out.0.Person_Attribute_1 = $in.0.Previous_paycheck_number;
+	$out.0.Person_Number = $in.0.Current_employee_Number;
+	$out.0.Global_Last_Name = $in.0.Last_Name;
+	$out.0.Global_First_Name = $in.0.First_Name;
+	$out.0.Global_Suffix = $in.0.Suffix;
+	$out.0.Global_Middle_Names = $in.0.Middle_Name;
+	$out.0.Global_Known_As = $in.0.Preferred_Name;
+	$out.0.Global_Previous_Last_Name = $in.0.Previous_Last_Name;
+	//$out.0.Ethnicity = $in.0.Ethnicity_LOV;
+	$out.0.Gender = $in.0.Gender_LOV;
+	$out.0.Date_of_Birth = $in.0.Date_Of_Birth;
+	$out.0.Address_Type = $in.1.Address_Type_LOV;
+	$out.0.Address_Line_1 = $in.1.Address_Line_1;
+	$out.0.Address_Line_2 = $in.1.Address_Line_2;
+	$out.0.Address_Line_3 = $in.1.Address_Line_3;
+	$out.0.Address_Line_4 = $in.1.Address_Line_4;
+	$out.0.Town_or_City = $in.1.City;
+	$out.0.Region_1 = $in.1.State;
+	$out.0.Postal_Code = $in.1.Postal_Code;
+	$out.0.Region_3 = $in.1.Province;
+	$out.0.Country = $in.1.Country_LOV;
+	$out.0.E_Mail_Type = $in.2.Type_LOV;
+	$out.0.E_Mail = $in.2.E_mail;
+	$out.0.Worker_Type = 'Employee';
+	$out.0.Action = 'Hire';
+	$out.0.Legislation = $in.1.Country_LOV;
+	$out.0.Frequency = 'Weekly';
+	$out.0.Job_Code = $in.3.Job_Code_LOV;
+	$out.0.Grade_Code = $in.3.Grades_LOV;
+	$out.0.Department = $in.3.Department_LOV;
+	$out.0.Working_as_a_Manager = $in.3.Working_as_a_Manager_YES_NO_LOV;
+	$out.0.Location_Code = $in.3.Work_Location_Code_LOV;
+	$out.0.Working_at_Home = $in.3.Working_at_Home_LOV;
+	$out.0.Working_Hours = $in.3.Normal_Working_hours;
+	$out.0.Assignment_Status = $in.3.Assignment_Status_LOV;
+	$out.0.Person_Type = $in.3.Person_Types_LOV;
+	$out.0.Assignment_Category = $in.3.Assignment_Category_LOV;
+	if ($in.1.Country_LOV == "US")
+	{
+		$out.0.Business_Unit = "USA Inc.";
+	}
+	else
+	{
+		$out.0.Business_Unit = "UK Ltd.";
+	}
+ if ($in.0.Ethnicity_LOV==null)
+	{
+		$out.0.Ethnicity = "Not disclosed";
+	}
+	else
+	{
+		$out.0.Ethnicity = $in.0.Ethnicity_LOV;
+	}
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMEmployeesV1.xlsx" guiName="Read Address" guiX="91" guiY="130" id="READ_ADDRESS" sheetName="Address" skipRows="2" type="XLS_READER"/>
+<Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMEmployeesV1.xlsx" guiName="Read Assignments" guiX="91" guiY="343" id="READ_ASSIGNMENTS" sheetName="Assignments" skipRows="6" type="XLS_READER"/>
+<Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMEmployeesV1.xlsx" guiName="Read Email" guiX="91" guiY="238" id="READ_EMAIL" sheetName="Email" skipRows="5" type="XLS_READER"/>
+<Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMEmployeesV1.xlsx" guiName="Read Person" guiX="91" guiY="25" id="READ_PERSON" sheetName="Person" skipRows="5" type="XLS_READER"/>
+<Node enabled="enabled" fileURL="${DATAOUT_DIR}/FusionHCMEmployees_R7.xls" firstDataRow="2" guiName="Write Employee" guiX="806" guiY="182" id="WRITE_EMPLOYEE" namesRow="1" sheetName="Create Employee" type="XLS_WRITER"/>
+<Edge fromNode="FILTER_ADDRESS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge11" inPort="Port 1 (slave)" metadata="Metadata2" outPort="Port 0 (accepted)" toNode="JOINERS_EMP_ADD_EMAIL_AND_ASSIGNMENTS:1"/>
+<Edge fromNode="FILTER_ASSIGNMENTS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge13" inPort="Port 3 (slave)" metadata="Metadata4" outPort="Port 0 (accepted)" toNode="JOINERS_EMP_ADD_EMAIL_AND_ASSIGNMENTS:3"/>
+<Edge fromNode="FILTER_EMAIL:0" guiBendpoints="" guiRouter="Manhattan" id="Edge12" inPort="Port 2 (slave)" metadata="Metadata3" outPort="Port 0 (accepted)" toNode="JOINERS_EMP_ADD_EMAIL_AND_ASSIGNMENTS:2"/>
+<Edge fromNode="FILTER_PERSON:0" guiBendpoints="" guiRouter="Manhattan" id="Edge10" inPort="Port 0 (driver)" metadata="Metadata0" outPort="Port 0 (accepted)" toNode="JOINERS_EMP_ADD_EMAIL_AND_ASSIGNMENTS:0"/>
+<Edge fromNode="JOINERS_EMP_ADD_EMAIL_AND_ASSIGNMENTS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge7" inPort="Port 0 (in)" metadata="Metadata1" outPort="Port 0 (out)" toNode="WRITE_EMPLOYEE:0"/>
+<Edge fromNode="READ_ADDRESS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge3" inPort="Port 0 (in)" metadata="Metadata2" outPort="Port 0 (out)" toNode="FILTER_ADDRESS:0"/>
+<Edge fromNode="READ_ASSIGNMENTS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge4" inPort="Port 0 (in)" metadata="Metadata4" outPort="Port 0 (out)" toNode="FILTER_ASSIGNMENTS:0"/>
+<Edge fromNode="READ_EMAIL:0" guiBendpoints="" guiRouter="Manhattan" id="Edge6" inPort="Port 0 (in)" metadata="Metadata3" outPort="Port 0 (out)" toNode="FILTER_EMAIL:0"/>
+<Edge debugMode="false" fromNode="READ_PERSON:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="FILTER_PERSON:0"/>
+</Phase>
+</Graph>

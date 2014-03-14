@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="Acer" created="Mon Mar 10 14:16:09 IST 2014" guiVersion="3.5.0" id="1394441645739" licenseType="Community" modified="Wed Mar 12 14:31:00 IST 2014" modifiedBy="Acer" name="COMN_LOCATIONMIGRATION" revision="1.11" showComponentDetails="true">
+<Global>
+<Metadata id="Metadata1">
+<Record fieldDelimiter="|" name="Location_FUSN_R7" recordDelimiter="\r\n" recordSize="-1" type="delimited">
+<Field eofAsDelimiter="false" label="Effective Start Date" name="Effective_Start_Date" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="* Location Set" name="Location_Set" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="* Name" name="Name" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="* Code" name="Code" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="* Status" name="Status" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Inventory Organization Code" name="Inventory_Organization_Code" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Description" name="Description" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="* Country" name="Country" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="* Address Line 1 or Postal Code" name="Address_Line_1_or_Postal_Code" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Address Line 2" name="Address_Line_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Address Line 3" name="Address_Line_3" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="City or Town" name="City_or_Town" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="County (UK) or Area (Hong Kong) or State" name="County_UK_or_Area_Hong_Kong_or_State" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="ZIP Code or Postal Code" name="ZIP_Code_or_Postal_Code" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Tax District (US)" name="Tax_District_US" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="County (US) or District (Hong Kong)" name="County_US_or_District_Hong_Kong" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Province" name="Province" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="County (China) or District (China) or Village (MX)" name="County_China_or_District_China_or_Village_MX" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Neighborhood (MX)" name="Neighborhood_MX" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Time Zone Code" name="Time_Zone_Code" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Official Language" name="Official_Language" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="E-Mail" name="E_Mail" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Geographic Hierarchy" name="Geographic_Hierarchy" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Main Phone" name="Main_Phone" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Fax" name="Fax" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Other Phone" name="Other_Phone" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Ship-to Site" name="Ship_to_Site" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Ship-to Location Set" name="Ship_to_Location_Set" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Ship-to Location Code" name="Ship_to_Location_Code" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Receiving Site" name="Receiving_Site" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Bill-to Site" name="Bill_to_Site" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Office Site" name="Office_Site" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Designated Receiver" name="Designated_Receiver" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Trade Name" name="Trade_Name" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Worksite Description" name="Worksite_Description" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Multiple Worksite Unit Number" name="Multiple_Worksite_Unit_Number" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Comment Code 1" name="Comment_Code_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Comment Code 2" name="Comment_Code_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Comment Code 3" name="Comment_Code_3" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Comment" name="Comment" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="D-U-N-S Number" name="D_U_N_S_Number" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="NAICS Number" name="NAICS_Number" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Apprentices Employed" name="Apprentices_Employed" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Government Contractor" name="Government_Contractor" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Headquarters Establishment" name="Headquarters_Establishment" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Veteran Reporting Name" name="Veteran_Reporting_Name" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="EEO-1 Reporting Name" name="EEO_1_Reporting_Name" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="EEO-1 Unit Number" name="EEO_1_Unit_Number" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="SIC Number" name="SIC_Number" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Main Activities, Line 1" name="Main_Activities_Line_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Main Activities, Line 2" name="Main_Activities_Line_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Main Activities, Line 3" name="Main_Activities_Line_3" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Main Activities, Line 4" name="Main_Activities_Line_4" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Reporting Code" name="Reporting_Code" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Organization SIRET" name="Organization_SIRET" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Issuer Number" name="Issuer_Number" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Location Type" name="Location_Type" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Context Value" name="Context_Value" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute 1" name="Attribute_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute 2" name="Attribute_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute 3" name="Attribute_3" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute 4" name="Attribute_4" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute 5" name="Attribute_5" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute 6" name="Attribute_6" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute 7" name="Attribute_7" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute 8" name="Attribute_8" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute 9" name="Attribute_9" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute 10" name="Attribute_10" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute 11" name="Attribute_11" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute 12" name="Attribute_12" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute 13" name="Attribute_13" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute 14" name="Attribute_14" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute 15" name="Attribute_15" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute Number 1" name="Attribute_Number_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute Number 2" name="Attribute_Number_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute Number 3" name="Attribute_Number_3" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute Number 4" name="Attribute_Number_4" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute Number 5" name="Attribute_Number_5" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute Number 6" name="Attribute_Number_6" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute Number 7" name="Attribute_Number_7" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute Number 8" name="Attribute_Number_8" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute Number 9" name="Attribute_Number_9" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute Number 10" name="Attribute_Number_10" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute Date 1" name="Attribute_Date_1" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute Date 2" name="Attribute_Date_2" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute Date 3" name="Attribute_Date_3" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute Date 4" name="Attribute_Date_4" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Attribute Date 5" name="Attribute_Date_5" nullable="true" shift="0" size="0" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata0" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="Location_INTY_V1" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\r\n" type="delimited">
+<Field format="excel:d-mmm-yy" label="*Start Date " name="Start_Date" type="string"/>
+<Field format="excel:d-mmm-yy" label="End Date " name="End_Date" type="string"/>
+<Field label="*Country" name="Country" type="string"/>
+<Field label="*Code" name="Code" type="string"/>
+<Field label="*Name" name="Name" type="string"/>
+<Field label="*Status" name="Status" type="string"/>
+<Field label="*Address Line 1" name="Address_Line_1" type="string"/>
+<Field label="Address Line 2" name="Address_Line_2" type="string"/>
+<Field label="Address Line 3" name="Address_Line_3" type="string"/>
+<Field label="Address Line 4" name="Address_Line_4" type="string"/>
+<Field label="City" name="City" type="string"/>
+<Field label="State" name="State" type="string"/>
+<Field label="Postal Code " name="Postal_Code" type="string"/>
+<Field label="Province" name="Province" type="string"/>
+<Field label="County" name="County" type="string"/>
+<Field label="Phone" name="Phone" type="string"/>
+<Field label="Fax" name="Fax" type="string"/>
+<Field label="Email" name="Email" type="string"/>
+<Field label="Time Zone" name="Time_Zone" type="string"/>
+</Record>
+</Metadata>
+<GraphParameters>
+<GraphParameterFile fileURL="workspace.prm"/>
+</GraphParameters>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" guiName="Filter Locations" guiX="325" guiY="129" id="FILTER_LOCATIONS" type="EXT_FILTER">
+<attr name="filterExpression"><![CDATA[//#CTL2
+NOT isnull($in.0.Name)]]></attr>
+</Node>
+<Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMWork StructuresV1.xlsx" guiName="Read Locations" guiX="90" guiY="124" id="READ_LOCATIONS" sheetName="Location" skipRows="6" type="XLS_READER"/>
+<Node enabled="enabled" guiName="Transform Location" guiX="522" guiY="129" id="TRANSFORM_LOCATION" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.Effective_Start_Date = $in.0.Start_Date;
+	$out.0.Location_Set = 'Common Set';
+	$out.0.Name = $in.0.Name;
+	$out.0.Code = $in.0.Code;
+	$out.0.Status = $in.0.Status;
+	$out.0.Country = $in.0.Country;
+	$out.0.Address_Line_1_or_Postal_Code = $in.0.Address_Line_1;
+	$out.0.Address_Line_2 = $in.0.Address_Line_2;
+	$out.0.Address_Line_3 = $in.0.Address_Line_3;
+	$out.0.City_or_Town = $in.0.City;
+	$out.0.County_UK_or_Area_Hong_Kong_or_State = $in.0.State;
+	$out.0.ZIP_Code_or_Postal_Code = $in.0.Postal_Code;
+	$out.0.Tax_District_US = $in.0.County;
+	$out.0.County_US_or_District_Hong_Kong = $in.0.County;
+	$out.0.Province = $in.0.Province;
+	$out.0.Time_Zone_Code = $in.0.Time_Zone;
+	$out.0.E_Mail = $in.0.Email;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" fileURL="${DATAOUT_DIR}/FusionHCMWorkStructures_R7.xls" firstDataRow="2" guiName="Write Locations" guiX="711" guiY="124" id="WRITE_LOCATIONS" namesRow="1" sheetName="Location" type="XLS_WRITER"/>
+<Edge fromNode="FILTER_LOCATIONS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (accepted)" toNode="TRANSFORM_LOCATION:0"/>
+<Edge fromNode="READ_LOCATIONS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="FILTER_LOCATIONS:0"/>
+<Edge debugMode="true" fromNode="TRANSFORM_LOCATION:0" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 0 (in)" metadata="Metadata1" outPort="Port 0 (out)" toNode="WRITE_LOCATIONS:0"/>
+</Phase>
+</Graph>
