@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Graph author="Acer" created="Mon Mar 10 14:16:09 IST 2014" guiVersion="3.5.0" id="1394441645739" licenseType="Community" modified="Wed Mar 12 14:31:00 IST 2014" modifiedBy="Acer" name="COMN_LOCATIONMIGRATION" revision="1.11" showComponentDetails="true">
+<Graph author="Acer" created="Mon Mar 10 14:16:09 IST 2014" guiVersion="3.5.0" id="1394441645739" licenseType="Community" modified="Mon Mar 17 18:04:36 IST 2014" modifiedBy="Acer" name="COMN_LOCATIONMIGRATION" revision="1.12" showComponentDetails="true">
 <Global>
 <Metadata id="Metadata1">
 <Record fieldDelimiter="|" name="Location_FUSN_R7" recordDelimiter="\r\n" recordSize="-1" type="delimited">
@@ -122,12 +122,12 @@
 <Dictionary/>
 </Global>
 <Phase number="0">
-<Node enabled="enabled" guiName="Filter Locations" guiX="325" guiY="129" id="FILTER_LOCATIONS" type="EXT_FILTER">
+<Node enabled="enabled" guiName="Filter Locations" guiX="304" guiY="137" id="FILTER_LOCATIONS" type="EXT_FILTER">
 <attr name="filterExpression"><![CDATA[//#CTL2
 NOT isnull($in.0.Name)]]></attr>
 </Node>
 <Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMWork StructuresV1.xlsx" guiName="Read Locations" guiX="90" guiY="124" id="READ_LOCATIONS" sheetName="Location" skipRows="6" type="XLS_READER"/>
-<Node enabled="enabled" guiName="Transform Location" guiX="522" guiY="129" id="TRANSFORM_LOCATION" type="REFORMAT">
+<Node enabled="enabled" guiName="Transform Location" guiX="487" guiY="137" id="TRANSFORM_LOCATION" type="REFORMAT">
 <attr name="transform"><![CDATA[//#CTL2
 
 // Transforms input record into output record.
@@ -172,7 +172,7 @@ function integer transform() {
 // function string getMessage() {}
 ]]></attr>
 </Node>
-<Node enabled="enabled" fileURL="${DATAOUT_DIR}/FusionHCMWorkStructures_R7.xls" firstDataRow="2" guiName="Write Locations" guiX="711" guiY="124" id="WRITE_LOCATIONS" namesRow="1" sheetName="Location" type="XLS_WRITER"/>
+<Node enabled="enabled" fileURL="${DATAOUT_DIR}/FusionHCMWorkStructures_R7.xls" firstDataRow="2" guiName="Write Locations" guiX="701" guiY="124" id="WRITE_LOCATIONS" namesRow="1" sheetName="Location" type="XLS_WRITER"/>
 <Edge fromNode="FILTER_LOCATIONS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (accepted)" toNode="TRANSFORM_LOCATION:0"/>
 <Edge fromNode="READ_LOCATIONS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="FILTER_LOCATIONS:0"/>
 <Edge debugMode="true" fromNode="TRANSFORM_LOCATION:0" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 0 (in)" metadata="Metadata1" outPort="Port 0 (out)" toNode="WRITE_LOCATIONS:0"/>
