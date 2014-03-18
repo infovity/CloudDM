@@ -1,15 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Graph author="Acer" created="Mon Mar 17 11:34:53 IST 2014" guiVersion="3.5.0" id="1395036723676" licenseType="Community" modified="Mon Mar 17 17:16:17 IST 2014" modifiedBy="Acer" name="COMN_AssignmentsMigrations" revision="1.9" showComponentDetails="true">
+<Graph author="Acer" created="Mon Mar 17 11:34:53 IST 2014" guiVersion="3.5.0" id="1395036723676" licenseType="Community" modified="Tue Mar 18 16:40:23 IST 2014" modifiedBy="Acer" name="COMN_AssignmentsMigrations" revision="1.21" showComponentDetails="true">
 <Global>
 <Metadata id="Metadata1">
 <Record fieldDelimiter="|" name="Assignments_FUSN_R7" recordDelimiter="\r\n" type="delimited">
 <Field label="* Person Number" name="Person_Number" type="string"/>
-<Field label="* Effective Date" name="Effective_Date" type="string"/>
-<Field label="Sequence" name="Sequence" type="string"/>
+<Field label="* Work Relationship Start Date" name="Work_Relationship_Start_Date" type="string"/>
+<Field label="Worker Number" name="Worker_Number" type="string"/>
+<Field label="* Worker Type" name="Worker_Type" type="string"/>
+<Field label="On Military Service" name="On_Military_Service" type="string"/>
+<Field label="Termination Action" name="Termination_Action" type="string"/>
+<Field label="Termination Reason" name="Termination_Reason" type="string"/>
+<Field label="Termination Date" name="Termination_Date" type="string"/>
+<Field label="* Legal Employer" name="Legal_Employer" type="string"/>
+<Field label="Legal Employer Seniority Date" name="Legal_Employer_Seniority_Date" type="string"/>
+<Field label="Enterprise Seniority Date" name="Enterprise_Seniority_Date" type="string"/>
+<Field label="Work Relationship DDF Context" name="Work_Relationship_DDF_Context" type="string"/>
+<Field label="Work Relationship Legislative Information Number 1" name="Work_Relationship_Legislative_Information_Number_1" type="string"/>
+<Field label="Work Relationship Legislative Information Date 1" name="Work_Relationship_Legislative_Information_Date_1" type="string"/>
+<Field label="Work Relationship Legislative Information Date 2" name="Work_Relationship_Legislative_Information_Date_2" type="string"/>
+<Field label="Work Relationship Legislative Information Date 3" name="Work_Relationship_Legislative_Information_Date_3" type="string"/>
+<Field label="Work Relationship Legislative Information 1" name="Work_Relationship_Legislative_Information_1" type="string"/>
+<Field label="Work Relationship Legislative Information 2" name="Work_Relationship_Legislative_Information_2" type="string"/>
+<Field label="Work Relationship Legislative Information 3" name="Work_Relationship_Legislative_Information_3" type="string"/>
+<Field label="Work Relationship Legislative Information 4" name="Work_Relationship_Legislative_Information_4" type="string"/>
+<Field label="Work Relationship Legislative Information 5" name="Work_Relationship_Legislative_Information_5" type="string"/>
+<Field label="Work Relationship Legislative Information 6" name="Work_Relationship_Legislative_Information_6" type="string"/>
+<Field label="Work Relationship DFF Context" name="Work_Relationship_DFF_Context" type="string"/>
+<Field label="Work Relationship Attribute Number 1" name="Work_Relationship_Attribute_Number_1" type="string"/>
+<Field label="Work Relationship Attribute Date 1" name="Work_Relationship_Attribute_Date_1" type="string"/>
+<Field label="Work Relationship Attribute Date 2" name="Work_Relationship_Attribute_Date_2" type="string"/>
+<Field label="Work Relationship Attribute Date 3" name="Work_Relationship_Attribute_Date_3" type="string"/>
+<Field label="Work Relationship Attribute 1" name="Work_Relationship_Attribute_1" type="string"/>
+<Field label="Work Relationship Attribute 2" name="Work_Relationship_Attribute_2" type="string"/>
+<Field label="Work Relationship Attribute 3" name="Work_Relationship_Attribute_3" type="string"/>
+<Field label="Work Relationship Attribute 4" name="Work_Relationship_Attribute_4" type="string"/>
+<Field label="Work Relationship Attribute 5" name="Work_Relationship_Attribute_5" type="string"/>
+<Field label="Work Relationship Attribute 6" name="Work_Relationship_Attribute_6" type="string"/>
 <Field label="* Action" name="Action" type="string"/>
 <Field label="Action Reason" name="Action_Reason" type="string"/>
 <Field label="Assignment Name" name="Assignment_Name" type="string"/>
-<Field label="* Assignment Number" name="Assignment_Number" type="string"/>
+<Field label="Assignment Number" name="Assignment_Number" type="string"/>
 <Field label="* Assignment Status" name="Assignment_Status" type="string"/>
 <Field label="* Business Unit" name="Business_Unit" type="string"/>
 <Field label="Person Type" name="Person_Type" type="string"/>
@@ -59,12 +89,7 @@
 <Field label="Headcount" name="Headcount" type="string"/>
 <Field label="Start Time" name="Start_Time" type="string"/>
 <Field label="End Time" name="End_Time" type="string"/>
-<Field label="Manager Number 1" name="Manager_Number_1" type="string"/>
-<Field label="Manager Type 1" name="Manager_Type_1" type="string"/>
-<Field label="Manager Number 2" name="Manager_Number_2" type="string"/>
-<Field label="Manager Type 2" name="Manager_Type_2" type="string"/>
-<Field label="Manager Number 3" name="Manager_Number_3" type="string"/>
-<Field label="Manager Type 3" name="Manager_Type_3" type="string"/>
+<Field label="Line Manager E-Mail" name="Line_Manager_E_Mail" type="string"/>
 <Field label="Probation Period" name="Probation_Period" type="string"/>
 <Field label="Probation Period Unit of Measure" name="Probation_Period_Unit_of_Measure" type="string"/>
 <Field label="Notice Period" name="Notice_Period" type="string"/>
@@ -101,10 +126,12 @@
 <Field label="Assignment Attribute 4" name="Assignment_Attribute_4" type="string"/>
 <Field label="Assignment Attribute 5" name="Assignment_Attribute_5" type="string"/>
 <Field label="Assignment Attribute 6" name="Assignment_Attribute_6" type="string"/>
+<Field label="Salary Basis" name="Salary_Basis" type="string"/>
+<Field label="Salary Amount" name="Salary_Amount" type="string"/>
 </Record>
 </Metadata>
-<Metadata id="Metadata0">
-<Record fieldDelimiter="|" name="Assignments_INTY_V1" recordDelimiter="\r\n" type="delimited">
+<Metadata id="Metadata0" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="Assignments_INTY_V1" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\r\n" type="delimited">
 <Field label="Current employee number " name="Current_employee_number" type="string"/>
 <Field label="*Assignment reference number " name="Assignment_reference_number" type="string"/>
 <Field label="Primary Assignment [LOV]" name="Primary_Assignment_LOV" type="string"/>
@@ -113,7 +140,7 @@
 <Field label="Action [LOV]" name="Action_LOV" type="string"/>
 <Field label="Action reason [LOV]" name="Action_reason_LOV" type="string"/>
 <Field label="Business Unit [LOV]" name="Business_Unit_LOV" type="string"/>
-<Field format="" label="Job Code [LOV]" name="Job_Code_LOV" type="string"/>
+<Field label="Job Code [LOV]" name="Job_Code_LOV" type="string"/>
 <Field label="Grades [LOV]" name="Grades_LOV" type="string"/>
 <Field label="Department [LOV]" name="Department_LOV" type="string"/>
 <Field label="Work Location  Code [LOV]" name="Work_Location_Code_LOV" type="string"/>
@@ -132,6 +159,7 @@
 <Field label="Notification Date " name="Notification_Date" type="string"/>
 <Field label="Termination Reason [LOV]" name="Termination_Reason_LOV" type="string"/>
 <Field label="Discretionary Title " name="Discretionary_Title" type="string"/>
+<Field name="Legal_Employer_LOV" type="string"/>
 </Record>
 </Metadata>
 <GraphParameters>
@@ -140,17 +168,20 @@
 <Dictionary/>
 </Global>
 <Phase number="0">
-<Node enabled="enabled" guiName="ExtFilter" guiX="305" guiY="144" id="EXT_FILTER" type="EXT_FILTER">
+<Node enabled="enabled" guiName="Filter Assignments" guiX="271" guiY="150" id="FILTER_ASSIGNMENTS" type="EXT_FILTER">
 <attr name="filterExpression"><![CDATA[//#CTL2
 (NOT isnull($in.0.Current_employee_number)) and ($in.0.Assignment_reference_number<>"1");]]></attr>
 </Node>
-<Node enabled="enabled" guiName="Reformat" guiX="487" guiY="137" id="REFORMAT" type="REFORMAT">
+<Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMAssignments.xlsx" guiName="Read Assignments" guiX="87" guiY="131" id="READ_ASSIGNMENTS" sheetName="Assignments" skipRows="6" type="XLS_READER"/>
+<Node enabled="enabled" guiName="Transform Assignments" guiX="433" guiY="150" id="TRANSFORM_ASSIGNMENTS" type="REFORMAT">
 <attr name="transform"><![CDATA[//#CTL2
 
 // Transforms input record into output record.
 function integer transform() {
 	$out.0.Person_Number = $in.0.Current_employee_number;
-	$out.0.Effective_Date = $in.0.Start;
+	$out.0.Worker_Type = $in.0.Worker_Type_LOV;
+	$out.0.Termination_Reason = $in.0.Termination_Reason_LOV;
+	$out.0.Termination_Date = $in.0.Termination_Date;
 	$out.0.Action = $in.0.Action_LOV;
 	$out.0.Action_Reason = $in.0.Action_reason_LOV;
 	$out.0.Assignment_Status = $in.0.Assignment_Status_LOV;
@@ -161,14 +192,16 @@ function integer transform() {
 	$out.0.Department = $in.0.Department_LOV;
 	$out.0.Location_Code = $in.0.Work_Location_Code_LOV;
 	$out.0.Working_at_Home = $in.0.Working_at_Home_LOV;
-	$out.0.Assignment_Category = $in.0.Assignment_Category_LOV;
-	$out.0.Working_as_a_Manager = $in.0.Working_as_a_Manager_YES_NO_LOV;
 	$out.0.Working_Hours = $in.0.Normal_Working_hours;
+	$out.0.Frequency = 'Weekly';
 	$out.0.FTE = $in.0.FTE;
 	$out.0.Headcount = $in.0.Headcount;
-	$out.0.Frequency = 'Weekly';
-		 
-	 if ($in.0.Worker_Type_LOV == "Employee")
+	$out.0.Legal_Employer = $in.0.Legal_Employer_LOV;
+	$out.0.Work_Relationship_Start_Date = $in.0.Start;
+	$out.0.Assignment_Category = $in.0.Assignment_Category_LOV;
+	$out.0.Working_as_a_Manager = $in.0.Working_as_a_Manager_YES_NO_LOV;
+
+     if ($in.0.Worker_Type_LOV == "Employee")
 	 {
 	 	$out.0.Assignment_Number = ("E"+$in.0.Current_employee_number+"-"+$in.0.Assignment_reference_number);
 	 }
@@ -184,7 +217,6 @@ function integer transform() {
 	 {
 	 	$out.0.Assignment_Number = ("N"+$in.0.Current_employee_number+"-"+$in.0.Assignment_reference_number);
 	 }
-
 	return ALL;
 }
 
@@ -207,10 +239,9 @@ function integer transform() {
 // function string getMessage() {}
 ]]></attr>
 </Node>
-<Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMAssignments.xlsx" guiName="XLSDataReader" guiX="129" guiY="131" id="XLSDATA_READER" sheetName="Assignments" skipRows="6" type="XLS_READER"/>
-<Node enabled="enabled" fileURL="${DATAOUT_DIR}/FusionHCMAssignments_R7.xls" firstDataRow="2" guiName="XLSDataWriter" guiX="665" guiY="137" id="XLSDATA_WRITER" namesRow="1" sheetName="Assignments" type="XLS_WRITER"/>
-<Edge fromNode="EXT_FILTER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (accepted)" toNode="REFORMAT:0"/>
-<Edge fromNode="REFORMAT:0" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 0 (in)" metadata="Metadata1" outPort="Port 0 (out)" toNode="XLSDATA_WRITER:0"/>
-<Edge fromNode="XLSDATA_READER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="EXT_FILTER:0"/>
+<Node enabled="enabled" fileURL="${DATAOUT_DIR}/FusionHCMAssignments_R7.xls" firstDataRow="2" guiName="Write Assignments" guiX="665" guiY="137" id="WRITE_ASSIGNMENTS" namesRow="1" sheetName="Create Work Rel Assignment" type="XLS_WRITER"/>
+<Edge fromNode="FILTER_ASSIGNMENTS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (accepted)" toNode="TRANSFORM_ASSIGNMENTS:0"/>
+<Edge fromNode="READ_ASSIGNMENTS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="FILTER_ASSIGNMENTS:0"/>
+<Edge fromNode="TRANSFORM_ASSIGNMENTS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 0 (in)" metadata="Metadata1" outPort="Port 0 (out)" toNode="WRITE_ASSIGNMENTS:0"/>
 </Phase>
 </Graph>

@@ -1,0 +1,9 @@
+$out.0.Effective_Start_Date = '1/100';
+	$out.0.Job_Set = 'Common Set';
+	$out.0.Name = $in.0.Job_Code+"-"+$in.0.Job_Title;
+	$out.0.Code = $in.0.Job_Code;
+	$out.0.Status = $in.0.Status;
+	$out.0.Medical_Checkup_Required = 'No';
+	$out.0.FLSA_Status = $in.0.FLSA;
+	$out.0.EEO_1_Category = $in.0.EEO_Category;
+	$out.0.Grade_Set_1 = 'Common Set';

@@ -1,0 +1,10 @@
+$out.0.Person_Number = $in.0.Current_Employee_Number;
+	$out.0.Effective_Start_Date = $in.0.Enterprise_Start_Date;
+	$out.0.Date_of_Birth = $in.0.Date_of_Birth;
+	$out.0.Country_of_Birth = $in.0.Country_of_Birth;
+	$out.0.Region_of_Birth = $in.0.Region_of_Birth;
+	$out.0.Town_of_Birth = $in.0.Town_of_Birth;
+	$out.0.Country = $in.0.Country;
+	$out.0.National_ID_Type = $in.0.National_ID_Type;
+	$out.0.National_ID = $in.0.ID_Number;
+	$out.0.Expiration_Date = $in.0.Expiration_Date;

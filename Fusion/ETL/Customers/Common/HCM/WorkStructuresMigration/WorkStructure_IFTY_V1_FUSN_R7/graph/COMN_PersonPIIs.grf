@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="Acer" created="Tue Mar 18 12:13:01 IST 2014" guiVersion="3.5.0" id="1395132338025" licenseType="Community" modified="Tue Mar 18 15:59:09 IST 2014" modifiedBy="Acer" name="COMN_PersonPIIs" revision="1.8" showComponentDetails="true">
+<Global>
+<Metadata id="Metadata1">
+<Record fieldDelimiter="|" name="PersonPII_FUSN_R7" recordDelimiter="\r\n" type="delimited">
+<Field label="* Person Number" name="Person_Number" type="string"/>
+<Field label="* Effective Start Date" name="Effective_Start_Date" type="string"/>
+<Field label="Global Title" name="Global_Title" type="string"/>
+<Field label="Global First Name" name="Global_First_Name" type="string"/>
+<Field label="Global Middle Names" name="Global_Middle_Names" type="string"/>
+<Field label="Global Last Name" name="Global_Last_Name" type="string"/>
+<Field label="Global Prefix" name="Global_Prefix" type="string"/>
+<Field label="Global Suffix" name="Global_Suffix" type="string"/>
+<Field label="Global Honors" name="Global_Honors" type="string"/>
+<Field label="Global Known As" name="Global_Known_As" type="string"/>
+<Field label="Global Previous Last Name" name="Global_Previous_Last_Name" type="string"/>
+<Field label="Local-Name Language" name="Local_Name_Language" type="string"/>
+<Field label="Local Title" name="Local_Title" type="string"/>
+<Field label="Local First Name" name="Local_First_Name" type="string"/>
+<Field label="Local Middle Names" name="Local_Middle_Names" type="string"/>
+<Field label="Local Last Name" name="Local_Last_Name" type="string"/>
+<Field label="Local Prefix" name="Local_Prefix" type="string"/>
+<Field label="Local Suffix" name="Local_Suffix" type="string"/>
+<Field label="Local Honors" name="Local_Honors" type="string"/>
+<Field label="Local Known As" name="Local_Known_As" type="string"/>
+<Field label="Local Previous Last Name" name="Local_Previous_Last_Name" type="string"/>
+<Field label="Country" name="Country" type="string"/>
+<Field label="AddressType" name="AddressType" type="string"/>
+<Field label="Address Line 1" name="Address_Line_1" type="string"/>
+<Field label="Address Line 2" name="Address_Line_2" type="string"/>
+<Field label="Address Line 3" name="Address_Line_3" type="string"/>
+<Field label="Address Line 4" name="Address_Line_4" type="string"/>
+<Field label="Region 1" name="Region_1" type="string"/>
+<Field label="Region 2" name="Region_2" type="string"/>
+<Field label="Region 3" name="Region_3" type="string"/>
+<Field label="Town or City" name="Town_or_City" type="string"/>
+<Field label="Postal Code" name="Postal_Code" type="string"/>
+<Field label="Primary Mailing" name="Primary_Mailing" type="string"/>
+<Field label="Primary Phone" name="Primary_Phone" type="string"/>
+<Field label="Phone Type 1" name="Phone_Type_1" type="string"/>
+<Field label="Country Code 1" name="Country_Code_1" type="string"/>
+<Field label="Area Code 1" name="Area_Code_1" type="string"/>
+<Field label="Phone Number 1" name="Phone_Number_1" type="string"/>
+<Field label="Phone Type 2" name="Phone_Type_2" type="string"/>
+<Field label="Country Code 2" name="Country_Code_2" type="string"/>
+<Field label="Area Code 2" name="Area_Code_2" type="string"/>
+<Field label="Phone Number 2" name="Phone_Number_2" type="string"/>
+<Field label="Phone Type 3" name="Phone_Type_3" type="string"/>
+<Field label="Country Code 3" name="Country_Code_3" type="string"/>
+<Field label="Area Code 3" name="Area_Code_3" type="string"/>
+<Field label="Phone Number 3" name="Phone_Number_3" type="string"/>
+<Field label="Primary E-Mail" name="Primary_E_Mail" type="string"/>
+<Field label="E-Mail Type" name="E_Mail_Type" type="string"/>
+<Field label="E-Mail" name="E_Mail" type="string"/>
+<Field label="Legislation" name="Legislation" type="string"/>
+<Field label="Marital Status" name="Marital_Status" type="string"/>
+<Field label="Ethnicity" name="Ethnicity" type="string"/>
+<Field label="Religion" name="Religion" type="string"/>
+<Field label="Highest Education Level" name="Highest_Education_Level" type="string"/>
+<Field label="Gender" name="Gender" type="string"/>
+<Field label="Person Legislative Information 1" name="Person_Legislative_Information_1" type="string"/>
+<Field label="Person Legislative Information 2" name="Person_Legislative_Information_2" type="string"/>
+<Field label="Person Legislative Information 3" name="Person_Legislative_Information_3" type="string"/>
+<Field label="Person Legislative Information 4" name="Person_Legislative_Information_4" type="string"/>
+<Field label="Person Legislative Information 5" name="Person_Legislative_Information_5" type="string"/>
+<Field label="Person Legislative Information 6" name="Person_Legislative_Information_6" type="string"/>
+<Field label="Person Legislative Information 7" name="Person_Legislative_Information_7" type="string"/>
+<Field label="Person Legislative Information 8" name="Person_Legislative_Information_8" type="string"/>
+<Field label="Person Legislative Information 9" name="Person_Legislative_Information_9" type="string"/>
+<Field label="Person Legislative Information 10" name="Person_Legislative_Information_10" type="string"/>
+<Field label="Person Legislative Information Date 1" name="Person_Legislative_Information_Date_1" type="string"/>
+<Field label="Person Legislative Information Number 1" name="Person_Legislative_Information_Number_1" type="string"/>
+<Field label="Contact Type" name="Contact_Type" type="string"/>
+<Field label="Emergency Contact" name="Emergency_Contact" type="string"/>
+<Field label="Title" name="Title" type="string"/>
+<Field label="First Name" name="First_Name" type="string"/>
+<Field label="Middle Names" name="Middle_Names" type="string"/>
+<Field label="Last Name" name="Last_Name" type="string"/>
+<Field label="Prefix" name="Prefix" type="string"/>
+<Field label="Suffix" name="Suffix" type="string"/>
+<Field label="Honors" name="Honors" type="string"/>
+<Field label="Known As" name="Known_As" type="string"/>
+<Field label="Previous Last Name" name="Previous_Last_Name" type="string"/>
+<Field label="Primary Phone" name="Primary_Phone_1" type="string"/>
+<Field label="Phone Type" name="Phone_Type" type="string"/>
+<Field label="Country Code" name="Country_Code" type="string"/>
+<Field label="Area Code" name="Area_Code" type="string"/>
+<Field label="Phone Number" name="Phone_Number" type="string"/>
+<Field label="Contact Shares Address" name="Contact_Shares_Address" type="string"/>
+<Field label="Primary National ID" name="Primary_National_ID" type="string"/>
+<Field label="National ID Country" name="National_ID_Country" type="string"/>
+<Field label="National ID Type" name="National_ID_Type" type="string"/>
+<Field label="National ID" name="National_ID" type="string"/>
+<Field label="Date of Birth" name="Date_of_Birth" type="string"/>
+<Field label="Date of Death" name="Date_of_Death" type="string"/>
+<Field label="Country of Birth" name="Country_of_Birth" type="string"/>
+<Field label="Region of Birth" name="Region_of_Birth" type="string"/>
+<Field label="Town of Birth" name="Town_of_Birth" type="string"/>
+<Field label="Correspondence Language" name="Correspondence_Language" type="string"/>
+<Field label="Visa Country" name="Visa_Country" type="string"/>
+<Field label="Visa Type" name="Visa_Type" type="string"/>
+<Field label="Visa Category" name="Visa_Category" type="string"/>
+<Field label="Visa Number" name="Visa_Number" type="string"/>
+<Field label="Visa Status" name="Visa_Status" type="string"/>
+<Field label="Visa Issue Date" name="Visa_Issue_Date" type="string"/>
+<Field label="Visa Expiration Date" name="Visa_Expiration_Date" type="string"/>
+<Field label="Passport Country" name="Passport_Country" type="string"/>
+<Field label="Passport Type" name="Passport_Type" type="string"/>
+<Field label="Passport Number" name="Passport_Number" type="string"/>
+<Field label="Passport Issuing Authority" name="Passport_Issuing_Authority" type="string"/>
+<Field label="Passport Issue Date" name="Passport_Issue_Date" type="string"/>
+<Field label="Passport Expiration Date" name="Passport_Expiration_Date" type="string"/>
+<Field label="Nationality" name="Nationality" type="string"/>
+<Field label="From Date" name="From_Date" type="string"/>
+<Field label="To Date" name="To_Date" type="string"/>
+<Field label="Nationality Status" name="Nationality_Status" type="string"/>
+<Field label="Communication Provider 1" name="Communication_Provider_1" type="string"/>
+<Field label="Account Name 1" name="Account_Name_1" type="string"/>
+<Field label="Communication Provider 2" name="Communication_Provider_2" type="string"/>
+<Field label="Account Name 2" name="Account_Name_2" type="string"/>
+<Field label="Disability Country" name="Disability_Country" type="string"/>
+<Field label="Disability Category" name="Disability_Category" type="string"/>
+<Field label="FTE" name="FTE" type="string"/>
+<Field label="Disability Status" name="Disability_Status" type="string"/>
+<Field label="Disability Reason" name="Disability_Reason" type="string"/>
+<Field label="Degree" name="Degree" type="string"/>
+<Field label="Registration Date" name="Registration_Date" type="string"/>
+<Field label="Expiration Date" name="Expiration_Date" type="string"/>
+<Field label="Disability Organization" name="Disability_Organization" type="string"/>
+<Field label="Registration ID" name="Registration_ID" type="string"/>
+<Field label="Description" name="Description" type="string"/>
+<Field label="Work Restrictions" name="Work_Restrictions" type="string"/>
+<Field label="Person DFF Context" name="Person_DFF_Context" type="string"/>
+<Field label="Person Attribute 1" name="Person_Attribute_1" type="string"/>
+<Field label="Person Attribute 2" name="Person_Attribute_2" type="string"/>
+<Field label="Person Attribute 3" name="Person_Attribute_3" type="string"/>
+<Field label="Person Attribute 4" name="Person_Attribute_4" type="string"/>
+<Field label="Person Attribute 5" name="Person_Attribute_5" type="string"/>
+<Field label="Person Attribute 6" name="Person_Attribute_6" type="string"/>
+<Field label="Person Attribute 7" name="Person_Attribute_7" type="string"/>
+<Field label="Person Attribute 8" name="Person_Attribute_8" type="string"/>
+<Field label="Person Attribute 9" name="Person_Attribute_9" type="string"/>
+<Field label="Person Attribute 10" name="Person_Attribute_10" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata0">
+<Record fieldDelimiter="|" name="PersonPII_INTY_V1" recordDelimiter="\r\n" type="delimited">
+<Field label="Current Employee Number" name="Current_Employee_Number" type="string"/>
+<Field label="*Enterprise Start Date" name="Enterprise_Start_Date" type="string"/>
+<Field label="Date of Birth" name="Date_of_Birth" type="string"/>
+<Field label="Country of Birth" name="Country_of_Birth" type="string"/>
+<Field label="Region of Birth" name="Region_of_Birth" type="string"/>
+<Field label="Town of Birth" name="Town_of_Birth" type="string"/>
+<Field label="Primary Identifier (Yes, No) " name="Primary_Identifier_Yes_No" type="string"/>
+<Field label="Country" name="Country" type="string"/>
+<Field label="National ID Type" name="National_ID_Type" type="string"/>
+<Field label="ID Number " name="ID_Number" type="string"/>
+<Field label="Issue Date" name="Issue_Date" type="string"/>
+<Field label="Expiration Date" name="Expiration_Date" type="string"/>
+</Record>
+</Metadata>
+<GraphParameters>
+<GraphParameterFile fileURL="workspace.prm"/>
+</GraphParameters>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" guiName="Filter PersonPII" guiX="286" guiY="167" id="FILTER_PERSON_PII" type="EXT_FILTER">
+<attr name="filterExpression"><![CDATA[//#CTL2
+NOT isnull($in.0.Current_Employee_Number)]]></attr>
+</Node>
+<Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMPersonPIIs.xlsx" guiName="Read PersonPII" guiX="104" guiY="154" id="READ_PERSON_PII" sheetName="PersonPII" skipRows="6" type="XLS_READER"/>
+<Node enabled="enabled" guiName="Transform PersonPII" guiX="461" guiY="167" id="TRANSFORM_PERSON_PII" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.Person_Number = $in.0.Current_Employee_Number;
+	$out.0.Effective_Start_Date = $in.0.Enterprise_Start_Date;
+	$out.0.Date_of_Birth = $in.0.Date_of_Birth;
+	$out.0.Country_of_Birth = $in.0.Country_of_Birth;
+	$out.0.Region_of_Birth = $in.0.Region_of_Birth;
+	$out.0.Town_of_Birth = $in.0.Town_of_Birth;
+	$out.0.Country = $in.0.Country;
+	$out.0.National_ID_Type = $in.0.National_ID_Type;
+	$out.0.National_ID = $in.0.ID_Number;
+	$out.0.Expiration_Date = $in.0.Expiration_Date;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" fileURL="${DATAOUT_DIR}/FusionHCMPersonPII_R7.xls" firstDataRow="2" guiName="Write PersonPII" guiX="674" guiY="154" id="WRITE_PERSON_PII" namesRow="1" sheetName="PersonPII" type="XLS_WRITER"/>
+<Edge fromNode="FILTER_PERSON_PII:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (accepted)" toNode="TRANSFORM_PERSON_PII:0"/>
+<Edge fromNode="READ_PERSON_PII:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="FILTER_PERSON_PII:0"/>
+<Edge fromNode="TRANSFORM_PERSON_PII:0" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 0 (in)" metadata="Metadata1" outPort="Port 0 (out)" toNode="WRITE_PERSON_PII:0"/>
+</Phase>
+</Graph>

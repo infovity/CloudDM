@@ -1,0 +1,39 @@
+$out.0.Person_Number = $in.0.Current_employee_number;
+	$out.0.Worker_Type = $in.0.Worker_Type_LOV;
+	$out.0.Termination_Reason = $in.0.Termination_Reason_LOV;
+	$out.0.Termination_Date = $in.0.Termination_Date;
+	$out.0.Action = $in.0.Action_LOV;
+	$out.0.Action_Reason = $in.0.Action_reason_LOV;
+	$out.0.Assignment_Status = $in.0.Assignment_Status_LOV;
+	$out.0.Business_Unit = $in.0.Business_Unit_LOV;
+	$out.0.Person_Type = $in.0.Person_Types_LOV;
+	$out.0.Job_Code = $in.0.Job_Code_LOV;
+	$out.0.Grade_Code = $in.0.Grades_LOV;
+	$out.0.Department = $in.0.Department_LOV;
+	$out.0.Location_Code = $in.0.Work_Location_Code_LOV;
+	$out.0.Working_at_Home = $in.0.Working_at_Home_LOV;
+	$out.0.Working_Hours = $in.0.Normal_Working_hours;
+	$out.0.Frequency = 'Weekly';
+	$out.0.FTE = $in.0.FTE;
+	$out.0.Headcount = $in.0.Headcount;
+	$out.0.Legal_Employer = $in.0.Legal_Employer_LOV;
+	$out.0.Work_Relationship_Start_Date = $in.0.Start;
+	$out.0.Assignment_Category = $in.0.Assignment_Category_LOV;
+	$out.0.Working_as_a_Manager = $in.0.Working_as_a_Manager_YES_NO_LOV;
+
+     if ($in.0.Worker_Type_LOV == "Employee")
+	 {
+	 	$out.0.Assignment_Number = ("E"+$in.0.Current_employee_number+"-"+$in.0.Assignment_reference_number);
+	 }
+	 else if ($in.0.Worker_Type_LOV == "Contingent Worker")
+	 {
+	 	$out.0.Assignment_Number = ("C"+$in.0.Current_employee_number+"-"+$in.0.Assignment_reference_number);
+	 }
+	 else if ($in.0.Worker_Type_LOV == "Ex-Emplyeee")
+	 {
+	 	$out.0.Assignment_Number = ("E"+$in.0.Current_employee_number+"-"+$in.0.Assignment_reference_number);
+	 }
+	  else if ($in.0.Worker_Type_LOV == "Non Worker")
+	 {
+	 	$out.0.Assignment_Number = ("N"+$in.0.Current_employee_number+"-"+$in.0.Assignment_reference_number);
+	 }

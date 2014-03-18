@@ -1,0 +1,70 @@
+$out.0.Legal_Employer = $in.0.Legal_Employer_LOV;
+	$out.0.Work_Relationship_Start_Date = $in.0.Enterprise_Start_Date;
+	$out.0.Enterprise_Seniority_Date = $in.0.Enterprise_Seniority_Date;
+	$out.0.Legal_Employer_Seniority_Date = $in.0.Legal_Entity_Seniority_Date;
+	$out.0.Person_Attribute_1 = $in.0.Previous_paycheck_number;
+	$out.0.Person_Number = $in.0.Current_employee_Number;
+	$out.0.Global_Last_Name = $in.0.Last_Name;
+	$out.0.Global_First_Name = $in.0.First_Name;
+	$out.0.Global_Suffix = $in.0.Suffix;
+	$out.0.Global_Middle_Names = $in.0.Middle_Name;
+	$out.0.Global_Known_As = $in.0.Preferred_Name;
+	$out.0.Global_Previous_Last_Name = $in.0.Previous_Last_Name;
+	$out.0.Gender = $in.0.Gender_LOV;
+	$out.0.Date_of_Birth = $in.0.Date_Of_Birth;
+	$out.0.Address_Type = $in.1.Address_Type_LOV;
+	$out.0.Address_Line_1 = $in.1.Address_Line_1;
+	$out.0.Address_Line_2 = $in.1.Address_Line_2;
+	$out.0.Address_Line_3 = $in.1.Address_Line_3;
+	$out.0.Address_Line_4 = $in.1.Address_Line_4;
+	$out.0.Town_or_City = $in.1.City;
+	$out.0.Region_1 = $in.1.State;
+	$out.0.Postal_Code = $in.1.Postal_Code;
+	$out.0.Region_3 = $in.1.Province;
+	$out.0.Country = $in.1.Country_LOV;
+	$out.0.E_Mail_Type = $in.2.Type_LOV;
+	$out.0.E_Mail = $in.2.E_mail;
+	$out.0.Worker_Type = 'Employee';
+	$out.0.Action = 'Hire';
+	$out.0.Legislation = $in.1.Country_LOV;
+	$out.0.Frequency = 'Weekly';
+	$out.0.Job_Code = $in.3.Job_Code_LOV;
+	$out.0.Grade_Code = $in.3.Grades_LOV;
+	$out.0.Department = $in.3.Department_LOV;
+	$out.0.Working_as_a_Manager = $in.3.Working_as_a_Manager_YES_NO_LOV;
+	$out.0.Location_Code = $in.3.Work_Location_Code_LOV;
+	$out.0.Working_at_Home = $in.3.Working_at_Home_LOV;
+	$out.0.Working_Hours = $in.3.Normal_Working_hours;
+	$out.0.Assignment_Status = $in.3.Assignment_Status_LOV;
+	$out.0.Person_Type = $in.3.Person_Types_LOV;
+	$out.0.Assignment_Category = $in.3.Assignment_Category_LOV;
+	$out.0.Phone_Type_1 = $in.4.Type_LOV;
+	$out.0.Phone_Number_1 = $in.4.Number;
+	$out.0.Area_Code_1 = $in.4.Area_Code;
+	
+		if ($in.1.Country_LOV == "US")
+	{
+		$out.0.Business_Unit = "USA Inc.";
+	}
+	else
+	{
+		$out.0.Business_Unit = "UK Ltd.";
+	}
+	//
+ if ($in.0.Ethnicity_LOV==null)
+	{
+		$out.0.Ethnicity = "Not disclosed";
+	}
+	else
+	{
+		$out.0.Ethnicity = $in.0.Ethnicity_LOV;
+	}
+	//
+	if ($in.4.Country_Code_LOV == "US")
+	{
+		$out.0.Country_Code_1 = "1";
+	}
+	else
+	{
+		$out.0.Country_Code_1 = "";
+	}

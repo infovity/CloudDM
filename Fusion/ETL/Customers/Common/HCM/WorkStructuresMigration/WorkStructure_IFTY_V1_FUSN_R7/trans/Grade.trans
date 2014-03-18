@@ -1,0 +1,15 @@
+$out.0.Grade_Set = 'Common Set';
+	$out.0.Grade_Name = $in.0.Grade_Name;
+	$out.0.Grade_Code = $in.0.Grade_Code;
+	$out.0.Grade_Status = $in.0.Status;
+	$out.0.Legislative_Data_Group = 'USA (ZELTIQ Inc) LDG';
+	$out.0.Rate_Name = 'ZLTQ SAL GRT';
+	$out.0.Rate_Type = 'Salary';
+	$out.0.Rate_Status = 'Active';
+	$out.0.Frequency = $in.0.Grade_Frequency;
+	$out.0.Currency = $in.0.Currency;
+	$out.0.Minimum = $in.0.Minimum;
+	$out.0.Maximum = $in.0.Maximum;
+	$out.0.Midpoint = $in.0.Midpoint;
+	$out.0.Annualization_Factor = 1;
+	$out.0.Effective_Start_Date = $in.0.Start_Date;

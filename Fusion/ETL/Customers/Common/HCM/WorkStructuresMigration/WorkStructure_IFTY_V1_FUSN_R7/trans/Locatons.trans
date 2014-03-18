@@ -1,0 +1,17 @@
+$out.0.Effective_Start_Date = $in.0.Start_Date;
+	$out.0.Location_Set = 'Common Set';
+	$out.0.Name = $in.0.Name;
+	$out.0.Code = $in.0.Code;
+	$out.0.Status = $in.0.Status;
+	$out.0.Country = $in.0.Country;
+	$out.0.Address_Line_1_or_Postal_Code = $in.0.Address_Line_1;
+	$out.0.Address_Line_2 = $in.0.Address_Line_2;
+	$out.0.Address_Line_3 = $in.0.Address_Line_3;
+	$out.0.City_or_Town = $in.0.City;
+	$out.0.County_UK_or_Area_Hong_Kong_or_State = $in.0.State;
+	$out.0.ZIP_Code_or_Postal_Code = $in.0.Postal_Code;
+	$out.0.Tax_District_US = $in.0.County;
+	$out.0.County_US_or_District_Hong_Kong = $in.0.County;
+	$out.0.Province = $in.0.Province;
+	$out.0.Time_Zone_Code = $in.0.Time_Zone;
+	$out.0.E_Mail = $in.0.Email;
