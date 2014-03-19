@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="Acer" created="Wed Mar 19 12:20:56 IST 2014" guiVersion="3.5.0" id="1395228467755" licenseType="Community" modified="Wed Mar 19 17:20:15 IST 2014" modifiedBy="Acer" name="COMN_FBLPersonAddressVOMigrations" revision="1.3" showComponentDetails="true">
+<Global>
+<Metadata id="Metadata0">
+<Record fieldDelimiter="|" name="PersonAddressVO_FUSN_R7" recordDelimiter="\r\n" type="delimited">
+<Field label="PersonAddrUsageId" name="PersonAddrUsageId" type="string"/>
+<Field label="EffectiveStartDate" name="EffectiveStartDate" type="string"/>
+<Field label="EffectiveEndDate" name="EffectiveEndDate" type="string"/>
+<Field label="PersonId" name="PersonId" type="string"/>
+<Field label="BusinessGroupId" name="BusinessGroupId" type="string"/>
+<Field label="BusinessGroupId1" name="BusinessGroupId1" type="string"/>
+<Field label="AddressType" name="AddressType" type="string"/>
+<Field label="AddressLine1" name="AddressLine1" type="string"/>
+<Field label="AddressLine2" name="AddressLine2" type="string"/>
+<Field label="AddressLine3" name="AddressLine3" type="string"/>
+<Field label="AddressLine4" name="AddressLine4" type="string"/>
+<Field label="Building" name="Building" type="string"/>
+<Field label="FloorNumber" name="FloorNumber" type="string"/>
+<Field label="TownOrCity" name="TownOrCity" type="string"/>
+<Field label="Region1" name="Region1" type="string"/>
+<Field label="Region2" name="Region2" type="string"/>
+<Field label="Region3" name="Region3" type="string"/>
+<Field label="Country" name="Country" type="string"/>
+<Field label="PostalCode" name="PostalCode" type="string"/>
+<Field label="LongPostalCode" name="LongPostalCode" type="string"/>
+<Field label="TimezoneCode" name="TimezoneCode" type="string"/>
+<Field label="DerivedLocale" name="DerivedLocale" type="string"/>
+<Field label="DqValidationLevel" name="DqValidationLevel" type="string"/>
+<Field label="FormattedSingleLineAddress" name="FormattedSingleLineAddress" type="string"/>
+<Field label="FormattedMultiLineAddress" name="FormattedMultiLineAddress" type="string"/>
+<Field label="MailingAddressFlag" name="MailingAddressFlag" type="string"/>
+<Field label="Logical Start Date" name="Logical_Start_Date" type="string"/>
+<Field label="Logical End Data" name="Logical_End_Data" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata1">
+<Record fieldDelimiter="|" name="PersonAddressVO_INTY_V1" recordDelimiter="\r\n" type="delimited">
+<Field format="" label="Current employee number" name="Current_employee_number" type="string"/>
+<Field label="*Effective start date " name="Effective_start_date" type="string"/>
+<Field format="" label="Effective end date " name="Effective_end_date" type="string"/>
+<Field label="Address Type [LOV]" name="Address_Type_LOV" type="string"/>
+<Field label="*Address Line 1" name="Address_Line_1" type="string"/>
+<Field label="Address Line 2" name="Address_Line_2" type="string"/>
+<Field label="Address Line 3" name="Address_Line_3" type="string"/>
+<Field label="Address Line 4" name="Address_Line_4" type="string"/>
+<Field label="City" name="City" type="string"/>
+<Field label="State" name="State" type="string"/>
+<Field label="Postal Code " name="Postal_Code" type="string"/>
+<Field label="Province" name="Province" type="string"/>
+<Field format="" label="County" name="County" type="string"/>
+<Field label="*Country [LOV]" name="Country_LOV" type="string"/>
+</Record>
+</Metadata>
+<GraphParameters>
+<GraphParameterFile fileURL="workspace.prm"/>
+</GraphParameters>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" guiName="Filter PersonAddressVO" guiX="250" guiY="140" id="FILTER_PERSON_ADDRESS_VO" type="EXT_FILTER">
+<attr name="filterExpression"><![CDATA[//#CTL2
+NOT isnull($in.0.Current_employee_number)]]></attr>
+</Node>
+<Node enabled="enabled" fileURL="${DATAIN_DIR}/InfovityHCMEmployeesV1.xlsx" guiName="Read PersonAddressVO" guiX="46" guiY="127" id="READ_PERSON_ADDRESS_VO" sheetName="Address" skipRows="4" type="XLS_READER"/>
+<Node enabled="enabled" guiName="Transform PersonAddressVO" guiX="451" guiY="140" id="TRANSFORM_PERSON_ADDRESS_VO" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.EffectiveStartDate = $in.0.Effective_start_date;
+	$out.0.EffectiveEndDate = $in.0.Effective_end_date;
+	$out.0.AddressType = $in.0.Address_Type_LOV;
+	$out.0.AddressLine1 = $in.0.Address_Line_1;
+	$out.0.AddressLine2 = $in.0.Address_Line_2;
+	$out.0.AddressLine3 = $in.0.Address_Line_3;
+	$out.0.AddressLine4 = $in.0.Address_Line_4;
+	$out.0.TownOrCity = $in.0.City;
+	$out.0.Country = $in.0.Country_LOV;
+	$out.0.PostalCode = $in.0.Postal_Code;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" fileURL="${DATAOUT_DIR}/FusionFBLPersonAddressVO.dat" guiName="Write PersonAddressVO" guiX="680" guiY="140" id="WRITE_PERSON_ADDRESS_VO" outputFieldNames="true" type="DATA_WRITER"/>
+<Edge fromNode="FILTER_PERSON_ADDRESS_VO:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" metadata="Metadata1" outPort="Port 0 (accepted)" toNode="TRANSFORM_PERSON_ADDRESS_VO:0"/>
+<Edge fromNode="READ_PERSON_ADDRESS_VO:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata1" outPort="Port 0 (out)" toNode="FILTER_PERSON_ADDRESS_VO:0"/>
+<Edge fromNode="TRANSFORM_PERSON_ADDRESS_VO:0" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="WRITE_PERSON_ADDRESS_VO:0"/>
+</Phase>
+</Graph>

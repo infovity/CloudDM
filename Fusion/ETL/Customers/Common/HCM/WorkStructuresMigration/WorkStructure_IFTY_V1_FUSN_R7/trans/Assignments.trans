@@ -16,10 +16,10 @@ $out.0.Person_Number = $in.0.Current_employee_number;
 	$out.0.Frequency = 'Weekly';
 	$out.0.FTE = $in.0.FTE;
 	$out.0.Headcount = $in.0.Headcount;
-	$out.0.Legal_Employer = $in.0.Legal_Employer_LOV;
 	$out.0.Work_Relationship_Start_Date = $in.0.Start;
 	$out.0.Assignment_Category = $in.0.Assignment_Category_LOV;
 	$out.0.Working_as_a_Manager = $in.0.Working_as_a_Manager_YES_NO_LOV;
+	$out.0.Legal_Employer = $in.1.Legal_Employer_LOV;
 
      if ($in.0.Worker_Type_LOV == "Employee")
 	 {
