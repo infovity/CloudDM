@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="datamigration-flow-definition">
+    <default-activity>selectObject</default-activity>
+    <view id="selectObject">
+      <page>/selectObject1.jsf</page>
+      <train-stop/>
+    </view>
+    <view id="uploadData.jspx">
+      <train-stop/>
+    </view>
+    <view id="reviewMapping.jspx">
+      <train-stop/>
+    </view>
+    <view id="confirmation.jspx">
+      <train-stop/>
+    </view>
+    <train/>
+  </task-flow-definition>
+</adfc-config>

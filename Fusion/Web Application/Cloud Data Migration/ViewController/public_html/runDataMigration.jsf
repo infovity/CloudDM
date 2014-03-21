@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="runDataMigration.jsf" id="d1">
+        <af:form id="f1">
+            <af:panelGridLayout id="pgl1">
+                <af:gridRow height="50px" id="gr2">
+                    <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc1">
+                        <!-- Header -->
+                        <af:outputLabel value="Infovity eMigrate" id="ol1"
+                                        inlineStyle="font-size:xx-large; text-align:center;"/>
+
+                    </af:gridCell>
+                </af:gridRow>
+                <af:gridRow height="100%" id="gr1">
+                    <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc2">
+                        <af:panelSplitter orientation="horizontal" splitterPosition="199" id="ps1">
+                            <f:facet name="first">
+                                <!-- Left -->
+                                 <af:panelGroupLayout id="pgl3">
+                                   <af:outputLabel value="Supported Objects" id="ol2"
+                                            inlineStyle="font-size:large; text-align:center;"/>
+                                    <af:spacer width="10" height="10" id="s1"/>
+
+                                    <af:iterator id="it1" var="prodFamily" value="#{DataMigratorBean.productFamilies}">
+                                            <af:spacer width="10" height="10" id="s2"/>
+                                            <h:dataTable value="#{prodFamily.value}" var="loader" id="dt1"
+                                                         style="text-align:left;">
+                                            <!--oracle-jdev-comment:Faces.RI.DT.Class.Key:java.lang.String-->
+                                            <h:column id="c1">
+                                                <f:facet name="header">
+                                                    <h:outputText value="#{prodFamily.key}" id="ot1"
+                                                                  style="text-align:left;"/>
+                                                </f:facet>
+                                                <h:outputText value="#{loader.loaderName}" id="ot2"/> 
+                                            </h:column>
+                                        </h:dataTable> 
+                                   </af:iterator>
+                       
+                                </af:panelGroupLayout>
+                               
+                            </f:facet>
+                            <f:facet name="second">
+                                <af:panelGroupLayout layout="scroll" id="pgl2">
+                                    <!-- Content -->
+                                </af:panelGroupLayout>
+                            </f:facet>
+                        </af:panelSplitter>
+                    </af:gridCell>
+                </af:gridRow>
+            </af:panelGridLayout>
+        </af:form>
+    </af:document>
+</f:view>

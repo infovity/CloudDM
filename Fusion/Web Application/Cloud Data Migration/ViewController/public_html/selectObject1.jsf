@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+        xmlns:h="http://java.sun.com/jsf/html">
+    <af:document title="selectObject1.jsf" id="d1">
+        <af:form id="f1">
+            <af:panelGridLayout id="pgl2">
+                <af:gridRow height="100%" id="gr2">
+                    <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc2">
+                        <af:panelSplitter orientation="horizontal" splitterPosition="166" id="ps1">
+
+                            <f:facet name="first">
+
+                            </f:facet>
+                            <f:facet name="second">
+                                <af:panelGroupLayout layout="scroll" id="pgl1" inlineStyle="vertical-align:baseline;"
+                                                     halign="center">
+                                    <af:panelFormLayout id="pfl1" >
+                                                                        <!-- Content -->
+                                    <af:spacer width="10" height="20" id="s6"/>
+                      
+                                    <af:selectOneChoice label="Loader Object" id="soc1">
+                                        <af:selectItem value="JOB" label="Jobs" id="Jobs"/>
+                                        <af:selectItem value="ASSIGNMENT" label="Assignments" id="si1"/>
+                                        <af:selectItem value="EMPLOYEE" label="Employees" id="si4"/>
+                                        <af:selectItem value="GRADE" label="Grades" id="si5"/>
+                                        <af:selectItem value="DEPARTMENT" label="Departments" id="si6"/>
+                                    </af:selectOneChoice>
+
+                                    <af:spacer width="10" height="20" id="s7"/>
+                                    
+                                    <af:selectOneChoice label="Infovity Template" id="soc2">
+                                        <af:selectItem value="HCMWorkStructuresV1" label="HCM WorkStructures V1" id="si2"/>
+                                    </af:selectOneChoice>
+
+                                    <af:spacer width="10" height="20" id="s8"/>
+
+                                    <af:selectOneChoice label="Fusion Release" id="soc3">
+                                        <af:selectItem value="HCMR7" label="HCM R7" id="si3"/>
+                                    </af:selectOneChoice>
+
+                                    <af:spacer width="10" height="20" id="s10"/>
+                                    
+                                            <af:button text="Submit" id="b1"/>
+                                        <f:facet name="footer"/>
+                                    </af:panelFormLayout>
+                                </af:panelGroupLayout>
+                            </f:facet>
+                        </af:panelSplitter>
+                    </af:gridCell>
+                </af:gridRow>
+            </af:panelGridLayout>
+        </af:form>
+    </af:document>
+</f:view>

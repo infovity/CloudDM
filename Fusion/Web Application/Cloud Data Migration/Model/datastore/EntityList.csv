@@ -1,0 +1,8 @@
+Loader Code,Loader Display Name,Mapping Enabled,Product Family
+LOCATION,Location,Y,HCM
+GRADE,Grade,Y,HCM
+DEPARTMENT,Department,Y,HCM
+EMPLOYEE,Employee,N,HCM
+SUPPLIER,Suppliers,Y,Financials
+CUSTOMERS,Customers,Y,Financials
+ASSIGNMENTS,Assignments,Y,HCM
