@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class Loader {
-    
+    //loader name
     private String loaderName;
     
     private String loaderCode;
