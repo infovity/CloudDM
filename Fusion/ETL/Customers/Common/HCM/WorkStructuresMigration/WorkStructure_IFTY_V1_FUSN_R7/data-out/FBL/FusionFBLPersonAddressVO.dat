@@ -1,101 +1,300 @@
 PersonAddrUsageId|EffectiveStartDate|EffectiveEndDate|PersonId|BusinessGroupId|BusinessGroupId1|AddressType|AddressLine1|AddressLine2|AddressLine3|AddressLine4|Building|FloorNumber|TownOrCity|Region1|Region2|Region3|Country|PostalCode|LongPostalCode|TimezoneCode|DerivedLocale|DqValidationLevel|FormattedSingleLineAddress|FormattedMultiLineAddress|MailingAddressFlag|Logical Start Date|Logical End Data
-|6/21/10|||||Home AddressHome AddressHome AddressHome AddressHome AddressHome AddressHome AddressHome AddressHome AddressHome AddressHome Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 7|||Lula Town ||||US|49895|||||||||
-|6/21/10|||||#$%^|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 8|||Lula Town ||||US|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 9|||Lula Town ||||US|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 10|||Lula Town ||||US|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 11|||Lula Town ||||IND|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 12|||Lula Town ||||IND|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 13|||Lula Town ||||IND|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 14|||Lula Town ||||IND|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 15|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 16|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 17|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 18|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 19|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 20|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 21|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 22|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 23|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 23|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 10|||Lula Town ||||US|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 11|||Lula Town ||||IND|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 12|||Lula Town ||||IND|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 13|||Lula Town ||||IND|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 14|||Lula Town ||||IND|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 15|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 16|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 17|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 18|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 19|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 20|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 21|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 22|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 23|||Lula Town ||||UK|49895|||||||||
-|||||||||||||||||||||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 10|||Lula Town ||||US|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 11|||Lula Town ||||IND|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 12|||Lula Town ||||IND|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 13|||Lula Town ||||IND|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 14|||Lula Town ||||IND|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 15|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 16|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 17|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 18|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 19|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 20|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 21|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 22|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 23|||Lula Town ||||UK|49895|||||||||
-|||||||||||||||||||||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 10|||Lula Town ||||US|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 11|||Lula Town ||||IND|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 12|||Lula Town ||||IND|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 13|||Lula Town ||||IND|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 14|||Lula Town ||||IND|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 15|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 16|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 17|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 18|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 19|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 20|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 21|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 22|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 23|||Lula Town ||||UK|49895|||||||||
-|||||||||||||||||||||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 10|||Lula Town ||||US|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 11|||Lula Town ||||IND|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 12|||Lula Town ||||IND|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 13|||Lula Town ||||IND|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 14|||Lula Town ||||IND|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 15|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 16|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 17|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 18|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 19|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 20|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 21|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 22|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 23|||Lula Town ||||UK|49895|||||||||
-|||||||||||||||||||||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 10|||Lula Town ||||US|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 11|||Lula Town ||||IND|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 12|||Lula Town ||||IND|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 13|||Lula Town ||||IND|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 14|||Lula Town ||||IND|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 15|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 16|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 17|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 18|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 19|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 20|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 21|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 22|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 23|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 23|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 17|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 18|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 19|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 20|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 21|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 22|||Lula Town ||||UK|49895|||||||||
-|6/21/10|||||Home Address|123 Catamaran Street |Address Line 2|Address Line 3|Address Line 23|||Lula Town ||||UK|49895|||||||||
+|03/11/2013||011188|||Home Address|6084 Monterey rd |#202 |||||San Jose|CA||Santa Clara|US |95138|||||||||
+|06/03/2013||011143|||Home Address|4300 The Woods Drive |# 800|||||San Jose|CA||Santa Clara|US |95136|||||||||
+|03/22/2010||010921|||Home Address|1178 Myrtle Dr.||||||Sunnyvale|CA||Santa Clara|US |94086|||||||||
+|08/05/2013||011226|||Home Address|204 Valle Verde||||||Hollister|ca||Santa Clara|US |95023|||||||||
+|05/27/2008||010801|||Home Address|8641 Delta Drive||||||Gilroy|CA||Santa Clara|US |95020|||||||||
+|07/27/2011||011016|||Home Address|3891 Seven Trees, Blvd |Apt#203 Bldg M|||||San Jose|CA||Santa Clara|US |95111|||||||||
+|12/17/2007||010778|||Home Address|18548 Poppy Jasper Lane||||||Morgan Hill|CA||Santa Clara|US |95037|||||||||
+|06/29/1998||001613|||Home Address|1656 Crucero Drive||||||San Jose|CA||Santa Clara|US |95122|||||||||
+|08/03/2011||011017|||Home Address|841 Monticelli Dr,| #215|||||Gilroy|CA||Santa Clara|US |95020|||||||||
+|04/25/2011||010999|||Home Address|824 Blossomhill Rd.,| # 1|||||San Jose|CA||Santa Clara|US |95123|||||||||
+|04/07/1999||010036|||Home Address|5959 Aster Drive||||||San Jose|CA||Santa Clara|US |95123|||||||||
+|02/25/2013||011183|||Home Address|1771 Paradise View Road||||||Morgan Hill|CA||Santa Clara|US |95037|||||||||
+|09/20/2010||010975|||Home Address|214 Pinot Ct.||||||San Jose|CA||Santa Clara|US |95119|||||||||
+|03/26/2012||011051|||Home Address|2320 Diamond Bar Ct||||||San Leandro|CA||Alameda|US |94579|||||||||
+|03/27/2013||011190|||Home Address|239 West Ave||||||Santa Cruz|CA||Santa Cruz|US |95060|||||||||
+|06/12/2006||010638|||Home Address|16714 Rita Drive||||||Morgan Hill|CA||Santa Clara|US |95037|||||||||
+|09/11/2000||010234|||Home Address|110 Bennett St.||||||Gilroy|CA||Santa Clara|US |95020|||||||||
+|04/14/2010||010926|||Home Address|3218 Gatelight Ct.||||||San Jose|CA||Santa Clara|US |95148|||||||||
+|06/03/2013||011111|||Home Address|1839 Wembley Ct||||||San Jose|CA||Santa Clara|US |95132|||||||||
+|11/10/2009||010890|||Home Address|638 N. Jackson Ave., |Apt#09|||||San Jose|CA||Santa Clara|US |95133|||||||||
+|11/15/2010||010983|||Home Address|2424 Damey Dr||||||San Jose|CA||Santa Clara|US |95116|||||||||
+|08/18/1999||001412|||Home Address|1133 Bellingham Dr||||||San Jose|CA||Santa Clara|US |95121|||||||||
+|03/22/2011||010995|||Home Address|1326 Avalon Dr||||||San Jose|CA||Santa Clara|US |95125|||||||||
+|01/10/2001||010314|||Home Address|521 Tennis Lane||||||Tracy|CA||San Joaquin|US |95376|||||||||
+|04/10/2012||011059|||Home Address|1826 Massachusetts D||||||Salinas|CA||Monterey|US |93905|||||||||
+|05/01/2013||011202|||Home Address|9100 Avezan Way||||||Gilroy |CA||Santa Clara|US |95020|||||||||
+|04/23/1999||001002|||Home Address|1535 Ramsgate Way||||||San Jose|CA||Santa Clara|US |95127|||||||||
+|04/05/1999||000417|||Home Address|1535 Ramsgate Wy||||||San Jose|CA||Santa Clara|US |95127|||||||||
+|06/27/2011||011011|||Home Address|1000 Hazelwood Ave||||||Campbell|CA||Santa Clara|US |95008|||||||||
+|11/26/2012||011158|||Home Address|17404 Walnut Grove Drive||||||Morgan Hill|CA||Santa Clara|US |95037|||||||||
+|07/11/2006||010650|||Home Address|301 Wright Ave.||||||Morgan Hill|CA||Santa Clara|US |95037|||||||||
+|08/21/2006||010667|||Home Address|605 Alberta Ave.||||||Sunnyvale|CA||Santa Clara|US |94087|||||||||
+|04/06/1999||001440|||Home Address|4432 Headen Way||||||Santa Clara|CA||Santa Clara|US |95054|||||||||
+|06/05/2003||010419|||Home Address|6996 Port Rowan Dr||||||San Jose|CA||Santa Clara|US |95119|||||||||
+|04/09/1999||000807|||Home Address|3780-B Old Pali Rd.||||||Honolulu|HI||Honolulu|US |96817|||||||||
+|04/16/2012||011064|||Home Address|9066 San Juan Ct||||||Gilroy|CA||Santa Clara|US |95020|||||||||
+|07/24/1992||000750|||Home Address|1233 Olympic Drive||||||Milpitas|CA||Santa Clara|US |95035|||||||||
+|03/01/2013||011112|||Home Address|1078 Nottingham Pl||||||San Jose|CA||Santa Clara|US |95117|||||||||
+|01/29/2001||010327|||Home Address|2363 Flint Ave||||||San Jose|CA||Santa Clara|US |95148|||||||||
+|10/19/1998||001115|||Home Address|540 Bonita Ave., |Sp#723|||||San Jose|CA||Santa Clara|US |95116|||||||||
+|01/28/2013||011173|||Home Address|1585 Hearthstone Dr||||||San Jose|CA||Santa Clara|US |95122|||||||||
+|04/19/2004||010469|||Home Address|555 Sugarloaf Road||||||Scotts Valley|CA||Santa Cruz|US |95066|||||||||
+|07/10/2000||010187|||Home Address|1834 Queen Elizabeth||||||San Jose|CA||Santa Clara|US |95132|||||||||
+|02/13/2012||011046|||Home Address|866 s. 10th street||||||San Jose|CA||Santa Clara|US |95112|||||||||
+|08/23/2010||010961|||Home Address|416 Lily Ann Way||||||San Jose|CA||Santa Clara|US |95123|||||||||
+|09/09/2002||010403|||Home Address|493 Caprice Drive||||||San Jose|CA||Santa Clara|US |95123|||||||||
+|01/05/2004||010451|||Home Address|335 Colville Dr||||||San Jose|CA||Santa Clara|US |95123|||||||||
+|10/18/2010||010980|||Home Address|3061 Yancy Dr||||||San Jose|CA||Santa Clara|US |95148|||||||||
+|04/02/2012||011058|||Home Address|2599 Flory Drive||||||San Jose|CA||Santa Clara|US |95121|||||||||
+|08/24/2009||010879|||Home Address|1175 Formosa Ridge||||||San Jose|CA||Santa Clara|US |95127|||||||||
+|06/16/2008||010809|||Home Address|555 Umbarger Rd#3||||||San Jose|CA||Santa Clara|US |95111|||||||||
+|03/12/2002||010379|||Home Address|548 Lily Ann Way||||||San Jose|CA||Santa Clara|US |95123|||||||||
+|10/03/2005||010581|||Home Address|3083 Delta Road||||||San Jose|CA||Santa Clara|US |95135|||||||||
+|02/04/1993||000806|||Home Address|2144 Toryglen Way||||||San Jose|CA||Santa Clara|US |95121|||||||||
+|12/14/2009||010899|||Home Address|5535 Don Juan Cir||||||San Jose|CA||Santa Clara|US |95123|||||||||
+|10/19/1998||001506|||Home Address|5302 Mango Blosom Ct||||||San Jose|CA||Santa Clara|US |95123|||||||||
+|04/04/2011||010991|||Home Address|3874 Linton Ct.||||||San Jose|CA||Santa Clara|US |95121|||||||||
+|06/20/2005||010541|||Home Address|2685 Toy Lane||||||San Jose|CA||Santa Clara|US |95121|||||||||
+|04/14/2010||010929|||Home Address|1824 Loyola Dr.||||||San Jose|CA||Santa Clara|US |95122|||||||||
+|02/03/2003||010408|||Home Address|1741 Sageland Dr.||||||San Jose|CA||Santa Clara|US |95131|||||||||
+|08/15/2000||010208|||Home Address|1339 Turrett Dr||||||San Jose|CA||Santa Clara|US |95131|||||||||
+|08/28/2000||010229|||Home Address|60 East Second St.||||||Morgan Hill|CA||Santa Clara|US |95037|||||||||
+|08/18/1998||001120|||Home Address|1649 Mabury Road||||||San Jose|CA||Santa Clara|US |95133|||||||||
+|05/29/2001||010356|||Home Address|2823 Mossmill Ct.||||||San Jose|CA||Santa Clara|US |95121|||||||||
+|04/10/2012||011060|||Home Address|2230 Seacliff Dr||||||Milpitas|CA||Santa Clara|US |95035|||||||||
+|08/18/1998||000851|||Home Address|1916 E. 25th Street||||||Oakland|CA||Alameda|US |94606|||||||||
+|08/13/2012||011069|||Home Address|2149 Inman way||||||San Jose|CA||Santa Clara|US |95122|||||||||
+|06/21/2006||010643|||Home Address|10275 Lucky Ct.||||||Gilroy|CA||Santa Clara|US |95020|||||||||
+|06/03/2013||011104|||Home Address|1773 Llyod C Gary Dr||||||Tracy|CA||San Joaquin|US |95376|||||||||
+|01/22/2013||011171|||Home Address|2053 Croner Place||||||San Jose|CA||Santa Clara|US |95131|||||||||
+|04/17/2012||011065|||Home Address|1416 Nottingham Circle||||||Los Banos|CA||Merced|US |93635|||||||||
+|08/23/2010||010963|||Home Address|17420 Cristina Ct.||||||Morgan Hill|CA||Santa Clara|US |95037|||||||||
+|11/23/2009||010895|||Home Address|64 Park Belmont Pl||||||San Jose|CA||Santa Clara|US |95136|||||||||
+|10/19/1998||000557|||Home Address|3553 Squirecreek circle||||||San Jose|CA||Santa Clara|US |95121|||||||||
+|05/05/2003||010415|||Home Address|4055 Via Cristobal||||||Campbell|CA||Santa Clara|US |95008|||||||||
+|03/08/2011||010992|||Home Address|1502 Lochner Dr.||||||San Jose|CA||Santa Clara|US |95127|||||||||
+|03/16/2007||010743|||Home Address|9714 Tapestry Drive ||||||Gilroy |CA||Santa Clara|US |95020|||||||||
+|03/12/2007||010739|||Home Address|1239 Sylvia Dr.||||||San Jose|CA||Santa Clara|US |95121|||||||||
+|03/12/2012||011055|||Home Address|947 Lundy Ave #104||||||San Jose|CA||Santa Clara|US |95133|||||||||
+|10/18/2005||010586|||Home Address|1739 Sundown Ln||||||San Jose|CA||Santa Clara|US |95127|||||||||
+|03/05/2012||011049|||Home Address|14289 Sobey Rd||||||Saratoga|CA||Santa Clara|US |95070|||||||||
+|11/01/2011||011038|||Home Address|10390 Reva CT||||||San Jose|CA||Santa Clara|US |95127|||||||||
+|12/16/2004||010513|||Home Address|10 Heath St.||||||Milpitas|CA||Santa Clara|US |95035|||||||||
+|09/09/2010||010970|||Home Address|615 Rough and Ready, Rd||||||San Jose|CA||Santa Clara|US |95133|||||||||
+|04/06/1999||010022|||Home Address|1353 Old Stone PL||||||San Jose|CA||Santa Clara|US |95132|||||||||
+|08/18/1998||000920|||Home Address|2530 Berryessa Road,| #508|||||San Jose|CA||Santa Clara|US |95132|||||||||
+|09/10/2012||011121|||Home Address|3410 Vistaview Dr||||||San Jose|CA||Santa Clara|US |95132|||||||||
+|07/29/2008||010816|||Home Address|1350 Oakland Rd, Space|#41|||||San Jose|CA||Santa Clara|US |95112|||||||||
+|09/30/2013||011232|||Home Address|1414 Dornoch Ave||||||San jose|CA||Santa Clara|US |95122|||||||||
+|09/05/2006||010673|||Home Address|711 Applause Place||||||San Jose|CA||Santa Clara|US |95134|||||||||
+|05/23/2006||010626|||Home Address|2132 Ashwood Ln||||||San Jose|CA||Santa Clara|US |95132|||||||||
+|10/14/2013||011237|||Home Address|3749 Jasmine Circle||||||San JOse|CA||Santa Clara|US |95135|||||||||
+|09/13/2010||010973|||Home Address|P.O. Box 731724||||||San Jose|CA||Santa Clara|US |95173|||||||||
+|04/18/2005||010524|||Home Address|545 Lily Ann Way||||||San Jose|CA||Santa Clara|US |95123|||||||||
+|12/01/2012||011084|||Home Address|321 Kirsmer St||||||Milpitas|CA||Santa Clara|US |95035|||||||||
+|09/10/2012||011126|||Home Address|305 Vineyard, Town Center| #211|||||Morgan Hill|CA||Santa Clara|US |95037|||||||||
+|07/06/1999||010062|||Home Address|703 Ashton Oaks Way||||||San Jose|CA||Santa Clara|US |95138|||||||||
+|08/25/2010||010965|||Home Address|18205 Sabini Court||||||Morgan Hill|CA||Santa Clara|US |95037|||||||||
+|12/01/2013||010974|||Home Address|6152 Glen Harbor Dr.||||||San Jose|CA||Santa Clara|US |95123|||||||||
+|03/04/2013||011184|||Home Address|6567 San Ignacio Ave ||||||San Jose|CA||Santa Clara|US |95119|||||||||
+|10/01/2013||011234|||Home Address|190 Ryland st #5312||||||San Jose|CA||Santa Clara|US |95110|||||||||
+|06/03/2013||011140|||Home Address|550 Moreland way Apt |2214|||||Santa Clara|CA||Santa Clara|US |95054|||||||||
+|09/26/2011||011032|||Home Address|7219 Carr Pl||||||Gilroy|CA||Santa Clara|US |95020|||||||||
+|04/10/2012||011063|||Home Address|1614 Orando Dr||||||San Jose|CA||Santa Clara|US |95122|||||||||
+|10/06/2003||010430|||Home Address|1554 Hemming Way Rd||||||San Jose|CA||Santa Clara|US |95132|||||||||
+|06/11/1990||000525|||Home Address|1882 Diamente Ct||||||San Jose|CA||Santa Clara|US |95116|||||||||
+|01/26/1998||001540|||Home Address|111 Barnard ave |Spc#25|||||San Jose|CA||Santa Clara|US |95112|||||||||
+|11/19/2012||011159|||Home Address|6235 Snell Ave||||||San Jose|CA||Santa Clara|US |95123|||||||||
+|08/17/1990||010015|||Home Address|16395 DEL MONTE AVE,| APT # 274 |||||Morgan Hill|CA||Santa Clara|US |95037|||||||||
+|08/15/2005||010556|||Home Address|975 Ferragalli Ct.||||||Gilroy|CA||Santa Clara|US |95020|||||||||
+|07/25/2005||010549|||Home Address|1601 Dry Creek Road||||||San Jose|CA||Santa Clara|US |95125|||||||||
+|02/22/2010||010917|||Home Address|1090 Del Mar Ave.||||||San Jose|CA||Santa Clara|US |95128|||||||||
+|06/03/2013||011152|||Home Address|1358 Carterwood Place||||||San Jose|CA||Santa Clara|US |95121|||||||||
+|12/02/2009||010897|||Home Address|2352 Warfield Way #d||||||San Jose|CA||Santa Clara|US |95122|||||||||
+|11/05/2007||010774|||Home Address|3547 Corsica Ct.||||||San Jose|CA||Santa Clara|US |95148|||||||||
+|01/14/2008||010781|||Home Address|2352 Warfield Way||||||San Jose|CA||Santa Clara|US |95122|||||||||
+|10/24/2005||010587|||Home Address|7054 Goldenspur Loop||||||San Jose|CA||Santa Clara|US |95138|||||||||
+|12/01/2012||011036|||Home Address|559 Cedro St||||||San Jose|CA||Santa Clara|US |95111|||||||||
+|05/03/2010||010936|||Home Address|2352 Warfield Way#d||||||San Jose|CA||Santa Clara|US |95122|||||||||
+|09/09/2008||010834|||Home Address|2685 Toy Ln||||||San Jose|CA||Santa Clara|US |95121|||||||||
+|06/03/2013||011133|||Home Address|3348 Quesada Dr||||||San Jose|CA||Santa Clara|US |95148|||||||||
+|08/13/2007||010758|||Home Address|1848 Perrone Cir||||||San Jose|CA||Santa Clara|US |95116|||||||||
+|03/16/2010||010919|||Home Address|3186 Kimlee Drive||||||San Jose|CA||Santa Clara|US |95132|||||||||
+|06/25/2001||010361|||Home Address|713 Adagio Way||||||San Jose|CA||Santa Clara|US |95111|||||||||
+|06/02/1999||010056|||Home Address|1231 Wentworth Way||||||San Jose|CA||Santa Clara|US |95121|||||||||
+|12/03/2012||011076|||Home Address|2438 Sleepy Hollow, Lane||||||San Jose|CA||Santa Clara|US |95116|||||||||
+|11/15/2000||010297|||Home Address|713 Adagio Way||||||San Jose|CA||Santa Clara|US |95111|||||||||
+|06/03/2013||011154|||Home Address|3569 Martigues Ct||||||San Jose|CA||Santa Clara|US |95148|||||||||
+|11/20/2007||010776|||Home Address|1101 Bendmill Way||||||San Jose|CA||Santa Clara|US |95121|||||||||
+|03/01/2013||011080|||Home Address|117 Cadwell Court||||||San Jose|CA||Santa Clara|US |95138|||||||||
+|07/01/2013||011210|||Home Address|305 Vineyard, Town Center |#211|||||Morgan Hill|ca||Santa Clara|US |95037|||||||||
+|04/19/2010||010930|||Home Address|270 Umbarger Rd |#96|||||San Jose|CA||Santa Clara|US |95111|||||||||
+|05/02/2005||010532|||Home Address|3276 Moreno Ave.||||||San Jose|CA||Santa Clara|US |95127|||||||||
+|07/15/2013||011220|||Home Address|6575 Ivy Lane||||||San Jose|CA||Santa Clara|US |95129|||||||||
+|08/19/2002||010399|||Home Address|3830 Seven Trees Blv||||||San Jose|CA||Santa Clara|US |95111|||||||||
+|05/16/2011||011001|||Home Address|77 Avenida Espana||||||San Jose|CA||Santa Clara|US |95139|||||||||
+|10/27/2005||010588|||Home Address|2563 Riparian Court||||||San Jose|CA||Santa Clara|US |95133|||||||||
+|08/02/1958||011252|||Home Address|837 Beaver Creek Way||||||San Jose|CA||Santa Clara|US |95133|||||||||
+|06/03/2013||011124|||Home Address|2444 Balme Dr||||||San Jose|CA||Santa Clara|US |95122|||||||||
+|12/20/1999||010104|||Home Address|60 Farrell Ave.||||||Gilroy|CA||Santa Clara|US |95020|||||||||
+|08/29/2011||011020|||Home Address|2621 Sadies Drive||||||Hollister|CA||Santa Clara|US |95023|||||||||
+|04/06/1999||001008|||Home Address|1873 Laporte Ave.||||||San Jose|CA||Santa Clara|US |95122|||||||||
+|07/12/2010||010951|||Home Address|3767 Inglewood drive||||||Santa Clara|CA||Santa Clara|US |95054|||||||||
+|05/19/2008||010800|||Home Address|19139 Chinook Court||||||Morgan Hill|CA||Santa Clara|US |95037|||||||||
+|07/11/2011||011012|||Home Address|316 Grey Ghost Ave||||||San Jose|CA||Santa Clara|US |95111|||||||||
+|01/02/2008||010386|||Home Address|3945 Baronet Ct.||||||San Jose|CA||Santa Clara|US |95121|||||||||
+|11/03/2003||010437|||Home Address|63 La Crosse Drive||||||Morgan Hill|CA||Santa Clara|US |95037|||||||||
+|06/03/2013||011145|||Home Address|416 n. 9th st |#A|||||San Jose|CA||Santa Clara|US |95112|||||||||
+|05/23/2011||011005|||Home Address|8830 Zinnia St||||||Gilroy|CA||Santa Clara|US |95020|||||||||
+|10/27/2003||010433|||Home Address|951 Erie Circle||||||Milpitas|CA||Santa Clara|US |95035|||||||||
+|02/02/2004||010456|||Home Address|209 Verano Dr.||||||Daly City|CA||San Mateo|US |94015|||||||||
+|08/14/1997||001413|||Home Address|105 Tennant Avenue||||||San Jose|CA||Santa Clara|US |95138|||||||||
+|08/30/2010||010967|||Home Address|P.O.Box 1552||||||Pleasanton|CA||Alameda|US |94566|||||||||
+|06/03/2013||011153|||Home Address|32 holloway Ave||||||San Francisco|CA||San Francisco|US |94112|||||||||
+|03/01/2013||011092|||Home Address|1520 E. Capitol Expy, |Spc. #175|||||San Jose|CA||Santa Clara|US |95121|||||||||
+|03/13/2006||010611|||Home Address|2635 Sturla Dr.||||||San Jose|CA||Santa Clara|US |95148|||||||||
+|12/01/2012||011075|||Home Address|67 Rosewell Ct||||||San Jose|CA||Santa Clara|US |95138|||||||||
+|11/22/2004||010509|||Home Address|218 Goldenrain Ct.||||||San Jose|CA||Santa Clara|US |95111|||||||||
+|01/27/2004||010454|||Home Address|4350 Stone Canyon Dr||||||San Jose|CA||Santa Clara|US |95136|||||||||
+|11/13/2006||010721|||Home Address|2286 Zoria Cir||||||San Jose|CA||Santa Clara|US |95131|||||||||
+|11/22/2004||010508|||Home Address|4350 Stone Canyon Dr||||||San Jose|CA||Santa Clara|US |95136|||||||||
+|01/17/2000||010117|||Home Address|2961 Masonwood St||||||San Jose|CA||Santa Clara|US |95148|||||||||
+|01/30/2001||010328|||Home Address|3111 Yakima Cir.||||||San Jose|CA||Santa Clara|US |95121|||||||||
+|06/28/2010||010945|||Home Address|2424 damey drive||||||San Jose|CA||Santa Clara|US |95116|||||||||
+|03/04/2002||010378|||Home Address|1246 Sagemill Ct.||||||San Jose|CA||Santa Clara|US |95121|||||||||
+|09/09/2008||010833|||Home Address|2115 Alameda Ave, |#B|||||Alameda|CA||Alameda|US |94501|||||||||
+|03/01/2013||011094|||Home Address|6560 Camden Ave||||||San Jose|CA||Santa Clara|US |95120|||||||||
+|04/23/1999||001106|||Home Address|1763 Lloyd C Gary Dr||||||Tracy|CA||San Joaquin|US |95376|||||||||
+|09/25/2006||010693|||Home Address|1793 Arroya De Oro||||||San Jose|CA||Santa Clara|US |95116|||||||||
+|10/25/2010||010981|||Home Address|1191 Clayburn Lane||||||San Jose|CA||Santa Clara|US |95121|||||||||
+|05/09/2005||010535|||Home Address|18929 Devon Ave||||||Saratoga|CA||Santa Clara|US |95070|||||||||
+|06/03/2013||011136|||Home Address|2855 FairFax ct||||||San Jose|CA||Santa Clara|US |95148|||||||||
+|04/14/2008||010794|||Home Address|5450 Monterey Rd, Spc|#56|||||San Jose|CA||Santa Clara|US |95111|||||||||
+|06/03/2013||011086|||Home Address|165 Blossom Hill Rd |#538|||||San Jose|CA||Santa Clara|US |95123|||||||||
+|05/03/2010||010935|||Home Address|3860 Rexwood Ct.||||||San Jose|CA||Santa Clara|US |95121|||||||||
+|06/23/2008||010810|||Home Address|5278 Broken Lance Ct||||||San Jose|CA||Santa Clara|US |95136|||||||||
+|12/03/2012||011099|||Home Address|2796 WestGrove Lane||||||San Jose|CA||Santa Clara|US |95148|||||||||
+|09/09/2008||010836|||Home Address|883 Salt Lake Dr.||||||San Jose|CA||Santa Clara|US |95133|||||||||
+|12/28/2009||010905|||Home Address|2922 Trinity River, Court||||||San Jose|CA||Santa Clara|US |95111|||||||||
+|08/30/2010||010966|||Home Address|51 Roundtable Dr.|#3|||||San Jose|CA||Santa Clara|US |95111|||||||||
+|02/13/2006||010608|||Home Address|2355 Stokes St.||||||San Jose|CA||Santa Clara|US |95128|||||||||
+|06/03/2013||011151|||Home Address|4022 Forest Brook Way||||||San Jose|CA||Santa Clara|US |95111|||||||||
+|05/03/2004||010475|||Home Address|196 Checkers Drive||||||San Jose|CA||Santa Clara|US |95116|||||||||
+|08/14/1997||001492|||Home Address|2647 Senter Rd.|#65|||||San Jose|CA||Santa Clara|US |95111|||||||||
+|08/14/1997||001478|||Home Address|836 Sorrento Dr.||||||Gilroy|CA||Santa Clara|US |95020|||||||||
+|07/06/2010||010948|||Home Address|7547 Pickeman Ct.||||||Gilroy|CA||Santa Clara|US |95020|||||||||
+|08/238/2010||010964|||Home Address|2600 Senter Road, |Space#171|||||San Jose|CA||Santa Clara|US |95111|||||||||
+|04/10/2006||010617|||Home Address|2150 Monterey Rd.,| #153|||||San Jose|CA||Santa Clara|US |95112|||||||||
+|09/14/2006||010681|||Home Address|3348 Vangorn Way||||||San Jose|CA||Santa Clara|US |95121|||||||||
+|09/03/2003||010425|||Home Address|3061 Yancy Dr.||||||San Jose|CA||Santa Clara|US |95148|||||||||
+|05/30/2006||010630|||Home Address|900 Golden Wheel Park Dr| #165|||||San Jose|CA||Santa Clara|US |95112|||||||||
+|06/28/2010||010943|||Home Address|1816 La Porte Ave.||||||San Jose|CA||Santa Clara|US |95122|||||||||
+|08/14/1997||001494|||Home Address|5802 Southview Dr||||||San Jose|CA||Santa Clara|US |95138|||||||||
+|10/19/1998||000829|||Home Address|1833 Blue Spruce Ct||||||Milpitas|CA||Santa Clara|US |95035|||||||||
+|06/13/2007||010755|||Home Address|1783 Ivy Mills Ln||||||San Jose|CA||Santa Clara|US |95122|||||||||
+|04/10/2012||011062|||Home Address|5773 Barnswell Way||||||San Jose|CA||Santa Clara|US |95138|||||||||
+|06/22/2010||010941|||Home Address|3404 Blue Mountain||||||San Jose|CA||Santa Clara|US |95127|||||||||
+|12/01/2012||011141|||Home Address|3160 OakBridge Dr||||||San Jose|CA||Santa Clara|US |95121|||||||||
+|10/19/1998||001592|||Home Address|2921 Lambeth Ct.||||||San Jose|CA||Santa Clara|US |95132|||||||||
+|11/15/1999||010085|||Home Address|5310 Pebbletree Way||||||San Jose|CA||Santa Clara|US |95111|||||||||
+|09/13/2010||010972|||Home Address|2130 Osborne Circle||||||Hollister|CA||San Benito |US |95023|||||||||
+|10/08/2012||011137|||Home Address|10361 Orange Ave||||||Cupertino|CA||Santa Clara|US |95014|||||||||
+|06/03/2013||011120|||Home Address|1295 acadia ave||||||Milpitas|CA||Santa Clara|US |95035|||||||||
+|09/27/2004||010497|||Home Address|2015 South White Rd||||||San Jose|CA||Santa Clara|US |95148|||||||||
+|09/22/2008||010850|||Home Address|326 Checkers Dr., |Apt#105|||||San Jose|CA||Santa Clara|US |95133|||||||||
+|06/05/2000||010164|||Home Address|7284 sleepy creek drive||||||San Jose|CA||Santa Clara|US |95120|||||||||
+|03/13/2000||010133|||Home Address|4161 Davis St.||||||Santa Clara|CA||Santa Clara|US |95054|||||||||
+|06/03/2013||011150|||Home Address|161 KenBrook circle||||||San Jose|CA||Santa Clara|US |95111|||||||||
+|04/06/1999||000728|||Home Address|1500 Virginia Pl|#103|||||San Jose|CA||Santa Clara|US |95116|||||||||
+|05/02/2006||010623|||Home Address|7217 Clarendon St.|#1|||||San Jose|CA||Santa Clara|US |95129|||||||||
+|03/17/2008||010789|||Home Address|2600 Corde Terra, Village |# 5410|||||San Jose|CA||Santa Clara|US |95111|||||||||
+|06/28/2010||010942|||Home Address|200 Ford Rd|#32|||||San Jose|CA||Santa Clara|US |95138|||||||||
+|08/16/2010||010956|||Home Address|2647 Senter Rd |#370|||||San Jose|CA||Santa Clara|US |95111|||||||||
+|10/19/1998||001609|||Home Address|177 Senter Rd.||||||San Jose|CA||Santa Clara|US |95111|||||||||
+|02/04/2013||011178|||Home Address|881 Toyon Ave||||||San Jose|CA||Santa Clara|US |95127|||||||||
+|10/22/1990||000614|||Home Address|1435 Maple Ct.||||||Tracy|CA||San Joaquin|US |95376|||||||||
+|06/03/2013||011146|||Home Address|16780 Jackson Oaks Drive||||||Morgan Hill|CA||Santa Clara|US |95037|||||||||
+|09/27/2000||010252|||Home Address|1220 Tasman Dr |#68|||||Sunnyvale|CA||Santa Clara|US |94089|||||||||
+|12/07/2009||010898|||Home Address|2835 Schooner Ct||||||San Jose|CA||Santa Clara|US |95148|||||||||
+|06/11/1990||000090|||Home Address|1267 S. Karen Ave.||||||Fresno|CA||Fresno|US |93727|||||||||
+|04/22/2010||010931|||Home Address|1803 Luby Dr||||||San Jose|CA||Santa Clara|US |95133|||||||||
+|09/07/2010||010969|||Home Address|1873 La Porte Ave.||||||San Jose|CA||Santa Clara|US |95122|||||||||
+|06/03/2013||011135|||Home Address|2600 Senter Road, |Space#298|||||San Jose|CA||Santa Clara|US |95111|||||||||
+|05/07/2008||010796|||Home Address|2600 Senter Road, |Space#298|||||San Jose|CA||Santa Clara|US |95111|||||||||
+|08/22/2005||010567|||Home Address|2517 Shilshore Cir.||||||San Jose|CA||Santa Clara|US |95121|||||||||
+|10/19/1998||001502|||Home Address|270 Umbarger Rd| #8|||||San Jose|CA||Santa Clara|US |95111|||||||||
+|12/17/2007||010777|||Home Address|3638 Magellan Ave.||||||Santa Clara|CA||Santa Clara|US |95051|||||||||
+|06/20/2005||010544|||Home Address|4136 Arezzo Pointe Ct.  ||||||San Jose|CA||Santa Clara|US |95148|||||||||
+|03/12/2007||010738|||Home Address|240 Marks Drive||||||Hollister|CA||San Benito |US |95023|||||||||
+|09/12/2005||010577|||Home Address|2592 Sherlock Drive||||||San Jose|CA||Santa Clara|US |95121|||||||||
+|08/14/1997||000541|||Home Address|16300 Dewitt Ave.||||||Morgan Hill|CA||Santa Clara|US |95037|||||||||
+|05/28/2013||011203|||Home Address||||||||||Santa Clara|||||||||||
+|12/01/2012||011026|||Home Address|1533 Alta Geln, |Apt# 20|||||San Jose|CA||Santa Clara|US |95125|||||||||
+|08/19/2005||010570|||Home Address|323 Gloria Ave||||||San Jose|CA||Santa Clara|US |95127|||||||||
+|11/10/2008||010857|||Home Address|3615 Kerwood Way||||||San Jose|CA||Santa Clara|US |95127|||||||||
+|09/15/2009||010880|||Home Address|10521 Observatory Drive||||||San Jose|CA||Santa Clara|US |95127|||||||||
+|06/26/2006||010644|||Home Address|6300 Snowberry Ct.||||||Gilroy|CA||Santa Clara|US |95020|||||||||
+|03/15/2011||010994|||Home Address|5026 Royal Estates ct||||||San Jose|CA||Santa Clara|US |95135|||||||||
+|04/06/1999||001571|||Home Address|1855 Luby Drive|#10|||||San Jose|CA||Santa Clara|US |95133|||||||||
+|10/05/2009||010883|||Home Address|6027 Monteverde Dr.||||||San Jose|CA||Santa Clara|US |95120|||||||||
+|06/28/2010||000743|||Home Address|128 Southview Ct.||||||San Jose|CA||Santa Clara|US |95138|||||||||
+|05/04/2009||010701|||Home Address|1882 Diamente Ct.||||||San Jose|CA||Santa Clara|US |95116|||||||||
+|01/20/2009||010860|||Home Address|171 Wembley Drive||||||Daly City|CA||San Mateo|US |94015|||||||||
+|01/08/2007||010731|||Home Address|3310 Farthing Way||||||San Jose|CA||Santa Clara|US |95132|||||||||
+|05/24/2010||010937|||Home Address|367 N. Temple Drive||||||Milpitas|CA||Santa Clara|US |95035|||||||||
+|02/08/2010||010911|||Home Address|110 Muirfield Dr.||||||San Jose|CA||Santa Clara|US |95116|||||||||
+|04/22/2010||010932|||Home Address|853 Mary Caroline Drive||||||San Jose|CA||Santa Clara|US |95133|||||||||
+|11/13/2000||010294|||Home Address|2961 Mason Wood St.||||||San Jose|CA||Santa Clara|US |95148|||||||||
+|03/07/2011||010993|||Home Address|2974 Crystal Creek, Dr.||||||San Jose|CA||Santa Clara|US |95133|||||||||
+|05/03/2004||010474|||Home Address|1520 E. Capitol Expw, |#141|||||San Jose|CA||Santa Clara|US |95121|||||||||
+|08/28/2006||010668|||Home Address|1211 Prune St.||||||Hollister|CA||San Benito|US |95023|||||||||
+|06/03/2013||011155|||Home Address|1400 Bowe ave |#1401|||||Santa Clara|CA||Santa Clara|US |95051|||||||||
+|08/02/2010||010953|||Home Address|794 Orkney Avenue||||||Santa Clara|CA||Santa Clara|US |95054|||||||||
+|03/29/2004||010467|||Home Address|1319 Old Abbey Place||||||San Jose|CA||Santa Clara|US |95132|||||||||
+|08/17/2005||010559|||Home Address|2693 Westberry Dr||||||San Jose|CA||Santa Clara|US |95132|||||||||
+|10/30/2006||010715|||Home Address|2528 Home Crest Dr||||||San Jose|CA||Santa Clara|US |95148|||||||||
+|07/01/2013||011215|||Home Address|2696 Apollo drive||||||san jose|ca||Santa Clara|US |95121|||||||||
+|06/11/1990||000357|||Home Address|2132 Ashwood Lane||||||San Jose|CA||Santa Clara|US |95132|||||||||
+|09/09/2008||010832|||Home Address|1520 E Capitol Expy, |SPC 240|||||San Jose|CA||Santa Clara|US |95121|||||||||
+|09/11/2006||010678|||Home Address|3818 Kauai Dr.||||||San Jose|CA||Santa Clara|US |95111|||||||||
+|10/28/2003||010434|||Home Address|1382 Taper Ct||||||San Jose|CA||Santa Clara|US |95122|||||||||
+|10/13/2008||010852|||Home Address|1842 Morrill Ave||||||San Jose|CA||Santa Clara|US |95132|||||||||
+|08/23/2010||010962|||Home Address|5265 Edenvale Ave.||||||San Jose|CA||Santa Clara|US |95136|||||||||
+|06/03/2013||011106|||Home Address|536 Mountain Home Drive||||||San Jose|CA||Santa Clara|US |95136|||||||||
+|05/31/2007||010754|||Home Address|1783 Ivy Mills Ln||||||San Jose|CA||Santa Clara|US |95122|||||||||
+|02/18/2010||010915|||Home Address|1412 Joe Dimaggio Ct||||||San Jose|CA||Santa Clara|US |95122|||||||||
+|04/14/2010||010927|||Home Address|2994 Aetna Way||||||San Jose|CA||Santa Clara|US |95121|||||||||
+|04/20/1999||010046|||Home Address|3121 Whiterose Ct.||||||San Jose|CA||Santa Clara|US |95148|||||||||
+|04/17/1996||001167|||Home Address|1324 Lightland Road||||||San Jose|CA||Santa Clara|US |95121|||||||||
+|03/27/2006||010615|||Home Address|1908 Senter Road|#263|||||San Jose|CA||Santa Clara|US |95112|||||||||
+|05/16/2011||011003|||Home Address|128 Southview Ct.||||||San Jose|CA||Santa Clara|US |95138|||||||||
+|06/03/2013||011108|||Home Address|135 Nashua Ct||||||San Jose|CA||Santa Clara|US |95139|||||||||
+|01/04/2010||010908|||Home Address|2710 Apollo drive ||||||San Jose|CA||Santa Clara|US |95121|||||||||
+|01/23/2006||010606|||Home Address|3094 Seafield ct||||||San Jose|CA||Santa Clara|US |95148|||||||||
+|12/13/2010||010986|||Home Address|2127 Rio Barranca CT||||||San Jose|CA||Santa Clara|US |95116|||||||||
+|12/12/2005||010599|||Home Address|1305 Cotterell Dr.||||||San Jose|CA||Santa Clara|US |95121|||||||||
+|11/04/2013||011244|||Home Address|3216 Lyter Way||||||San Jose|CA||Santa Clara|US |95135|||||||||
+|04/01/2009||010868|||Home Address|2015 Portsmouth Ct.||||||San Jose|CA||Santa Clara|US |95132|||||||||
+|09/23/2010||010978|||Home Address|1318 Calle Oriente| #2|||||Milpitas|CA||Santa Clara|US |95035|||||||||
+|12/19/2005||010600|||Home Address|2784 Lena Dr.||||||San Jose|CA||Santa Clara|US |95124|||||||||
+|06/11/1990||000359|||Home Address|3295 Fawn Drive||||||San Jose|CA||Santa Clara|US |95124|||||||||
+|11/05/2009||010888|||Home Address|4468 Poinsettia Ct||||||San Jose|CA||Santa Clara|US |95136|||||||||
+|11/14/2005||010594|||Home Address|138 Chynoweth ave ||||||San Jose|CA||Santa Clara|US |95136|||||||||
+|07/01/2013||011131|||Home Address|2600 Corde Terra, |Apt #5112|||||San Jose|CA||Santa Clara|US |95111|||||||||
+|07/31/2000||010201|||Home Address|6130 Monterey Hwy, |Spc#55|||||San Jose|CA||Santa Clara|US |95138|||||||||
+|04/25/2005||010529|||Home Address|1613 Ambergrove Dr., |Bldg. C|||||San Jose|CA||Santa Clara|US |95131|||||||||
+|03/13/2012||011050|||Home Address|2197 Cinderella Ln||||||San Jose|CA||Santa Clara|US |95116|||||||||
+|09/19/2007||010767|||Home Address|3133 Perivale Ct.||||||San Jose|CA||Santa Clara|US |95148|||||||||
+|09/06/2005||010542|||Home Address|2595 Las Palmas Way||||||San Jose|CA||Santa Clara|US |95133|||||||||
+|09/25/1995||001064|||Home Address|3267 Desertwood Ln||||||San Jose|CA||Santa Clara|US |95132|||||||||
+|07/11/2011||011014|||Home Address|293 Ely Court||||||San Jose|CA||Santa Clara|US |95123|||||||||
+|08/30/2005||010574|||Home Address|2984 Samaria Place||||||San Jose|CA||Santa Clara|US |95111|||||||||
+|02/10/2003||010409|||Home Address|676 Blue Ridge Drive||||||Boulder Creek|CA||Santa Cruz|US |95006|||||||||
+|08/16/2010||010958|||Home Address|11565 Padre Way||||||Dublin|CA||Alameda|US |94568|||||||||
+|09/18/2006||010684|||Home Address|1424 Redmond Ave||||||San Jose|CA||Santa Clara|US |95120|||||||||
+|12/01/2012||011040|||Home Address|6174 Cottle Rd, |#F2|||||San Jose|CA||Santa Clara|US |95123|||||||||
+|11/18/2002||010405|||Home Address|2431 Mattos Drive||||||Milpitas|CA||Santa Clara|US |95035|||||||||
+|03/06/2006||010609|||Home Address|2022 Lockwood Dr||||||San Jose|CA||Santa Clara|US |95132|||||||||
+|06/03/2013||011139|||Home Address|399 Timber way||||||Milpitas|CA||Santa Clara|US |95035|||||||||
