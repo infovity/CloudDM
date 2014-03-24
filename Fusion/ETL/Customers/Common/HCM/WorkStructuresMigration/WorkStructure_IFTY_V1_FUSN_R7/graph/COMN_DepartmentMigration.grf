@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Graph author="Acer" created="Mon Mar 10 14:16:09 IST 2014" guiVersion="3.5.0" id="1394441672752" licenseType="Community" modified="Wed Mar 12 14:23:07 IST 2014" modifiedBy="Acer" name="COMN_DEPARTMENTMIGRATION" revision="1.13" showComponentDetails="true">
+<Graph author="Acer" created="Mon Mar 10 14:16:09 IST 2014" guiVersion="3.5.0" id="1394441672752" licenseType="Community" modified="Mon Mar 24 11:51:01 IST 2014" modifiedBy="Acer" name="COMN_DEPARTMENTMIGRATION" revision="1.14" showComponentDetails="true">
 <Global>
 <Metadata id="Metadata2" previewAttachmentCharset="ISO-8859-1">
 <Record fieldDelimiter="|" name="Depatment_FUSN_R7" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\r\n" recordSize="-1" type="delimited">
@@ -68,6 +68,7 @@
 </Record>
 </Metadata>
 <GraphParameters>
+<GraphParameter name="ID_PREFIX" value="100"/>
 <GraphParameterFile fileURL="workspace.prm"/>
 </GraphParameters>
 <Dictionary/>
@@ -84,7 +85,7 @@ NOT isnull($in.0.Department_Name)]]></attr>
 // Transforms input record into output record.
 function integer transform() {
 	$out.0.Effective_Start_Date = $in.0.Start_Date;
-	$out.0.Attribute_1 = $in.0.Department_Code;
+	$out.0.Attribute_1 = getParamValue("ID_PREFIX") + $in.0.Department_Code;
 	$out.0.Department_Set = 'Common Set';
 	$out.0.Name = $in.0.Department_Name;
 	$out.0.Status = $in.0.Status;

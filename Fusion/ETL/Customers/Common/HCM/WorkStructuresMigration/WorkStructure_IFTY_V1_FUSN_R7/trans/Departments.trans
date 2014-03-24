@@ -1,5 +1,5 @@
 $out.0.Effective_Start_Date = $in.0.Start_Date;
-	$out.0.Attribute_1 = $in.0.Department_Code;
+	$out.0.Attribute_1 = getParamValue("ID_PREFIX") + $in.0.Department_Code;
 	$out.0.Department_Set = 'Common Set';
 	$out.0.Name = $in.0.Department_Name;
 	$out.0.Status = $in.0.Status;

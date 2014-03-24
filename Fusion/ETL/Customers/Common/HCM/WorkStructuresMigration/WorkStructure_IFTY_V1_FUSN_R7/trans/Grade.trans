@@ -1,6 +1,6 @@
 $out.0.Grade_Set = 'Common Set';
 	$out.0.Grade_Name = $in.0.Grade_Name;
-	$out.0.Grade_Code = $in.0.Grade_Code;
+	$out.0.Grade_Code = getParamValue("ID_PREFIX") + $in.0.Grade_Code;
 	$out.0.Grade_Status = $in.0.Status;
 	$out.0.Legislative_Data_Group = 'USA (ZELTIQ Inc) LDG';
 	$out.0.Rate_Name = 'ZLTQ SAL GRT';

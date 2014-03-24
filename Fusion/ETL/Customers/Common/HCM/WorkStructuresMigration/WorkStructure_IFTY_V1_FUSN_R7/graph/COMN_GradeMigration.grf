@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Graph author="Nagaraju M" created="Fri Mar 07 10:07:11 GST 2014" guiVersion="3.5.0" id="1394177546327" licenseType="Community" modified="Thu Mar 13 12:12:09 IST 2014" modifiedBy="Acer" name="COMN_GRADE_MIGRATION" revision="1.15" showComponentDetails="true">
+<Graph author="Nagaraju M" created="Fri Mar 07 10:07:11 GST 2014" guiVersion="3.5.0" id="1394177546327" licenseType="Community" modified="Mon Mar 24 11:57:29 IST 2014" modifiedBy="Acer" name="COMN_GRADE_MIGRATION" revision="1.16" showComponentDetails="true">
 <Global>
 <Metadata id="Metadata0" previewAttachment="${DATAIN_DIR}/Grade.csv" previewAttachmentCharset="ISO-8859-1">
 <Record fieldDelimiter="," label="Grade.csv" name="Grade_IFTY_V1" previewAttachment="${DATAIN_DIR}/Grade.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="both" quotedStrings="false" recordDelimiter="\r\n" skipSourceRows="1" type="delimited">
@@ -38,6 +38,7 @@
 </Record>
 </Metadata>
 <GraphParameters>
+<GraphParameter name="ID_PREFIX" value="100"/>
 <GraphParameterFile fileURL="workspace.prm"/>
 </GraphParameters>
 <Dictionary/>
@@ -55,7 +56,7 @@ NOT isnull($in.0.Grade_Name)]]></attr>
 function integer transform() {
 	$out.0.Grade_Set = 'Common Set';
 	$out.0.Grade_Name = $in.0.Grade_Name;
-	$out.0.Grade_Code = $in.0.Grade_Code;
+	$out.0.Grade_Code = getParamValue("ID_PREFIX") + $in.0.Grade_Code;
 	$out.0.Grade_Status = $in.0.Status;
 	$out.0.Legislative_Data_Group = 'USA (ZELTIQ Inc) LDG';
 	$out.0.Rate_Name = 'ZLTQ SAL GRT';

@@ -3,7 +3,7 @@ $out.0.Legal_Employer = $in.0.Legal_Employer_LOV;
 	$out.0.Enterprise_Seniority_Date = $in.0.Enterprise_Seniority_Date;
 	$out.0.Legal_Employer_Seniority_Date = $in.0.Legal_Entity_Seniority_Date;
 	$out.0.Person_Attribute_1 = $in.0.Previous_paycheck_number;
-	$out.0.Person_Number = $in.0.Current_employee_Number;
+	$out.0.Person_Number = getParamValue("EMPLOYEE_ID_PREFIX") + $in.0.Current_employee_Number;
 	$out.0.Global_Last_Name = $in.0.Last_Name;
 	$out.0.Global_First_Name = $in.0.First_Name;
 	$out.0.Global_Suffix = $in.0.Suffix;
@@ -21,12 +21,23 @@ $out.0.Legal_Employer = $in.0.Legal_Employer_LOV;
 	$out.0.Region_1 = $in.1.State;
 	$out.0.Postal_Code = $in.1.Postal_Code;
 	$out.0.Region_3 = $in.1.Province;
-	$out.0.Country = $in.1.Country_LOV;
+	
+	if ( $in.1.Country_LOV == "US ") {
+		$out.0.Country = "United States";
+	} else {
+		$out.0.Country = $in.1.Country_LOV;
+	}	
 	$out.0.E_Mail_Type = $in.2.Type_LOV;
-	$out.0.E_Mail = $in.2.E_mail;
+	$out.0.E_Mail = getParamValue("EMPLOYEE_ID_PREFIX") + $in.2.E_mail;
 	$out.0.Worker_Type = 'Employee';
 	$out.0.Action = 'Hire';
-	$out.0.Legislation = $in.1.Country_LOV;
+	if ( $in.1.Country_LOV == "US ") {
+		$out.0.Legislation = "United States";
+	} else {
+		$out.0.Legislation = $in.1.Country_LOV;
+	}
+	
+	
 	$out.0.Frequency = 'Weekly';
 	$out.0.Job_Code = $in.3.Job_Code_LOV;
 	$out.0.Grade_Code = $in.3.Grades_LOV;
@@ -36,20 +47,18 @@ $out.0.Legal_Employer = $in.0.Legal_Employer_LOV;
 	$out.0.Working_at_Home = $in.3.Working_at_Home_LOV;
 	$out.0.Working_Hours = $in.3.Normal_Working_hours;
 	$out.0.Assignment_Status = $in.3.Assignment_Status_LOV;
-	$out.0.Person_Type = $in.3.Person_Types_LOV;
+		
+	if ( $in.3.Person_Types_LOV == "Regualar Employee") {
+		$out.0.Person_Type = "Employee";
+	} else {
+		$out.0.Person_Type = $in.3.Person_Types_LOV;
+	}
 	$out.0.Assignment_Category = $in.3.Assignment_Category_LOV;
 	$out.0.Phone_Type_1 = $in.4.Type_LOV;
 	$out.0.Phone_Number_1 = $in.4.Number;
 	$out.0.Area_Code_1 = $in.4.Area_Code;
+	$out.0.Business_Unit = $in.3.Business_Unit_LOV;
 	
-		if ($in.1.Country_LOV == "US")
-	{
-		$out.0.Business_Unit = "USA Inc.";
-	}
-	else
-	{
-		$out.0.Business_Unit = "UK Ltd.";
-	}
 	//
  if ($in.0.Ethnicity_LOV==null)
 	{

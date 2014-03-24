@@ -1,7 +1,7 @@
 $out.0.Effective_Start_Date = $in.0.Start_Date;
 	$out.0.Location_Set = 'Common Set';
 	$out.0.Name = $in.0.Name;
-	$out.0.Code = $in.0.Code;
+	$out.0.Code = getParamValue("ID_PREFIX") + $in.0.Code;
 	$out.0.Status = $in.0.Status;
 	$out.0.Country = $in.0.Country;
 	$out.0.Address_Line_1_or_Postal_Code = $in.0.Address_Line_1;
