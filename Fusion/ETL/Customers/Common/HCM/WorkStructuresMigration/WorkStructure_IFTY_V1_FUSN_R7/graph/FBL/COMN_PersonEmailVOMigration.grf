@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Graph author="Acer" created="Wed Mar 19 12:20:56 IST 2014" guiVersion="3.5.0" id="1395229863486" licenseType="Community" modified="Fri Mar 21 18:17:59 IST 2014" modifiedBy="Acer" name="COMN_PersonEmailVOMigration" revision="1.8" showComponentDetails="true">
+<Graph author="Acer" created="Wed Mar 19 12:20:56 IST 2014" guiVersion="3.5.0" id="1395229863486" licenseType="Community" modified="Mon Mar 24 17:57:35 IST 2014" modifiedBy="Acer" name="COMN_PersonEmailVOMigration" revision="1.24" showComponentDetails="true">
 <Global>
 <Metadata id="Metadata1">
 <Record fieldDelimiter="|" name="PersonEmailVO_FUSN_R7" recordDelimiter="\r\n" type="delimited">
@@ -24,28 +24,169 @@
 <Field label="To date " name="To_date" type="string"/>
 </Record>
 </Metadata>
+<Metadata id="Metadata6">
+<Record fieldDelimiter="|" name="PersonEthnicityVO_FUSN_R7" recordDelimiter="\r\n" type="delimited">
+<Field label="EthnicityId" name="EthnicityId" type="string"/>
+<Field label="BusinessGroupId" name="BusinessGroupId" type="string"/>
+<Field label="LegislationCode" name="LegislationCode" type="string"/>
+<Field label="PersonId" name="PersonId" type="string"/>
+<Field label="DeclarerId" name="DeclarerId" type="string"/>
+<Field label="Ethnicity" name="Ethnicity" type="string"/>
+<Field label="PrimaryFlag" name="PrimaryFlag" type="string"/>
+<Field label="ATTRIBUTE1" name="ATTRIBUTE1" type="string"/>
+<Field label="ATTRIBUTE2" name="ATTRIBUTE2" type="string"/>
+<Field label="ATTRIBUTE3" name="ATTRIBUTE3" type="string"/>
+<Field label="ATTRIBUTE4" name="ATTRIBUTE4" type="string"/>
+<Field label="ATTRIBUTE5" name="ATTRIBUTE5" type="string"/>
+<Field label="ATTRIBUTE6" name="ATTRIBUTE6" type="string"/>
+<Field label="ATTRIBUTE7" name="ATTRIBUTE7" type="string"/>
+<Field label="ATTRIBUTE8" name="ATTRIBUTE8" type="string"/>
+<Field label="ATTRIBUTE9" name="ATTRIBUTE9" type="string"/>
+<Field label="ATTRIBUTE10" name="ATTRIBUTE10" type="string"/>
+<Field label="ATTRIBUTE11" name="ATTRIBUTE11" type="string"/>
+<Field label="ATTRIBUTE12" name="ATTRIBUTE12" type="string"/>
+<Field label="ATTRIBUTE13" name="ATTRIBUTE13" type="string"/>
+<Field label="ATTRIBUTE14" name="ATTRIBUTE14" type="string"/>
+<Field label="ATTRIBUTE15" name="ATTRIBUTE15" type="string"/>
+<Field label="ATTRIBUTE16" name="ATTRIBUTE16" type="string"/>
+<Field label="ATTRIBUTE17" name="ATTRIBUTE17" type="string"/>
+<Field label="ATTRIBUTE18" name="ATTRIBUTE18" type="string"/>
+<Field label="ATTRIBUTE19" name="ATTRIBUTE19" type="string"/>
+<Field label="ATTRIBUTE20" name="ATTRIBUTE20" type="string"/>
+<Field label="ATTRIBUTE21" name="ATTRIBUTE21" type="string"/>
+<Field label="ATTRIBUTE22" name="ATTRIBUTE22" type="string"/>
+<Field label="ATTRIBUTE23" name="ATTRIBUTE23" type="string"/>
+<Field label="ATTRIBUTE24" name="ATTRIBUTE24" type="string"/>
+<Field label="ATTRIBUTE25" name="ATTRIBUTE25" type="string"/>
+<Field label="ATTRIBUTE26" name="ATTRIBUTE26" type="string"/>
+<Field label="ATTRIBUTE27" name="ATTRIBUTE27" type="string"/>
+<Field label="ATTRIBUTE28" name="ATTRIBUTE28" type="string"/>
+<Field label="ATTRIBUTE29" name="ATTRIBUTE29" type="string"/>
+<Field label="ATTRIBUTE30" name="ATTRIBUTE30" type="string"/>
+<Field label="ATTRIBUTE_NUMBER1" name="ATTRIBUTE_NUMBER1" type="string"/>
+<Field label="ATTRIBUTE_NUMBER2" name="ATTRIBUTE_NUMBER2" type="string"/>
+<Field label="ATTRIBUTE_NUMBER3" name="ATTRIBUTE_NUMBER3" type="string"/>
+<Field label="ATTRIBUTE_NUMBER4" name="ATTRIBUTE_NUMBER4" type="string"/>
+<Field label="ATTRIBUTE_NUMBER5" name="ATTRIBUTE_NUMBER5" type="string"/>
+<Field label="ATTRIBUTE_NUMBER6" name="ATTRIBUTE_NUMBER6" type="string"/>
+<Field label="ATTRIBUTE_NUMBER7" name="ATTRIBUTE_NUMBER7" type="string"/>
+<Field label="ATTRIBUTE_NUMBER8" name="ATTRIBUTE_NUMBER8" type="string"/>
+<Field label="ATTRIBUTE_NUMBER9" name="ATTRIBUTE_NUMBER9" type="string"/>
+<Field label="ATTRIBUTE_NUMBER10" name="ATTRIBUTE_NUMBER10" type="string"/>
+<Field label="ATTRIBUTE_NUMBER11" name="ATTRIBUTE_NUMBER11" type="string"/>
+<Field label="ATTRIBUTE_NUMBER12" name="ATTRIBUTE_NUMBER12" type="string"/>
+<Field label="ATTRIBUTE_NUMBER13" name="ATTRIBUTE_NUMBER13" type="string"/>
+<Field label="ATTRIBUTE_NUMBER14" name="ATTRIBUTE_NUMBER14" type="string"/>
+<Field label="ATTRIBUTE_NUMBER15" name="ATTRIBUTE_NUMBER15" type="string"/>
+<Field label="ATTRIBUTE_NUMBER16" name="ATTRIBUTE_NUMBER16" type="string"/>
+<Field label="ATTRIBUTE_NUMBER17" name="ATTRIBUTE_NUMBER17" type="string"/>
+<Field label="ATTRIBUTE_NUMBER18" name="ATTRIBUTE_NUMBER18" type="string"/>
+<Field label="ATTRIBUTE_NUMBER19" name="ATTRIBUTE_NUMBER19" type="string"/>
+<Field label="ATTRIBUTE_NUMBER20" name="ATTRIBUTE_NUMBER20" type="string"/>
+<Field label="ATTRIBUTE_DATE1" name="ATTRIBUTE_DATE1" type="string"/>
+<Field label="ATTRIBUTE_DATE2" name="ATTRIBUTE_DATE2" type="string"/>
+<Field label="ATTRIBUTE_DATE3" name="ATTRIBUTE_DATE3" type="string"/>
+<Field label="ATTRIBUTE_DATE4" name="ATTRIBUTE_DATE4" type="string"/>
+<Field label="ATTRIBUTE_DATE5" name="ATTRIBUTE_DATE5" type="string"/>
+<Field label="ATTRIBUTE_DATE6" name="ATTRIBUTE_DATE6" type="string"/>
+<Field label="ATTRIBUTE_DATE7" name="ATTRIBUTE_DATE7" type="string"/>
+<Field label="ATTRIBUTE_DATE8" name="ATTRIBUTE_DATE8" type="string"/>
+<Field label="ATTRIBUTE_DATE9" name="ATTRIBUTE_DATE9" type="string"/>
+<Field label="ATTRIBUTE_DATE10" name="ATTRIBUTE_DATE10" type="string"/>
+<Field label="ATTRIBUTE_DATE11" name="ATTRIBUTE_DATE11" type="string"/>
+<Field label="ATTRIBUTE_DATE12" name="ATTRIBUTE_DATE12" type="string"/>
+<Field label="ATTRIBUTE_DATE13" name="ATTRIBUTE_DATE13" type="string"/>
+<Field label="ATTRIBUTE_DATE14" name="ATTRIBUTE_DATE14" type="string"/>
+<Field label="ATTRIBUTE_DATE15" name="ATTRIBUTE_DATE15" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata2">
+<Record fieldDelimiter="|" name="PersonPhonesVO_INTY_V1" recordDelimiter="\r\n" type="delimited">
+<Field format="excel:000000" label="Current Employee Number " name="Current_Employee_Number" type="string"/>
+<Field format="" label="*Type  [LOV] " name="Type_LOV" type="string"/>
+<Field label="Primary (Phone) [LOV]" name="Primary_Phone_LOV" type="string"/>
+<Field label="Country Code [LOV]" name="Country_Code_LOV" type="string"/>
+<Field label="Area Code" name="Area_Code" type="string"/>
+<Field label="*Number" name="Number" type="string"/>
+<Field label="Extension" name="Extension" type="string"/>
+<Field label="From Date" name="From_Date" type="string"/>
+<Field label="To Date" name="To_Date" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata3">
+<Record fieldDelimiter="|" name="PersonPhoneVO_FUSN_R7" recordDelimiter="\r\n" type="delimited">
+<Field label="PHONE_ID" name="PHONE_ID" type="string"/>
+<Field label="BUSINESS_GROUP_ID" name="BUSINESS_GROUP_ID" type="string"/>
+<Field label="PHONE_TYPE" name="PHONE_TYPE" type="string"/>
+<Field label="DATE_FROM" name="DATE_FROM" type="string"/>
+<Field label="DATE_TO" name="DATE_TO" type="string"/>
+<Field label="PERSON_ID" name="PERSON_ID" type="string"/>
+<Field label="PHONE_NUMBER" name="PHONE_NUMBER" type="string"/>
+<Field label="COUNTRY_CODE_NUMBER" name="COUNTRY_CODE_NUMBER" type="string"/>
+<Field label="EXTENSION" name="EXTENSION" type="string"/>
+<Field label="SPEED_DIAL_NUMBER" name="SPEED_DIAL_NUMBER" type="string"/>
+<Field label="VALIDITY" name="VALIDITY" type="string"/>
+<Field label="AREA_CODE" name="AREA_CODE" type="string"/>
+<Field label="SEARCH_PHONE_NUMBER" name="SEARCH_PHONE_NUMBER" type="string"/>
+<Field label="LEGISLATION_CODE" name="LEGISLATION_CODE" type="string"/>
+<Field label="PRIMARY_FLAG" name="PRIMARY_FLAG" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata5" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="PersonPII_INTY_V1" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\r\n" type="delimited">
+<Field label="Current Employee Number" name="Current_Employee_Number" type="string"/>
+<Field label="*Enterprise Start Date" name="Enterprise_Start_Date" type="string"/>
+<Field label="Date of Birth" name="Date_of_Birth" type="string"/>
+<Field label="Country of Birth" name="Country_of_Birth" type="string"/>
+<Field label="Region of Birth" name="Region_of_Birth" type="string"/>
+<Field label="Town of Birth" name="Town_of_Birth" type="string"/>
+<Field label="Primary Identifier (Yes, No) " name="Primary_Identifier_Yes_No" type="string"/>
+<Field label="Country" name="Country" type="string"/>
+<Field format="" label="National ID Type" name="National_ID_Type" type="string"/>
+<Field label="ID Number " name="ID_Number" type="string"/>
+<Field label="Issue Date" name="Issue_Date" type="string"/>
+<Field label="Expiration Date" name="Expiration_Date" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata4">
+<Record fieldDelimiter="|" name="PersonVO_INTY_V1" recordDelimiter="\r\n" type="delimited">
+<Field label="* Legal Employer [LOV] " name="Legal_Employer_LOV" type="string"/>
+<Field label="*Enterprise Start Date" name="Enterprise_Start_Date" type="string"/>
+<Field label="Enterprise Seniority Date" name="Enterprise_Seniority_Date" type="string"/>
+<Field label="*Legal Entity Start Date" name="Legal_Entity_Start_Date" type="string"/>
+<Field label="Legal Entity Seniority Date" name="Legal_Entity_Seniority_Date" type="string"/>
+<Field format="excel:000000" label="Current employee Number " name="Current_employee_Number" type="string"/>
+<Field format="excel:d-mmm-yy" label="Fusion Person Number  " name="Fusion_Person_Number" type="string"/>
+<Field label="*Last Name" name="Last_Name" type="string"/>
+<Field label="*First Name" name="First_Name" type="string"/>
+<Field label="Suffix " name="Suffix" type="string"/>
+<Field label="Middle Name " name="Middle_Name" type="string"/>
+<Field format="excel:d-mmm-yy" label="Preferred Name " name="Preferred_Name" type="string"/>
+<Field label="Previous Last Name" name="Previous_Last_Name" type="string"/>
+<Field label="Ethnicity [LOV]" name="Ethnicity_LOV" type="string"/>
+<Field label="Marriedarital Status [LOV]" name="Marriedarital_Status_LOV" type="string"/>
+<Field label="Gender [LOV] " name="Gender_LOV" type="string"/>
+<Field label="Date of Death" name="Date_of_Death" type="string"/>
+<Field format="excel:d-mmm-yy" label="Correspondence Language" name="Correspondence_Language" type="string"/>
+</Record>
+</Metadata>
 <GraphParameters>
+<GraphParameter name="ID_PREFIX" value="100"/>
+<GraphParameter name="ID_PREFIX_ETHNICITY" value="200"/>
 <GraphParameterFile fileURL="workspace.prm"/>
 </GraphParameters>
 <Dictionary/>
 </Global>
 <Phase number="0">
-<Node enabled="enabled" guiName="Filter PersonEmailVO" guiX="259" guiY="153" id="FILTER_PERSON_EMAIL_VO" type="EXT_FILTER">
-<attr name="filterExpression"><![CDATA[//#CTL2
-NOT isnull($in.0.Current_Employee_Number)]]></attr>
-</Node>
-<Node enabled="enabled" fileURL="${DATAIN_DIR}/FBL/InfovityHCMEmployeesV1.xlsx" guiName="Read PersonEmailVO" guiX="55" guiY="153" id="READ_PERSON_EMAIL_VO" sheetName="Email" skipRows="5" type="XLS_READER"/>
-<Node enabled="enabled" guiName="Transform PersonEmailVO" guiX="453" guiY="153" id="TRANSFORM_PERSON_EMAIL_VO" type="REFORMAT">
+<Node enabled="enabled" guiName="ExtHashJoin" guiX="467" guiY="304" id="EXT_HASH_JOIN" joinKey="$Current_employee_Number=$Current_Employee_Number" type="EXT_HASH_JOIN">
 <attr name="transform"><![CDATA[//#CTL2
 
 // Transforms input record into output record.
 function integer transform() {
-	$out.0.DateFrom = $in.0.From_Date;
-	$out.0.DateTo = $in.0.To_date;
-	$out.0.EmailType = $in.0.Type_LOV;
-	$out.0.EmailAddress = $in.0.E_mail;
-	$out.0.PrimaryFlag = $in.0.Primary_E_mail_LOV;
-	$out.0.PersonId = $in.0.Current_Employee_Number;
+	$out.0.EthnicityId = getParamValue("ID_PREFIX_ETHNICITY") + $in.0.Current_employee_Number;
+	$out.0.LegislationCode = $in.1.Country;
+	$out.0.PersonId = getParamValue("ID_PREFIX_ETHNICITY") + $in.0.Current_employee_Number;
+	$out.0.Ethnicity = $in.0.Ethnicity_LOV;
 
 	return ALL;
 }
@@ -69,9 +210,120 @@ function integer transform() {
 // function string getMessage() {}
 ]]></attr>
 </Node>
-<Node enabled="enabled" fileURL="${DATAOUT_DIR}/FBL/FusionFBLPersonEmailVO.dat" guiName="Write PersonEmailVO" guiX="680" guiY="153" id="WRITE_PERSON_EMAIL_VO" outputFieldNames="true" type="DATA_WRITER"/>
+<Node enabled="enabled" guiName="Filter PersonEmailVO" guiX="241" guiY="41" id="FILTER_PERSON_EMAIL_VO" type="EXT_FILTER">
+<attr name="filterExpression"><![CDATA[//#CTL2
+NOT isnull($in.0.Current_Employee_Number) AND ($in.0.Type_LOV=='Work E-Mail')]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Filter PersonPhoneVO" guiX="241" guiY="146" id="FILTER_PERSON_PHONE_VO" type="EXT_FILTER">
+<attr name="filterExpression"><![CDATA[//#CTL2
+NOT isnull($in.0.Current_Employee_Number)]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Filter PersonPIIVO" guiX="251" guiY="370" id="FILTER_PERSON_PIIVO" type="EXT_FILTER">
+<attr name="filterExpression"><![CDATA[//#CTL2
+NOT isnull($in.0.Current_Employee_Number)]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Filter PersonVO" guiX="241" guiY="267" id="FILTER_PERSON_VO" type="EXT_FILTER">
+<attr name="filterExpression"><![CDATA[//#CTL2
+NOT isnull($in.0.Current_employee_Number)]]></attr>
+</Node>
+<Node enabled="enabled" fileURL="${DATAIN_DIR}/FBL/InfovityHCMEmployeesV1.xlsx" guiName="Read PersonEmailVO" guiX="38" guiY="28" id="READ_PERSON_EMAIL_VO" sheetName="Email" skipRows="5" type="XLS_READER"/>
+<Node enabled="enabled" fileURL="${DATAIN_DIR}/FBL/InfovityHCMEmployeesV1.xlsx" guiName="Read PersonPhoneVO" guiX="38" guiY="146" id="READ_PERSON_PHONE_VO" sheetName="Phones" skipRows="5" type="XLS_READER"/>
+<Node enabled="enabled" fileURL="${DATAIN_DIR}/FBL/InfovityHCMPersonPIIs.xlsx" guiName="Read PersonPIIVO" guiX="38" guiY="370" id="READ_PERSON_PIIVO" sheetName="PersonPII" skipRows="6" type="XLS_READER"/>
+<Node enabled="enabled" fileURL="${DATAIN_DIR}/FBL/InfovityHCMEmployeesV1.xlsx" guiName="Read PersonVO" guiX="38" guiY="261" id="READ_PERSON_VO" sheetName="Person" skipRows="5" type="XLS_READER"/>
+<Node enabled="enabled" guiName="Transform PersonEmailVO" guiX="443" guiY="41" id="TRANSFORM_PERSON_EMAIL_VO" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.DateFrom = $in.0.From_Date;
+	$out.0.DateTo = $in.0.To_date;
+	$out.0.EmailType = $in.0.Type_LOV;
+	$out.0.EmailAddress = $in.0.E_mail;
+	$out.0.PrimaryFlag = $in.0.Primary_E_mail_LOV;
+	$out.0.PersonId = $in.0.Current_Employee_Number;
+	$out.0.EmailAddressId = getParamValue("ID_PREFIX") + $in.0.Current_Employee_Number;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Transform PersonPhoneVO" guiX="449" guiY="146" id="TRANSFORM_PERSON_PHONE_VO" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.PHONE_ID = getParamValue("ID_PREFIX") + $in.0.Current_Employee_Number;
+	$out.0.PHONE_TYPE = $in.0.Type_LOV;
+	$out.0.DATE_FROM = $in.0.From_Date;
+	$out.0.DATE_TO = $in.0.To_Date;
+	$out.0.PERSON_ID = getParamValue("ID_PREFIX") + $in.0.Current_Employee_Number;
+	$out.0.PHONE_NUMBER = $in.0.Number;
+	$out.0.EXTENSION = $in.0.Extension;
+	$out.0.AREA_CODE = $in.0.Area_Code;
+	$out.0.PRIMARY_FLAG = $in.0.Primary_Phone_LOV;
+	$out.0.COUNTRY_CODE_NUMBER = $in.0.Country_Code_LOV;
+	
+	if ($in.0.Country_Code_LOV=="US")
+	{
+		$out.0.COUNTRY_CODE_NUMBER="1";
+	}
+   else
+   {
+		$out.0.COUNTRY_CODE_NUMBER="2";
+	}
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" fileURL="${DATAOUT_DIR}/FBL/Person/FusionFBLPersonEmailVO.dat" guiName="Write PersonEmailVO" guiX="681" guiY="41" id="WRITE_PERSON_EMAIL_VO" outputFieldNames="true" type="DATA_WRITER"/>
+<Node enabled="enabled" fileURL="${DATAOUT_DIR}/FBL/Person/FusionFBLPersonEthnicityVO.dat" guiName="Write PersonEthnicityVO" guiX="681" guiY="291" id="WRITE_PERSON_ETHNICITY_VO" outputFieldNames="true" type="DATA_WRITER"/>
+<Node enabled="enabled" fileURL="${DATAOUT_DIR}/FBL/Person/FusionFBLPersonPhoneVO.dat" guiName="Write PersonPhoneVO" guiX="681" guiY="146" id="WRITE_PERSON_PHONE_VO" outputFieldNames="true" type="DATA_WRITER"/>
+<Edge fromNode="EXT_HASH_JOIN:0" guiBendpoints="" guiRouter="Manhattan" id="Edge8" inPort="Port 0 (in)" metadata="Metadata6" outPort="Port 0 (out)" toNode="WRITE_PERSON_ETHNICITY_VO:0"/>
 <Edge fromNode="FILTER_PERSON_EMAIL_VO:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (accepted)" toNode="TRANSFORM_PERSON_EMAIL_VO:0"/>
+<Edge fromNode="FILTER_PERSON_PHONE_VO:0" guiBendpoints="" guiRouter="Manhattan" id="Edge4" inPort="Port 0 (in)" metadata="Metadata2" outPort="Port 0 (accepted)" toNode="TRANSFORM_PERSON_PHONE_VO:0"/>
+<Edge fromNode="FILTER_PERSON_PIIVO:0" guiBendpoints="" guiRouter="Manhattan" id="Edge10" inPort="Port 1 (slave)" metadata="Metadata5" outPort="Port 0 (accepted)" toNode="EXT_HASH_JOIN:1"/>
+<Edge fromNode="FILTER_PERSON_VO:0" guiBendpoints="" guiRouter="Manhattan" id="Edge7" inPort="Port 0 (driver)" metadata="Metadata4" outPort="Port 0 (accepted)" toNode="EXT_HASH_JOIN:0"/>
 <Edge fromNode="READ_PERSON_EMAIL_VO:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="FILTER_PERSON_EMAIL_VO:0"/>
+<Edge fromNode="READ_PERSON_PHONE_VO:0" guiBendpoints="" guiRouter="Manhattan" id="Edge3" inPort="Port 0 (in)" metadata="Metadata2" outPort="Port 0 (out)" toNode="FILTER_PERSON_PHONE_VO:0"/>
+<Edge fromNode="READ_PERSON_PIIVO:0" guiBendpoints="" guiRouter="Manhattan" id="Edge9" inPort="Port 0 (in)" metadata="Metadata5" outPort="Port 0 (out)" toNode="FILTER_PERSON_PIIVO:0"/>
+<Edge fromNode="READ_PERSON_VO:0" guiBendpoints="" guiRouter="Manhattan" id="Edge6" inPort="Port 0 (in)" metadata="Metadata4" outPort="Port 0 (out)" toNode="FILTER_PERSON_VO:0"/>
 <Edge fromNode="TRANSFORM_PERSON_EMAIL_VO:0" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 0 (in)" metadata="Metadata1" outPort="Port 0 (out)" toNode="WRITE_PERSON_EMAIL_VO:0"/>
+<Edge fromNode="TRANSFORM_PERSON_PHONE_VO:0" guiBendpoints="" guiRouter="Manhattan" id="Edge5" inPort="Port 0 (in)" metadata="Metadata3" outPort="Port 0 (out)" toNode="WRITE_PERSON_PHONE_VO:0"/>
 </Phase>
 </Graph>

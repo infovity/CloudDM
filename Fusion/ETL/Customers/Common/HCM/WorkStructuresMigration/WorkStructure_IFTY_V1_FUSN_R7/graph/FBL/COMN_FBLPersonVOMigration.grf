@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Graph author="Acer" created="Wed Mar 19 12:20:56 IST 2014" guiVersion="3.5.0" id="1395220707778" licenseType="Community" modified="Mon Mar 24 11:32:49 IST 2014" modifiedBy="Acer" name="COMN_DATSampleTest" revision="1.69" showComponentDetails="true">
+<Graph author="Acer" created="Wed Mar 19 12:20:56 IST 2014" guiVersion="3.5.0" id="1395220707778" licenseType="Community" modified="Mon Mar 24 17:54:48 IST 2014" modifiedBy="Acer" name="COMN_DATSampleTest" revision="1.73" showComponentDetails="true">
 <Global>
 <Metadata id="Metadata5">
 <Record fieldDelimiter="|" name="PersonAddressVO_FUSN_R7" recordDelimiter="\r\n" type="delimited">
@@ -80,17 +80,17 @@
 </Record>
 </Metadata>
 <Metadata id="Metadata7">
-<Record fieldDelimiter="|" name="PersonNationalIdentifierVO_FUSN_R7" recordDelimiter="\r\n" type="delimited">
-<Field label="NATIONAL_IDENTIFIER_ID" name="NATIONAL_IDENTIFIER_ID" type="string"/>
-<Field label="BUSINESS_GROUP_ID" name="BUSINESS_GROUP_ID" type="string"/>
-<Field label="PERSON_ID" name="PERSON_ID" type="string"/>
-<Field label="LEGISLATION_CODE" name="LEGISLATION_CODE" type="string"/>
-<Field label="ISSUE_DATE" name="ISSUE_DATE" type="string"/>
-<Field label="EXPIRATION_DATE" name="EXPIRATION_DATE" type="string"/>
-<Field label="NATIONAL_IDENTIFIER_TYPE" name="NATIONAL_IDENTIFIER_TYPE" type="string"/>
-<Field label="NATIONAL_IDENTIFIER_NUMBER" name="NATIONAL_IDENTIFIER_NUMBER" type="string"/>
-<Field label="PLACE_OF_ISSUE" name="PLACE_OF_ISSUE" type="string"/>
-<Field label="PRIMARY_FLAG" name="PRIMARY_FLAG" type="string"/>
+<Record fieldDelimiter="|" name="PersonNationalIdentifierVO_FUSN_R7" recordDelimiter="\r\n" recordSize="-1" type="delimited">
+<Field eofAsDelimiter="false" label="NATIONAL_IDENTIFIER_ID" name="NATIONAL_IDENTIFIER_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="BUSINESS_GROUP_ID" name="BUSINESS_GROUP_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="PERSON_ID" name="PERSON_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="LEGISLATION_CODE" name="LEGISLATION_CODE" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="ISSUE_DATE" name="ISSUE_DATE" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="EXPIRATION_DATE" name="EXPIRATION_DATE" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="NATIONAL_IDENTIFIER_TYPE" name="NATIONAL_IDENTIFIER_TYPE" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="NATIONAL_IDENTIFIER_NUMBER" name="NATIONAL_IDENTIFIER_NUMBER" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="PLACE_OF_ISSUE" name="PLACE_OF_ISSUE" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="PRIMARY_FLAG" name="PRIMARY_FLAG" nullable="true" shift="0" size="0" type="string"/>
 </Record>
 </Metadata>
 <Metadata id="Metadata6">
@@ -430,6 +430,7 @@ function integer transform() {
 	$out.0.Region3 = $in.0.County;
 	$out.0.Country = $in.0.Country_LOV;
 	$out.0.PostalCode = $in.0.Postal_Code;
+	$out.0.PersonAddrUsageId = getParamValue("ID_PREFIX") + $in.0.Current_employee_number;
 
 	return ALL;
 }
@@ -458,14 +459,16 @@ function integer transform() {
 
 // Transforms input record into output record.
 function integer transform() {
-	$out.0.PERSON_ID = $in.0.Current_employee_Number;
-	$out.0.PERSON_NAME_ID = $in.0.Current_employee_Number;
+	$out.0.PERSON_ID = getParamValue("ID_PREFIX") + $in.0.Current_employee_Number;
+	$out.0.PERSON_NAME_ID = getParamValue("ID_PREFIX") + $in.0.Current_employee_Number;
 	$out.0.LAST_NAME = $in.0.Last_Name;
 	$out.0.FIRST_NAME = $in.0.First_Name;
 	$out.0.MIDDLE_NAMES = $in.0.Middle_Name;
 	$out.0.KNOWN_AS = $in.0.Preferred_Name;
 	$out.0.PREVIOUS_LAST_NAME = $in.0.Previous_Last_Name;
 	$out.0.SUFFIX = $in.0.Suffix;
+	$out.0.EFFECTIVE_END_DATE = '12/31/4712';
+	$out.0.EFFECTIVE_START_DATE = $in.0.Enterprise_Start_Date;
 
 	return ALL;
 }
@@ -502,6 +505,7 @@ function integer transform() {
 	$out.0.NATIONAL_IDENTIFIER_TYPE = $in.0.National_ID_Type;
 	$out.0.NATIONAL_IDENTIFIER_NUMBER = $in.0.ID_Number;
 	$out.0.PRIMARY_FLAG = $in.0.Primary_Identifier_Yes_No;
+	$out.0.NATIONAL_IDENTIFIER_ID = getParamValue("ID_PREFIX") + $in.0.Current_Employee_Number;
 
 	return ALL;
 }
@@ -557,9 +561,9 @@ function integer transform() {
 ]]></attr>
 </Node>
 <Node enabled="enabled" guiName="Trash" guiX="669" guiY="146" id="TRASH" type="TRASH"/>
-<Node enabled="enabled" fileURL="${DATAOUT_DIR}/FBL/FusionFBLPersonAddressVO.dat" guiName="Write PersonAddressVO" guiX="669" guiY="312" id="WRITE_PERSON_ADDRESS_VO" outputFieldNames="true" type="DATA_WRITER"/>
-<Node enabled="enabled" fileURL="${DATAOUT_DIR}/FBL/FusionFBLPersonNamesVO.dat" guiName="Write PersonNamesVO" guiX="672" guiY="212" id="WRITE_PERSON_NAMES_VO" outputFieldNames="true" type="DATA_WRITER"/>
-<Node enabled="enabled" fileURL="${DATAOUT_DIR}/FBL/PersonNationalIdentifierVO.dat" guiName="Write PersonNationalIdentifierVO" guiX="751" guiY="425" id="WRITE_PERSON_NATIONAL_IDENTIFIER_VO" outputFieldNames="true" type="DATA_WRITER"/>
+<Node enabled="enabled" fileURL="${DATAOUT_DIR}/FBL/Person/FusionFBLPersonAddressVO.dat" guiName="Write PersonAddressVO" guiX="669" guiY="312" id="WRITE_PERSON_ADDRESS_VO" outputFieldNames="true" type="DATA_WRITER"/>
+<Node enabled="enabled" fileURL="${DATAOUT_DIR}/FBL/Person/FusionFBLPersonNamesVO.dat" guiName="Write PersonNamesVO" guiX="672" guiY="212" id="WRITE_PERSON_NAMES_VO" outputFieldNames="true" type="DATA_WRITER"/>
+<Node enabled="enabled" fileURL="${DATAOUT_DIR}/FBL/Person/PersonNationalIdentifierVO.dat" guiName="Write PersonNationalIdentifierVO" guiX="751" guiY="425" id="WRITE_PERSON_NATIONAL_IDENTIFIER_VO" outputFieldNames="true" type="DATA_WRITER"/>
 <Node enabled="enabled" fileURL="${DATAOUT_DIR}/FBL/Person/F_PERSON__VO.dat" guiName="Write PersonVO" guiX="680" guiY="38" id="WRITE_PERSON_VO" outputFieldNames="true" quotedStrings="false" type="DATA_WRITER"/>
 <Edge fromNode="FILTER_PERSON_ADDRESS_VO:0" guiBendpoints="" guiRouter="Manhattan" id="Edge11" inPort="Port 0 (in)" metadata="Metadata4" outPort="Port 0 (accepted)" toNode="TRANSFORM_PERSON_ADDRESS_VO:0"/>
 <Edge fromNode="FILTER_PERSON_NAMES_VO:0" guiBendpoints="" guiRouter="Manhattan" id="Edge8" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (accepted)" toNode="TRANSFORM_PERSON_NAMES_VO:0"/>
