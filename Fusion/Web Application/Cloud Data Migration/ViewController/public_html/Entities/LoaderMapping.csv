@@ -1,0 +1,3 @@
+Customer ID,Customer Name,Entity,Fusion Version,Infovity Version,Transformation Mapping,Fusion Template File Location,Fusion Template File Name,Infovity Template File Location,Infovity Template File Name,Transformation file Location,Transformation file
+INFOVITY_COMMON,Common,LOCATION,Release 7,Work Structures V1,location.grf,/common/location/,FusionWorkStructuresV7,/common/location,InfovityWorkStructure,,
+INFOVITY_COMMON,Common,JOB,Release 7,Work Structures V1,location.grf,/common/location/,FusionWorkStructuresV7,/common/location,InfovityWorkStructure,,

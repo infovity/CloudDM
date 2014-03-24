@@ -131,7 +131,7 @@
   </context-param>
   <context-param>
     <param-name>javax.faces.FACELETS_RESOURCE_RESOLVER</param-name>
-    <param-value>oracle.adfinternal.view.faces.facelets.rich.AdfFaceletsResourceResolver</param-value>
+    <param-value>oracle.adfinternal.view.faces.facelets.rich.MDSFaceletsResourceResolver</param-value>
   </context-param>
   <context-param>
     <param-name>oracle.adf.view.rich.dvt.DEFAULT_IMAGE_FORMAT</param-name>
@@ -140,6 +140,18 @@
   <context-param>
     <param-name>javax.faces.FACELETS_VIEW_MAPPINGS</param-name>
     <param-value>*.jsf;*.xhtml</param-value>
+  </context-param>
+  <context-param>
+    <param-name>com.sun.faces.faceletCache</param-name>
+    <param-value>oracle.adfinternal.view.faces.facelets.rich.MDSFaceletCache</param-value>
+  </context-param>
+  <context-param>
+    <param-name>oracle.adf.jsp.provider.0</param-name>
+    <param-value>oracle.mds.jsp.MDSJSPProviderHelper</param-value>
+  </context-param>
+  <context-param>
+    <param-name>org.apache.myfaces.trinidad.CHANGE_PERSISTENCE</param-name>
+    <param-value>oracle.adf.view.rich.change.FilteredPersistenceChangeManager</param-value>
   </context-param>
   <mime-mapping>
     <extension>swf</extension>

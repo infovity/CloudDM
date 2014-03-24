@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<task-flow-registry xmlns="http://xmlns.oracle.com/adf/controller/rc">
+   <task-flow-descriptor path="WEB-INF/datamigration-flow-definition.xml" id="datamigration-flow-definition" type="task-flow-definition" uses-page-fragments="false" library-internal="false" train="true" critical="false" page-type="facelets"/>
+</task-flow-registry>

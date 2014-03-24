@@ -1,86 +1,99 @@
-<%@ page import="java.io.*,java.util.*, javax.servlet.*" %>
-
+<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8"%>
+<%@ page import = "java.io.IOException"%>
+<%@ page import = "java.io.InputStream"%>
+<%@ page import = "java.util.Enumeration"%>
+<%@ page import = "java.util.Properties"%>
+<%@ page import = "java.io.FileInputStream"%>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    </head>
+    <body><center>
+<table border="1">
+<tr>
+<th>Infovity Template</th>
+<th>Fusion Template*</th>
+</tr>
 <%
-  /*  File file ;
-   int maxFileSize = 5000 * 1024;
-   int maxMemSize = 5000 * 1024;
-   ServletContext context = pageContext.getServletContext();
- //  String filePath = context.getInitParameter("file-upload");
-   String filePath = "C:\\JDeveloper\\mywork\\Cloud Data Migration\\ViewController\\uploadFiles";
-   // Verify the content type
 
-   String contentType = request.getContentType();
-   if (contentType != null && (contentType.indexOf("multipart/form-data") >= 0)) {
+Properties prop = new Properties();
+	InputStream input = null;
+ 
+	try {
+ 
+		String filename = "C:\\Transform\\Mapping.txt";
+                // FileInputStream filename = new FileInputStream("C:\\Transform\\Mapping.properties");
+                //String filename = request.getServletContext().getRealPath("/Transform/Mapping.properties");
+               // InputStream filename = this.getClass().getResourceAsStream("/Entities/Mapping.properties");
+		prop.load(new FileInputStream(filename));
+                
+                /*
+                input = getClass().getClassLoader().getResourceAsStream(filename);
+		if (input == null) {
+			System.out.println("Sorry, unable to find " + filename);
+                        
+			return;
+		}
 
-      DiskFileItemFactory factory = new DiskFileItemFactory();
-      // maximum size that will be stored in memory
-      factory.setSizeThreshold(maxMemSize);
-      // Location to save data that is larger than maxMemSize.
-      factory.setRepository(new File("c:\\temp"));
-
-      // Create a new file upload handler
-      ServletFileUpload upload = new ServletFileUpload(factory);
-      // maximum file size to be uploaded.
-      upload.setSizeMax( maxFileSize );
-      try{ 
-         // Parse the request to get file items.
-         List fileItems = upload.parseRequest(request);
-
-         // Process the uploaded file items
-         Iterator i = fileItems.iterator();
-
-         out.println("<html>");
-         out.println("<head>");
-         out.println("<title>JSP File upload</title>");  
-         out.println("</head>");
-         out.println("<body>");
-         while ( i.hasNext () ) 
-         {
-            FileItem fi = (FileItem)i.next();
-            if ( !fi.isFormField () )	
-            {
-            // Get the uploaded file parameters
-            String fieldName = fi.getFieldName();
-            String fileName = fi.getName();
-            boolean isInMemory = fi.isInMemory();
-            long sizeInBytes = fi.getSize();
-            // Write the file
-            if( fileName.lastIndexOf("\\") >= 0 ){
-            file = new File( filePath + 
-            fileName.substring( fileName.lastIndexOf("\\"))) ;
-            }else{
-            file = new File( filePath + 
-            fileName.substring(fileName.lastIndexOf("\\")+1)) ;
-            }
-            fi.write( file ) ;
-            out.println("Uploaded Filename: " + filePath + 
-            fileName + "<br>");
-            }
-         }
-         out.println("</body>");
-         out.println("</html>");
-      }catch(Exception ex) {
-         System.out.println(ex);
-      }
-      
-   }else{
-      out.println("<html>");
-      out.println("<head>");
-      out.println("<title>Servlet upload</title>");  
-      out.println("</head>");
-      out.println("<body>");
-      out.println("<p>No file uploaded</p>"); 
-      out.println("</body>");
-      out.println("</html>");
-   } */
-   
-         out.println("<html>");
-      out.println("<head>");
-      out.println("<title>Servlet upload</title>");  
-      out.println("</head>");
-      out.println("<body>");
-      out.println("<p>No file uploaded</p>"); 
-      out.println("</body>");
-      out.println("</html>");
+		prop.load(input);
+  */
+		Enumeration<?> e = prop.propertyNames();
+		while (e.hasMoreElements()) {
+			String key = (String) e.nextElement();
+			String value = prop.getProperty(key);
+                        //String key1 = key.replace("$out.0.","" );
+                        //String value1 = value.replace("$in.0.","");
+                        //String value2 = value1.replace(";","");
+			System.out.println("Key : " + key  + ", Value : " + value);
+                        //String str = "$out.0.Midpoint";
+                        
+                        int n = key.indexOf(".0.");
+                        int k = value.indexOf(".0.");
+                        String keytrim = key.substring(n+3);
+                        if( k < 0 ){
+                        String valuetrim = value.replace(";","");
+                        %>
+                     <tr><td><%=valuetrim.replace("'","")%></td><td><%=keytrim%></td></tr>
+                     <%
+                              //System.out.print("This is if statement");
+                           }
+                      else     
+                      {
+                        String valuetrim = value.substring(k+3);
+                        String valuetrim1 = valuetrim.replace(";","");
+                       // String res = str.substring(2);
+                       // System.out.println("kkkkk:" +value.indexOf(".0."));
+                        //System.out.println("keytrim:" +keytrim);
+                       // System.out.println("valuetrim:" +valuetrim);
+                       // System.out.println("Key1 : " + key1.replace("$out.0."," " ) + ", Value1 : " + value1.replace("$in.0.","") );
+                     %>
+                     <tr><td><%=valuetrim1.replace("'","") %></td><td><%=keytrim%></td></tr>
+                     <%
+                     }
+		}
+ 
+	} catch (IOException ex) {
+		ex.printStackTrace();
+	} finally {
+		if (input != null) {
+			try {
+				input.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+ 
+  
+ 
 
 %>
+
+</table>
+</center>
+<br><br><br><br><br>
+<center><a href="confirmation.jsp"><input type="button" value="Next" name="nextbut" width="200" height="200"/></a></center>
+<center>Wanted to modify the mapping   <a href="confirmation.jsp" target="body">Contact Us</a></center>
+</body>
+</html>

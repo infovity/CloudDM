@@ -13,4 +13,11 @@
   <adf:adf-properties-child xmlns="http://xmlns.oracle.com/adf/config/properties">
     <adf-property name="adfAppUID" value="Cloud Data Migration-3015"/>
   </adf:adf-properties-child>
+  <adf-faces-config xmlns="http://xmlns.oracle.com/adf/faces/config">
+    <persistent-change-manager>
+      <persistent-change-manager-class>
+        oracle.adf.view.rich.change.MDSDocumentChangeManager
+      </persistent-change-manager-class>
+    </persistent-change-manager>
+  </adf-faces-config>
 </adf-config>
