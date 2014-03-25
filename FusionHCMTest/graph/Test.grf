@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="Owner" created="Thu Feb 06 23:07:12 PST 2014" guiVersion="3.5.0" id="1391756899219" licenseType="Community" modified="Thu Feb 06 23:48:54 PST 2014" modifiedBy="Owner" name="Test" revision="1.14" showComponentDetails="true">
+<Global>
+<Metadata id="Metadata0" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="PersonData2_PersonData2" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\r\n" type="delimited">
+<Field format="" label="Legal Employer" name="Legal_Employer" type="string"/>
+<Field format="excel:m/d/yy" label="Enterprise Start Date" name="Enterprise_Start_Date" type="date"/>
+<Field format="excel:m/d/yy" label="Enterprise Seniority Date" name="Enterprise_Seniority_Date" type="date"/>
+<Field format="excel:m/d/yy" label="Legal Entity Start Date" name="Legal_Entity_Start_Date" type="date"/>
+<Field format="excel:m/d/yy" label="Legal Entity Seniority Date" name="Legal_Entity_Seniority_Date" type="date"/>
+<Field label="Worker Category" name="Worker_Category" type="string"/>
+<Field format="" label="Previous paycheck number " name="Previous_paycheck_number" type="long"/>
+<Field format="" label="Person Number" name="Person_Number" type="long"/>
+<Field format="" label="Last Name" name="Last_Name" type="string"/>
+<Field format="" label="First Name" name="First_Name" type="string"/>
+<Field label="Suffix " name="Suffix" type="string"/>
+<Field label="Middle Name " name="Middle_Name" type="string"/>
+<Field format="" label="Preferred Name " name="Preferred_Name" type="string"/>
+<Field label="Previous Last Name" name="Previous_Last_Name" type="string"/>
+<Field format="" label="Ethnicity" name="Ethnicity" type="string"/>
+<Field label="Marital Status" name="Marital_Status" type="string"/>
+<Field format="" label="Gender" name="Gender" type="string"/>
+<Field format="excel:m/d/yy" label="Date of Birth" name="Date_of_Birth" type="date"/>
+<Field label="Date of Death" name="Date_of_Death" type="string"/>
+<Field label="Country of Birth" name="Country_of_Birth" type="string"/>
+<Field label="Region of Birth" name="Region_of_Birth" type="string"/>
+<Field label="Town of Birth" name="Town_of_Birth" type="string"/>
+<Field label="Correspondence Language" name="Correspondence_Language" type="string"/>
+<Field format="" label="Primary Identifier" name="Primary_Identifier" type="string"/>
+<Field format="" label="Country" name="Country" type="string"/>
+<Field format="" label="National ID Type" name="National_ID_Type" type="string"/>
+<Field label="ID Number " name="ID_Number" type="string"/>
+<Field label="Issue Date" name="Issue_Date" type="string"/>
+<Field label="Expiration Date" name="Expiration_Date" type="string"/>
+<Field format="" label="HR Business Partner" name="HR_Business_Partner" type="string"/>
+<Field format="" label="Previous person number" name="Previous_person_number" type="long"/>
+<Field format="" label="Address Type" name="Address_Type" type="string"/>
+<Field format="" label="Address Line 1" name="Address_Line_1" type="string"/>
+<Field format="" label="Address Line 2" name="Address_Line_2" type="string"/>
+<Field label="Address Line 3" name="Address_Line_3" type="string"/>
+<Field label="Address Line 4" name="Address_Line_4" type="string"/>
+<Field format="" label="City" name="City" type="string"/>
+<Field label="State" name="State" type="string"/>
+<Field format="" label="Postal Code " name="Postal_Code" type="long"/>
+<Field label="Province" name="Province" type="string"/>
+<Field format="" label="Country" name="Country_1" type="string"/>
+<Field format="" label="Previous Person Number" name="Previous_Person_Number" type="long"/>
+<Field format="" label="Primary Email" name="Primary_Email" type="string"/>
+<Field format="" label="Type" name="Type" type="string"/>
+<Field format="" label="Email" name="Email" type="string"/>
+<Field label="From Date" name="From_Date" type="string"/>
+<Field label="To date " name="To_date" type="string"/>
+<Field format="" label="Previous person Number " name="Previous_person_Number" type="long"/>
+<Field format="" label="Legal Employer" name="Legal_Employer_1" type="string"/>
+<Field format="" label="Job Code" name="Job_Code" type="string"/>
+<Field format="" label="Grades" name="Grades" type="string"/>
+<Field label="Department" name="Department" type="string"/>
+<Field format="" label="Shift Type" name="Shift_Type" type="string"/>
+<Field format="" label="Working as a Manager " name="Working_as_a_Manager" type="string"/>
+<Field format="" label="Position Level " name="Position_Level" type="string"/>
+<Field format="" label="Position Title" name="Position_Title" type="string"/>
+<Field format="" label="Work Location Code " name="Work_Location_Code" type="string"/>
+<Field format="" label="Working at Home " name="Working_at_Home" type="string"/>
+<Field format="" label="Normal Working hours " name="Normal_Working_hours" type="long"/>
+<Field label="Manager Effective Date " name="Manager_Effective_Date" type="string"/>
+<Field format="" label="Manager Person Number " name="Manager_Person_Number" type="long"/>
+<Field format="" label="Assignment Status" name="Assignment_Status" type="string"/>
+<Field format="" label="Person Types " name="Person_Types" type="string"/>
+<Field format="" label="Assignment Category" name="Assignment_Category" type="string"/>
+</Record>
+</Metadata>
+<GraphParameters>
+<GraphParameterFile fileURL="workspace.prm"/>
+</GraphParameters>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" guiName="ExtFilter" guiX="517" guiY="164" id="EXT_FILTER" type="EXT_FILTER">
+<attr name="filterExpression"><![CDATA[//#CTL2
+$in.0.Person_Number >= 100]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Trash" guiX="753" guiY="33" id="TRASH" type="TRASH"/>
+<Node enabled="enabled" fileURL="C:/Anto/Infovity/Zeltiq/MuleTransform/Input/Old/PersonData2.xls" guiName="XLSDataReader" guiX="202" guiY="79" id="XLSDATA_READER" metadataRow="1" type="XLS_READER"/>
+<Edge fromNode="EXT_FILTER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge3" inPort="Port 1 (in)" metadata="Metadata0" outPort="Port 0 (accepted)" toNode="TRASH:1"/>
+<Edge debugMode="false" fromNode="XLSDATA_READER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="TRASH:0"/>
+<Edge debugMode="true" fromNode="XLSDATA_READER:1" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 1 (out)" toNode="EXT_FILTER:0"/>
+</Phase>
+</Graph>

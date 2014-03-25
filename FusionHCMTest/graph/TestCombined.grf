@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="Owner" created="Sat Feb 08 12:07:42 PST 2014" guiVersion="3.5.0" id="1391890092828" licenseType="Community" modified="Mon Mar 03 09:30:42 PST 2014" modifiedBy="Owner" name="TestCombined" revision="1.55" showComponentDetails="true">
+<Global>
+<Metadata id="Metadata4" previewAttachment="${DATAIN_DIR}/Assignments.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="Assignments.csv" name="Assignments_csv" previewAttachment="${DATAIN_DIR}/Assignments.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="both" quotedStrings="false" recordDelimiter="\r\n" skipSourceRows="1" type="delimited">
+<Field label="Previous person Number " name="Previous_person_Number" type="integer"/>
+<Field label="Legal Employer" name="Legal_Employer" type="string"/>
+<Field label="Job Code" name="Job_Code" type="string"/>
+<Field label="Grades" name="Grades" type="string"/>
+<Field label="Department" name="Department" type="string"/>
+<Field label="Shift Type" name="Shift_Type" type="string"/>
+<Field label="Working as a Manager" name="Working_as_a_Manager" type="string"/>
+<Field label="Position Level " name="Position_Level" type="string"/>
+<Field label="Position Title" name="Position_Title" type="string"/>
+<Field label="Work Location Code " name="Work_Location_Code" type="string"/>
+<Field label="Working at Home " name="Working_at_Home" type="string"/>
+<Field label="Normal Working hours " name="Normal_Working_hours" type="decimal"/>
+<Field label="Manager Effective Date " name="Manager_Effective_Date" type="string"/>
+<Field label="Manager Person Number " name="Manager_Person_Number" type="integer"/>
+<Field label="Assignment Status" name="Assignment_Status" type="string"/>
+<Field label="Person Types " name="Person_Types" type="string"/>
+<Field label="Assignment Category" name="Assignment_Category" type="string"/>
+<Field label="Salary Basis" name="Salary_Basis" type="string"/>
+<Field label="Currency" name="Currency" type="string"/>
+<Field format="MM/dd/yy" label="Salary Effective Date " name="Salary_Effective_Date" type="date"/>
+<Field label="Salary Amount Annual" name="Salary_Amount_Annual" scale="2" type="decimal"/>
+<Field label="Hourly Amount " name="Hourly_Amount" type="string"/>
+<Field label="Plan Type " name="Plan_Type" type="string"/>
+<Field label="Bonus % " name="Bonus" type="string"/>
+<Field label="Comp Plan Name" name="Comp_Plan_Name" type="string"/>
+<Field label="Annual Target Variable Amount " name="Annual_Target_Variable_Amount" type="string"/>
+<Field label="Bonus Plan: Corporate Weighting %" name="Bonus_Plan_Corporate_Weighting" type="string"/>
+<Field label="Bonus Plan: Individual Goal Weighting %" name="Bonus_Plan_Individual_Goal_Weighting" type="string"/>
+<Field label="Previous Employer " name="Previous_Employer" type="string"/>
+<Field label="Merger and Acquisition" name="Merger_and_Acquisition" type="string"/>
+<Field label="Previous Job Title" name="Previous_Job_Title" type="string"/>
+<Field label="Promotion Type" name="Promotion_Type" type="string"/>
+<Field label="Recruiting Fee " name="Recruiting_Fee" type="string"/>
+<Field eofAsDelimiter="true" label="Recruiting Source" name="Recruiting_Source" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata3" previewAttachment="${DATAIN_DIR}/CreateWorkerMapping.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="CreateWorkerMapping.csv" name="CreateWorkerMapping_csv" previewAttachment="${DATAIN_DIR}/CreateWorkerMapping.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="both" quotedStrings="false" recordDelimiter="\r\n" skipSourceRows="1" type="delimited">
+<Field label="Person Number" name="Person_Number" type="long"/>
+<Field label="* Country" name="Country" type="string"/>
+<Field label="Global Title" name="Global_Title" type="string"/>
+<Field label="Global First Name" name="Global_First_Name" type="string"/>
+<Field label="Global Middle Names" name="Global_Middle_Names" type="string"/>
+<Field label="* Global Last Name" name="Global_Last_Name" type="string"/>
+<Field label="Global Prefix" name="Global_Prefix" type="string"/>
+<Field label="Global Suffix" name="Global_Suffix" type="string"/>
+<Field label="Global Honors" name="Global_Honors" type="string"/>
+<Field label="Global Known As" name="Global_Known_As" type="string"/>
+<Field label="Global Previous Last Name" name="Global_Previous_Last_Name" type="string"/>
+<Field label="Local-Name Language" name="Local_Name_Language" type="string"/>
+<Field label="Local Title" name="Local_Title" type="string"/>
+<Field label="Local First Name" name="Local_First_Name" type="string"/>
+<Field label="Local Middle Names" name="Local_Middle_Names" type="string"/>
+<Field label="Local Last Name" name="Local_Last_Name" type="string"/>
+<Field label="Local Prefix" name="Local_Prefix" type="string"/>
+<Field label="Local Suffix" name="Local_Suffix" type="string"/>
+<Field label="Local Honors" name="Local_Honors" type="string"/>
+<Field label="Local Known As" name="Local_Known_As" type="string"/>
+<Field label="Local Previous Last Name" name="Local_Previous_Last_Name" type="string"/>
+<Field label="Address Type" name="Address_Type" type="string"/>
+<Field label="Country" name="Country_1" type="string"/>
+<Field label="Address Line 1" name="Address_Line_1" type="string"/>
+<Field label="Address Line 2" name="Address_Line_2" type="string"/>
+<Field label="Address Line 3" name="Address_Line_3" type="string"/>
+<Field label="Address Line 4" name="Address_Line_4" type="string"/>
+<Field label="Region 1" name="Region_1" type="string"/>
+<Field label="Region 2" name="Region_2" type="string"/>
+<Field label="Region 3" name="Region_3" type="string"/>
+<Field label="Town or City" name="Town_or_City" type="string"/>
+<Field label="Postal Code" name="Postal_Code" type="integer"/>
+<Field label="Phone Type 1" name="Phone_Type_1" type="string"/>
+<Field label="Country Code 1" name="Country_Code_1" type="string"/>
+<Field label="Area Code 1" name="Area_Code_1" type="string"/>
+<Field label="Phone Number 1" name="Phone_Number_1" type="string"/>
+<Field label="Phone Type 2" name="Phone_Type_2" type="string"/>
+<Field label="Country Code 2" name="Country_Code_2" type="string"/>
+<Field label="Area Code 2" name="Area_Code_2" type="string"/>
+<Field label="Phone Number 2" name="Phone_Number_2" type="string"/>
+<Field label="E-Mail Type" name="E_Mail_Type" type="string"/>
+<Field label="E-Mail" name="E_Mail" type="string"/>
+<Field label="Legislation" name="Legislation" type="string"/>
+<Field label="Marital Status" name="Marital_Status" type="string"/>
+<Field label="Ethnicity" name="Ethnicity" type="string"/>
+<Field label="Religion" name="Religion" type="string"/>
+<Field label="Highest Education Level" name="Highest_Education_Level" type="string"/>
+<Field label="Gender" name="Gender" type="string"/>
+<Field label="Person Legislative Information 1" name="Person_Legislative_Information_1" type="string"/>
+<Field label="Person Legislative Information 2" name="Person_Legislative_Information_2" type="string"/>
+<Field label="Person Legislative Information 3" name="Person_Legislative_Information_3" type="string"/>
+<Field label="Person Legislative Information 4" name="Person_Legislative_Information_4" type="string"/>
+<Field label="Person Legislative Information 5" name="Person_Legislative_Information_5" type="string"/>
+<Field label="Person Legislative Information 6" name="Person_Legislative_Information_6" type="string"/>
+<Field label="Person Legislative Information 7" name="Person_Legislative_Information_7" type="string"/>
+<Field label="Person Legislative Information 8" name="Person_Legislative_Information_8" type="string"/>
+<Field label="Person Legislative Information 9" name="Person_Legislative_Information_9" type="string"/>
+<Field label="Person Legislative Information 10" name="Person_Legislative_Information_10" type="string"/>
+<Field label="Person Legislative Information Number 1" name="Person_Legislative_Information_Number_1" type="string"/>
+<Field label="Contact Type" name="Contact_Type" type="string"/>
+<Field label="Emergency Contact" name="Emergency_Contact" type="string"/>
+<Field label="Title" name="Title" type="string"/>
+<Field label="First Name" name="First_Name" type="string"/>
+<Field label="Middle Names" name="Middle_Names" type="string"/>
+<Field label="Last Name" name="Last_Name" type="string"/>
+<Field label="Prefix" name="Prefix" type="string"/>
+<Field label="Suffix" name="Suffix" type="string"/>
+<Field label="Honors" name="Honors" type="string"/>
+<Field label="Known As" name="Known_As" type="string"/>
+<Field label="Previous Last Name" name="Previous_Last_Name" type="string"/>
+<Field label="Phone Type" name="Phone_Type" type="string"/>
+<Field label="Country Code" name="Country_Code" type="string"/>
+<Field label="Area Code" name="Area_Code" type="string"/>
+<Field label="Phone Number" name="Phone_Number" type="string"/>
+<Field label="National ID Country" name="National_ID_Country" type="string"/>
+<Field label="National ID Type" name="National_ID_Type" type="string"/>
+<Field label="National ID" name="National_ID" type="string"/>
+<Field label="Date of Birth" name="Date_of_Birth" type="string"/>
+<Field label="Correspondence Language" name="Correspondence_Language" type="string"/>
+<Field label="Visa Country" name="Visa_Country" type="string"/>
+<Field label="Visa Type" name="Visa_Type" type="string"/>
+<Field label="Visa Category" name="Visa_Category" type="string"/>
+<Field label="Visa Number" name="Visa_Number" type="string"/>
+<Field label="Visa Status" name="Visa_Status" type="string"/>
+<Field label="Visa Issue Date" name="Visa_Issue_Date" type="string"/>
+<Field label="Visa Expiration Date" name="Visa_Expiration_Date" type="string"/>
+<Field label="Passport Country" name="Passport_Country" type="string"/>
+<Field label="Passport Type" name="Passport_Type" type="string"/>
+<Field label="Passport Number" name="Passport_Number" type="string"/>
+<Field label="Passport Issuing Authority" name="Passport_Issuing_Authority" type="string"/>
+<Field label="Passport Issue Date" name="Passport_Issue_Date" type="string"/>
+<Field label="Passport Expiration Date" name="Passport_Expiration_Date" type="string"/>
+<Field label="Nationality" name="Nationality" type="string"/>
+<Field label="From Date" name="From_Date" type="string"/>
+<Field label="To Date" name="To_Date" type="string"/>
+<Field label="Nationality Status" name="Nationality_Status" type="string"/>
+<Field label="Person DFF Context" name="Person_DFF_Context" type="string"/>
+<Field label="Person Attribute Number 1" name="Person_Attribute_Number_1" type="string"/>
+<Field label="Person Attribute Date 1" name="Person_Attribute_Date_1" type="string"/>
+<Field label="Person Attribute Date 2" name="Person_Attribute_Date_2" type="string"/>
+<Field label="Person Attribute 1" name="Person_Attribute_1" type="integer"/>
+<Field label="Person Attribute 2" name="Person_Attribute_2" type="string"/>
+<Field label="Person Attribute 3" name="Person_Attribute_3" type="string"/>
+<Field label="Person Attribute 4" name="Person_Attribute_4" type="string"/>
+<Field label="Person Attribute 5" name="Person_Attribute_5" type="string"/>
+<Field label="Person Attribute 6" name="Person_Attribute_6" type="string"/>
+<Field format="dd/MM/yy" label="* Work Relationship Start Date" name="Work_Relationship_Start_Date" type="date"/>
+<Field label="Worker Number" name="Worker_Number" type="string"/>
+<Field label="* Worker Type" name="Worker_Type" type="string"/>
+<Field label="On Military Service" name="On_Military_Service" type="string"/>
+<Field label="Termination Action" name="Termination_Action" type="string"/>
+<Field label="Termination Reason" name="Termination_Reason" type="string"/>
+<Field label="Termination Date" name="Termination_Date" type="string"/>
+<Field label="* Legal Employer" name="Legal_Employer" type="string"/>
+<Field format="dd/MM/yy" label="Legal Employer Seniority Date" name="Legal_Employer_Seniority_Date" type="date"/>
+<Field format="dd/MM/yy" label="Enterprise Seniority Date" name="Enterprise_Seniority_Date" type="date"/>
+<Field label="Work Relationship DDF Context" name="Work_Relationship_DDF_Context" type="string"/>
+<Field label="Work Relationship Legislative Information Number 1" name="Work_Relationship_Legislative_Information_Number_1" type="string"/>
+<Field label="Work Relationship Legislative Information Date 1" name="Work_Relationship_Legislative_Information_Date_1" type="string"/>
+<Field label="Work Relationship Legislative Information Date 2" name="Work_Relationship_Legislative_Information_Date_2" type="string"/>
+<Field label="Work Relationship Legislative Information Date 3" name="Work_Relationship_Legislative_Information_Date_3" type="string"/>
+<Field label="Work Relationship Legislative Information 1" name="Work_Relationship_Legislative_Information_1" type="string"/>
+<Field label="Work Relationship Legislative Information 2" name="Work_Relationship_Legislative_Information_2" type="string"/>
+<Field label="Work Relationship Legislative Information 3" name="Work_Relationship_Legislative_Information_3" type="string"/>
+<Field label="Work Relationship Legislative Information 4" name="Work_Relationship_Legislative_Information_4" type="string"/>
+<Field label="Work Relationship Legislative Information 5" name="Work_Relationship_Legislative_Information_5" type="string"/>
+<Field label="Work Relationship Legislative Information 6" name="Work_Relationship_Legislative_Information_6" type="string"/>
+<Field label="Work Relationship DFF Context" name="Work_Relationship_DFF_Context" type="string"/>
+<Field label="Work Relationship Attribute Number 1" name="Work_Relationship_Attribute_Number_1" type="string"/>
+<Field label="Work Relationship Attribute Date 1" name="Work_Relationship_Attribute_Date_1" type="string"/>
+<Field label="Work Relationship Attribute Date 2" name="Work_Relationship_Attribute_Date_2" type="string"/>
+<Field label="Work Relationship Attribute 1" name="Work_Relationship_Attribute_1" type="string"/>
+<Field label="Work Relationship Attribute 2" name="Work_Relationship_Attribute_2" type="string"/>
+<Field label="Work Relationship Attribute 3" name="Work_Relationship_Attribute_3" type="string"/>
+<Field label="Work Relationship Attribute 4" name="Work_Relationship_Attribute_4" type="string"/>
+<Field label="Work Relationship Attribute 5" name="Work_Relationship_Attribute_5" type="string"/>
+<Field label="Work Relationship Attribute 6" name="Work_Relationship_Attribute_6" type="string"/>
+<Field label="* Action" name="Action" type="string"/>
+<Field label="Action Reason" name="Action_Reason" type="string"/>
+<Field label="Assignment Name" name="Assignment_Name" type="string"/>
+<Field label="Assignment Number" name="Assignment_Number" type="string"/>
+<Field label="* Assignment Status" name="Assignment_Status" type="string"/>
+<Field label="* Business Unit" name="Business_Unit" type="string"/>
+<Field label="* Person Type" name="Person_Type" type="string"/>
+<Field label="Contract Type" name="Contract_Type" type="string"/>
+<Field label="Contract Duration" name="Contract_Duration" type="string"/>
+<Field label="Duration Unit of Measure" name="Duration_Unit_of_Measure" type="string"/>
+<Field label="Projected End Date" name="Projected_End_Date" type="string"/>
+<Field label="Contract DDF Context" name="Contract_DDF_Context" type="string"/>
+<Field label="Contract Legislative Information Number 1" name="Contract_Legislative_Information_Number_1" type="string"/>
+<Field label="Contract Legislative Information Number 2" name="Contract_Legislative_Information_Number_2" type="string"/>
+<Field label="Contract Legislative Information Number 3" name="Contract_Legislative_Information_Number_3" type="string"/>
+<Field label="Contract Legislative Information Number 4" name="Contract_Legislative_Information_Number_4" type="string"/>
+<Field label="Contract Legislative Information Date 1" name="Contract_Legislative_Information_Date_1" type="string"/>
+<Field label="Contract Legislative Information Date 2" name="Contract_Legislative_Information_Date_2" type="string"/>
+<Field label="Contract Legislative Information Date 3" name="Contract_Legislative_Information_Date_3" type="string"/>
+<Field label="Contract Legislative Information 1" name="Contract_Legislative_Information_1" type="string"/>
+<Field label="Contract Legislative Information 2" name="Contract_Legislative_Information_2" type="string"/>
+<Field label="Contract Legislative Information 3" name="Contract_Legislative_Information_3" type="string"/>
+<Field label="Contract Legislative Information 4" name="Contract_Legislative_Information_4" type="string"/>
+<Field label="Contract Legislative Information 5" name="Contract_Legislative_Information_5" type="string"/>
+<Field label="Contract Legislative Information 6" name="Contract_Legislative_Information_6" type="string"/>
+<Field label="Contract DFF Context" name="Contract_DFF_Context" type="string"/>
+<Field label="Contract Attribute Number 1" name="Contract_Attribute_Number_1" type="string"/>
+<Field label="Contract Attribute Date 1" name="Contract_Attribute_Date_1" type="string"/>
+<Field label="Contract Attribute Date 2" name="Contract_Attribute_Date_2" type="string"/>
+<Field label="Contract Attribute 1" name="Contract_Attribute_1" type="string"/>
+<Field label="Contract Attribute 2" name="Contract_Attribute_2" type="string"/>
+<Field label="Contract Attribute 3" name="Contract_Attribute_3" type="string"/>
+<Field label="Contract Attribute 4" name="Contract_Attribute_4" type="string"/>
+<Field label="Contract Attribute 5" name="Contract_Attribute_5" type="string"/>
+<Field label="Contract Attribute 6" name="Contract_Attribute_6" type="string"/>
+<Field label="Position Code" name="Position_Code" type="string"/>
+<Field label="Job Code" name="Job_Code" type="integer"/>
+<Field label="Grade Code" name="Grade_Code" type="string"/>
+<Field label="Department" name="Department" type="string"/>
+<Field label="Reporting Establishment" name="Reporting_Establishment" type="string"/>
+<Field label="Location Code" name="Location_Code" type="string"/>
+<Field label="Working at Home" name="Working_at_Home" type="string"/>
+<Field label="Worker Category" name="Worker_Category" type="string"/>
+<Field label="Assignment Category" name="Assignment_Category" type="string"/>
+<Field label="Working as a Manager" name="Working_as_a_Manager" type="string"/>
+<Field label="Hourly Paid or Salaried" name="Hourly_Paid_or_Salaried" type="string"/>
+<Field label="Working Hours" name="Working_Hours" type="integer"/>
+<Field label="Frequency" name="Frequency" type="string"/>
+<Field label="FTE" name="FTE" type="string"/>
+<Field label="Headcount" name="Headcount" type="string"/>
+<Field label="Start Time" name="Start_Time" type="string"/>
+<Field label="End Time" name="End_Time" type="string"/>
+<Field label="Line Manager E-Mail" name="Line_Manager_E_Mail" type="string"/>
+<Field label="Probation Period" name="Probation_Period" type="string"/>
+<Field label="Probation Period Unit of Measure" name="Probation_Period_Unit_of_Measure" type="string"/>
+<Field label="Notice Period" name="Notice_Period" type="string"/>
+<Field label="Notice Period UOM" name="Notice_Period_UOM" type="string"/>
+<Field label="Retirement Age" name="Retirement_Age" type="string"/>
+<Field label="Retirement Date" name="Retirement_Date" type="string"/>
+<Field label="Bargaining Unit" name="Bargaining_Unit" type="string"/>
+<Field label="Union Member" name="Union_Member" type="string"/>
+<Field label="Default Expense Account ID" name="Default_Expense_Account_ID" type="string"/>
+<Field label="Expense Check Send-to Address" name="Expense_Check_Send_to_Address" type="string"/>
+<Field label="People Group ID" name="People_Group_ID" type="string"/>
+<Field label="Assignment DDF Context" name="Assignment_DDF_Context" type="string"/>
+<Field label="Assignment Legislative Information Number 1" name="Assignment_Legislative_Information_Number_1" type="string"/>
+<Field label="Assignment Legislative Information Number 2" name="Assignment_Legislative_Information_Number_2" type="string"/>
+<Field label="Assignment Legislative Information Number 3" name="Assignment_Legislative_Information_Number_3" type="string"/>
+<Field label="Assignment Legislative Information Number 4" name="Assignment_Legislative_Information_Number_4" type="string"/>
+<Field label="Assignment Legislative Information Date 1" name="Assignment_Legislative_Information_Date_1" type="string"/>
+<Field label="Assignment Legislative Information Date 2" name="Assignment_Legislative_Information_Date_2" type="string"/>
+<Field label="Assignment Legislative Information 1" name="Assignment_Legislative_Information_1" type="string"/>
+<Field label="Assignment Legislative Information 2" name="Assignment_Legislative_Information_2" type="string"/>
+<Field label="Assignment Legislative Information 3" name="Assignment_Legislative_Information_3" type="string"/>
+<Field label="Assignment Legislative Information 4" name="Assignment_Legislative_Information_4" type="string"/>
+<Field label="Assignment Legislative Information 5" name="Assignment_Legislative_Information_5" type="string"/>
+<Field label="Assignment Legislative Information 6" name="Assignment_Legislative_Information_6" type="string"/>
+<Field label="Assignment DFF Context" name="Assignment_DFF_Context" type="string"/>
+<Field label="Assignment Attribute Number 1" name="Assignment_Attribute_Number_1" type="string"/>
+<Field label="Assignment Attribute Date 1" name="Assignment_Attribute_Date_1" type="string"/>
+<Field label="Assignment Attribute Date 2" name="Assignment_Attribute_Date_2" type="string"/>
+<Field label="Assignment Attribute 1" name="Assignment_Attribute_1" type="string"/>
+<Field label="Assignment Attribute 2" name="Assignment_Attribute_2" type="string"/>
+<Field label="Assignment Attribute 3" name="Assignment_Attribute_3" type="string"/>
+<Field label="Assignment Attribute 4" name="Assignment_Attribute_4" type="string"/>
+<Field label="Assignment Attribute 5" name="Assignment_Attribute_5" type="string"/>
+<Field label="Assignment Attribute 6" name="Assignment_Attribute_6" type="string"/>
+<Field label="Salary Basis" name="Salary_Basis" type="string"/>
+<Field label="Salary Amount" name="Salary_Amount" type="string"/>
+<Field label="Generate user account" name="Generate_user_account" type="string"/>
+<Field label="User Name" name="User_Name" type="string"/>
+<Field label="Send user name and password" name="Send_user_name_and_password" type="string"/>
+<Field eofAsDelimiter="true" label="E-Mail" name="E_Mail_1" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata1" previewAttachment="${DATAIN_DIR}/Person.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="Person.csv" name="Person_csv" previewAttachment="${DATAIN_DIR}/Person.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="both" quotedStrings="false" recordDelimiter="\r\n" skipSourceRows="1" type="delimited">
+<Field label=" Legal Employer" name="Legal_Employer" type="string"/>
+<Field label="Enterprise Start Date" name="Enterprise_Start_Date" type="string"/>
+<Field label="Enterprise Seniority Date" name="Enterprise_Seniority_Date" type="string"/>
+<Field label="Legal Entity Start Date" name="Legal_Entity_Start_Date" type="string"/>
+<Field label="Legal Entity Seniority Date" name="Legal_Entity_Seniority_Date" type="string"/>
+<Field label="Worker Category" name="Worker_Category" type="string"/>
+<Field label="Previous paycheck number " name="Previous_paycheck_number" type="integer"/>
+<Field label="Person Number" name="Person_Number" type="integer"/>
+<Field label="Last Name" name="Last_Name" type="string"/>
+<Field label="First Name" name="First_Name" type="string"/>
+<Field label="Suffix " name="Suffix" type="string"/>
+<Field label="Middle Name " name="Middle_Name" type="string"/>
+<Field label="Preferred Name " name="Preferred_Name" type="string"/>
+<Field label="Previous Last Name" name="Previous_Last_Name" type="string"/>
+<Field label="Ethnicity" name="Ethnicity" type="string"/>
+<Field label="Marital Status" name="Marital_Status" type="string"/>
+<Field label="Gender" name="Gender" type="string"/>
+<Field label="Date of Birth" name="Date_of_Birth" type="string"/>
+<Field label="Date of Death" name="Date_of_Death" type="string"/>
+<Field label="Country of Birth" name="Country_of_Birth" type="string"/>
+<Field label="Region of Birth" name="Region_of_Birth" type="string"/>
+<Field label="Town of Birth" name="Town_of_Birth" type="string"/>
+<Field label="Correspondence Language" name="Correspondence_Language" type="string"/>
+<Field label="Primary Identifier " name="Primary_Identifier" type="string"/>
+<Field label="Country" name="Country" type="string"/>
+<Field label="National ID Type" name="National_ID_Type" type="string"/>
+<Field label="ID Number " name="ID_Number" type="string"/>
+<Field label="Issue Date" name="Issue_Date" type="string"/>
+<Field label="Expiration Date" name="Expiration_Date" type="string"/>
+<Field eofAsDelimiter="true" label="HR Business Partner" name="HR_Business_Partner" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata2" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="ZLTQ_EmployeeData_Assignments" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\r\n" type="delimited">
+<Field label="Previous person Number " name="Previous_person_Number" type="long"/>
+<Field label="Legal Employer" name="Legal_Employer" type="string"/>
+<Field label="Job Code" name="Job_Code" type="long"/>
+<Field label="Grades" name="Grades" type="string"/>
+<Field label="Department" name="Department" type="string"/>
+<Field label="Shift Type&#10;" name="Shift_Type" type="string"/>
+<Field label="Working as a Manager (YES/NO) " name="Working_as_a_Manager_YES_NO" type="string"/>
+<Field label="Position Level " name="Position_Level" type="string"/>
+<Field label="Position Title&#10;" name="Position_Title" type="string"/>
+<Field label="Work Location Code " name="Work_Location_Code" type="string"/>
+<Field label="Working at Home " name="Working_at_Home" type="string"/>
+<Field label="Normal Working hours " name="Normal_Working_hours" type="long"/>
+<Field label="Manager Effective Date " name="Manager_Effective_Date" type="string"/>
+<Field label="Manager Person Number " name="Manager_Person_Number" type="long"/>
+<Field label="Assignment Status" name="Assignment_Status" type="string"/>
+<Field label="Person Types " name="Person_Types" type="string"/>
+<Field label="Assignment Category" name="Assignment_Category" type="string"/>
+<Field label="Salary Basis" name="Salary_Basis" type="string"/>
+<Field label="Currency" name="Currency" type="string"/>
+<Field format="excel:mm/dd/yyyy" label="Salary Effective Date " name="Salary_Effective_Date" type="date"/>
+<Field format="excel:0.00" label="Salary Amount &#10;Annual" name="Salary_Amount_Annual" type="number"/>
+<Field label="Hourly Amount " name="Hourly_Amount" type="string"/>
+<Field label="Plan Type " name="Plan_Type" type="string"/>
+<Field format="excel:0.0%" label="Bonus % " name="Bonus" type="number"/>
+<Field label="Comp Plan Name" name="Comp_Plan_Name" type="string"/>
+<Field format="excel:0" label="Annual Target Variable Amount " name="Annual_Target_Variable_Amount" type="string"/>
+<Field label="Bonus Plan: &#10;Corporate Weighting %" name="Bonus_Plan_Corporate_Weighting" type="string"/>
+<Field format="excel:0%" label="Bonus Plan: &#10;Individual Goal Weighting %" name="Bonus_Plan_Individual_Goal_Weighting" type="long"/>
+<Field label="Previous Employer " name="Previous_Employer" type="string"/>
+<Field label="Merger and Acquisition" name="Merger_and_Acquisition" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata0">
+<Record fieldDelimiter="|" name="ZLTQ_EmployeeData_Person" recordDelimiter="\r\n" type="delimited">
+<Field label="* Legal Employer" name="Legal_Employer" type="string"/>
+<Field label="Enterprise Start Date" name="Enterprise_Start_Date" type="string"/>
+<Field label="Enterprise Seniority Date" name="Enterprise_Seniority_Date" type="string"/>
+<Field label="Legal Entity Start Date" name="Legal_Entity_Start_Date" type="string"/>
+<Field label="Legal Entity Seniority Date" name="Legal_Entity_Seniority_Date" type="string"/>
+<Field label="Worker Category" name="Worker_Category" type="string"/>
+<Field label="Previous paycheck number " name="Previous_paycheck_number" type="long"/>
+<Field label="Person Number" name="Person_Number" type="long"/>
+<Field label="*Last Name" name="Last_Name" type="string"/>
+<Field label="*First Name" name="First_Name" type="string"/>
+<Field label="Suffix " name="Suffix" type="string"/>
+<Field label="Middle Name " name="Middle_Name" type="string"/>
+<Field label="*Preferred Name " name="Preferred_Name" type="string"/>
+<Field label="Previous Last Name" name="Previous_Last_Name" type="string"/>
+<Field label="Ethnicity" name="Ethnicity" type="string"/>
+<Field label="Marital Status" name="Marital_Status" type="string"/>
+<Field label="Gender" name="Gender" type="string"/>
+<Field label="Date of Birth" name="Date_of_Birth" type="string"/>
+<Field label="Date of Death" name="Date_of_Death" type="string"/>
+<Field label="Country of Birth" name="Country_of_Birth" type="string"/>
+<Field label="Region of Birth" name="Region_of_Birth" type="string"/>
+<Field label="Town of Birth" name="Town_of_Birth" type="string"/>
+<Field label="Correspondence Language" name="Correspondence_Language" type="string"/>
+<Field label="Primary Identifier (Yes, No) " name="Primary_Identifier_Yes_No" type="string"/>
+<Field label="Country" name="Country" type="string"/>
+<Field label="National ID Type" name="National_ID_Type" type="string"/>
+<Field label="ID Number " name="ID_Number" type="string"/>
+<Field label="Issue Date" name="Issue_Date" type="string"/>
+<Field label="Expiration Date" name="Expiration_Date" type="string"/>
+<Field label="HR Business Partner" name="HR_Business_Partner" type="string"/>
+</Record>
+</Metadata>
+<GraphParameters>
+<GraphParameterFile fileURL="workspace.prm"/>
+</GraphParameters>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" fileURL="${DATAIN_DIR}/ZLTQ_EmployeeData_FromCSV.xlsx" guiName="Assignment Details" guiX="62" guiY="299" id="ASSIGNMENT_DETAILS" sheetName="Assignments" type="XLS_READER"/>
+<Node enabled="enabled" guiName="ExtHashJoin" guiX="395" guiY="206" id="EXT_HASH_JOIN" type="EXT_HASH_JOIN"/>
+<Node enabled="enabled" fileURL="${DATAOUT_DIR}/test.xls" guiName="Fusion Create Worker" guiX="656" guiY="49" id="FUSION_CREATE_WORKER" type="XLS_WRITER"/>
+<Node enabled="enabled" guiName="Person + Assignments" guiX="383" guiY="49" hashTableSize="600" id="PERSON_ASSIGNMENTS" joinKey="$Person_Number=$Previous_person_Number" joinType="inner" type="EXT_HASH_JOIN">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.Person_Number = $in.0.Person_Number;
+	
+	$out.0.Global_First_Name = $in.0.First_Name;
+	$out.0.Department = $in.1.Department;
+	$out.0.Legal_Employer = $in.0.Legal_Employer;
+	$out.0.Worker_Category = $in.0.Worker_Category;
+	$out.0.Last_Name = $in.0.Last_Name;
+	$out.0.First_Name = $in.0.First_Name;
+	$out.0.Suffix = $in.0.Suffix;
+	$out.0.Previous_Last_Name = $in.0.Previous_Last_Name;
+	$out.0.Ethnicity = $in.0.Ethnicity;
+	$out.0.Marital_Status = $in.0.Marital_Status;
+	$out.0.Gender = $in.0.Gender;
+	$out.0.Date_of_Birth = $in.0.Date_of_Birth;
+	$out.0.Correspondence_Language = $in.0.Correspondence_Language;
+	$out.0.Country = $in.0.Country;
+	
+	$out.0.National_ID_Type = $in.0.National_ID_Type;
+	$out.0.Working_at_Home = $in.1.Working_at_Home;
+	$out.0.Assignment_Status = $in.1.Assignment_Status;
+	$out.0.Assignment_Category = $in.1.Assignment_Category;
+	$out.0.Salary_Basis = $in.1.Salary_Basis;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" fileURL="${DATAIN_DIR}/ZLTQ_EmployeeData_FromCSV.xlsx" guiName="Person Details" guiX="66" guiY="67" id="PERSON_DETAILS" sheetName="Person" type="XLS_READER"/>
+<Node enabled="enabled" guiName="XLSDataReader" guiX="522" guiY="284" id="XLSDATA_READER" type="XLS_READER"/>
+<Edge fromNode="ASSIGNMENT_DETAILS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge3" inPort="Port 1 (slave)" metadata="Metadata4" outPort="Port 0 (out)" toNode="EXT_HASH_JOIN:1"/>
+<Edge debugMode="true" fromNode="PERSON_ASSIGNMENTS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 0 (in)" metadata="Metadata3" outPort="Port 0 (out)" toNode="FUSION_CREATE_WORKER:0"/>
+<Edge fromNode="PERSON_DETAILS:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (driver)" metadata="Metadata1" outPort="Port 0 (out)" toNode="EXT_HASH_JOIN:0"/>
+</Phase>
+</Graph>
