@@ -6,6 +6,9 @@
 <%@ page import="org.apache.commons.fileupload.disk.*" %>
 <%@ page import="org.apache.commons.fileupload.servlet.*" %>
 <%@ page import="org.apache.commons.io.output.*" %>
+<%@ page import="com.infovity.clouddm.model.LoaderTransformation"%>
+
+
 <%
 System.out.println("save Excel file Page");
 	 
@@ -41,11 +44,21 @@ System.out.println("save Excel file Page");
 		int boundaryLocation = file.indexOf(boundary, pos) - 4; 
 		int startPos = ((file.substring(0, pos)).getBytes()).length; 
 		int endPos = ((file.substring(0, boundaryLocation)).getBytes()).length; 
-		File ff = new File(saveFile);
+		//File ff = new File(saveFile);
+
+                LoaderTransformation trans = (LoaderTransformation) session.getAttribute("SelectedLoaderTransformation");
 		
-		String filename ="D:/"+saveFile;
-		
-		FileOutputStream fileOut = new FileOutputStream(filename); 
+		String inputFileDir = request.getServletContext().getRealPath("") + trans.getInputFileLocation() ;
+		System.out.println("file name " + inputFileDir);
+                
+                trans.setInputFileName(saveFile);
+                
+                File inputFile = new File(inputFileDir);
+                if(!inputFile.exists()) {
+                    inputFile.mkdirs();
+                } 
+                
+		FileOutputStream fileOut = new FileOutputStream(inputFileDir + trans.getInputFileName(), false); 
 		fileOut.write(dataBytes, startPos, (endPos - startPos)); 
 		fileOut.flush(); 
 		fileOut.close();
@@ -63,7 +76,7 @@ System.out.println("save Excel file Page");
 		<table style='font-family:Arial;font-size:10px' align='center' width='50%' height='30%' border='1'>
 		<tr><td>
 		<table width='100%' align='center'><tr><td><b>YOU HAVE SUCCESSFULLY SAVE THE FILE INTO FOLLOWING LOCATION</b> 
-		 <%=filename %>
+		 <%=inputFileDir %>
 		</td></tr>
 		<tr><td>&nbsp;</td></tr><tr><td align='center'>
 		<b><a href='javascript: history.back(-1)'>Back</a></b></td></tr></table>

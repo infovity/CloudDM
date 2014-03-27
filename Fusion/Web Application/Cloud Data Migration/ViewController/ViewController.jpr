@@ -542,4 +542,7 @@
          </hash>
       </list>
    </hash>
+   <hash n="ResourceBundleOptions">
+      <list n="RegisteredResourceBundles"/>
+   </hash>
 </jpr:project>

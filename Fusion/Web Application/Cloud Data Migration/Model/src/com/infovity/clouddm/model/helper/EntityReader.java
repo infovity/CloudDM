@@ -65,8 +65,8 @@ public class EntityReader {
                 loaderTrans.setFusionVersion(nextLine[3]);
                 loaderTrans.setInfovityVersion(nextLine[4]);
                 loaderTrans.setTransMapping(nextLine[5]);
-                loaderTrans.setFusionTemplFileLocation(nextLine[06]);
-                loaderTrans.setFusionTemplFileName(nextLine[7]);
+                loaderTrans.setInputFileLocation(nextLine[06]);
+                loaderTrans.setOutputFileLocation(nextLine[7]);
                 loaderTrans.setInfovityTemplFileLocation(nextLine[8]);
                 loaderTrans.setInfovityTemplFileName(nextLine[9]);
                 loaderTrans.setTransFileLocation(nextLine[10]);

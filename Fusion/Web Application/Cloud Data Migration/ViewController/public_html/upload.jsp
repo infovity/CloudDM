@@ -6,6 +6,8 @@
 <%@ page import="org.apache.commons.fileupload.disk.*" %>
 <%@ page import="org.apache.commons.fileupload.servlet.*" %>
 <%@ page import="org.apache.commons.io.output.*" %>
+<%@ page import="com.infovity.clouddm.model.LoaderTransformation"%>
+
 <html>
   <head>
     <title>Upload Excel File</title>
@@ -35,6 +37,25 @@ return false;
 <tr><td>Box</td></tr>
 <tr><td>FTP</td></tr>
 <tr><td>Drop Box</td></tr></table>
+<%
+        String filePath = request.getServletContext().getRealPath("/Entities/LoaderMapping.csv");
+
+    String selectedObject = request.getParameter("loader");
+    String inputFileLocation = "";
+    
+    if (selectedObject != null) {
+        ArrayList <LoaderTransformation> allTransformations = LoaderTransformation.getAllLoaderTransformations(filePath);
+              for (LoaderTransformation trans : allTransformations) {
+                  if (selectedObject.equals(trans.getEntity())) {
+                         session.setAttribute("SelectedLoaderTransformation", trans);
+                   }
+              }
+    } else {
+        out.println("Go back to the previous screen and select the loader");
+    }
+%>
+<input type="hidden" name="inputFileLocation" value="<%=inputFileLocation%>"/>
+
 <form action="saveExcel.jsp" method="post" enctype="multipart/form-data" onSubmit="return check();">
     <table>
      <tr><td colspan="2"><center>Upload Excel File</center></td></tr>

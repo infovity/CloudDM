@@ -34,7 +34,7 @@ $(function(){
 <tr>
 <td><a href="Select.jsp" target="body">Select</a></td>
 <td><a href="upload.jsp" target="body">Upload</a></td>
-<td><a href="reviewmapping.jsp" target="body">Review Mapping</a></td>
+<td><a href="reviewMapping.jsp" target="body">Review Mapping</a></td>
 <td><a href="confirmation.jsp" target="body">Confirmation</a></td>
 </tr>
 </table>

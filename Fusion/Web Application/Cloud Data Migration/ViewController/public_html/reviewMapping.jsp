@@ -5,6 +5,9 @@
 <%@ page import = "java.util.Enumeration"%>
 <%@ page import = "java.util.Properties"%>
 <%@ page import = "java.io.FileInputStream"%>
+<%@ page import="com.infovity.clouddm.model.LoaderTransformation"%>
+
+
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -22,7 +25,13 @@ Properties prop = new Properties();
  
 	try {
  
-		String filename = "C:\\Transform\\Mapping.txt";
+                 LoaderTransformation trans = (LoaderTransformation) session.getAttribute("SelectedLoaderTransformation");
+		
+                String etlModelProjectDir = "C:\\Anto\\Infovity\\CloudMigration\\Source\\CloudDM\\Fusion\\ETL\\Customers";
+		String inputFileDir = etlModelProjectDir + trans.getTransFileLocation();
+		System.out.println("file name " + inputFileDir);
+                
+		String filename = inputFileDir + trans.getTransFile();
                 // FileInputStream filename = new FileInputStream("C:\\Transform\\Mapping.properties");
                 //String filename = request.getServletContext().getRealPath("/Transform/Mapping.properties");
                // InputStream filename = this.getClass().getResourceAsStream("/Entities/Mapping.properties");

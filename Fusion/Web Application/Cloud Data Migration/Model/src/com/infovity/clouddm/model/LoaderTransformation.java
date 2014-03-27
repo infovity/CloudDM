@@ -10,125 +10,148 @@ public class LoaderTransformation {
     public LoaderTransformation() {
         super();
     }
-    private String CustomerID = null;
+    private String customerID = null;
 
-    private String CustomerName = null;
+    private String customerName = null;
 
-    private String Entity = null;
+    private String entity = null;
 
-    private String FusionVersion = null;
+    private String fusionVersion = null;
 
-    private String InfovityVersion = null;
+    private String infovityVersion = null;
 
-    private String TransMapping = null;
+    private String transMapping = null;
 
-    private String FusionTemplFileLocation = null;
+    private String inputFileLocation = null;
 
-    private String FusionTemplFileName = null;
+    private String outputFileLocation = null;
 
-    private String InfovityTemplFileLocation = null;
+    private String infovityTemplFileLocation = null;
 
-    private String InfovityTemplFileName = null;
+    private String infovityTemplFileName = null;
 
-    private String TransFileLocation = null;
+    private String transFileLocation = null;
 
-    private String TransFile = null;
+    private String transFile = null;
 
+    private String inputFileName = null;
+
+    private String outputFileName = "FusionOutput";
+
+    public void setInputFileName(String inputFileName) {
+        this.inputFileName = inputFileName;
+    }
+
+    public String getInputFileName() {
+        return inputFileName;
+    }
+
+    public void setOutputFileName(String outputFileName) {
+        this.outputFileName = outputFileName;
+    }
+
+    public String getOutputFileName() {
+        
+        if (getInputFileName() != null) {
+            return "Fusion" + getInputFileName();
+        }
+        return outputFileName;
+    }
 
     public void setCustomerID(String CustomerID) {
-        this.CustomerID = CustomerID;
+        this.customerID = CustomerID;
     }
 
     public String getCustomerID() {
-        return CustomerID;
+        return customerID;
     }
 
     public void setCustomerName(String CustomerName) {
-        this.CustomerName = CustomerName;
+        this.customerName = CustomerName;
     }
 
     public String getCustomerName() {
-        return CustomerName;
+        return customerName;
     }
 
     public void setEntity(String Entity) {
-        this.Entity = Entity;
+        this.entity = Entity;
     }
 
     public String getEntity() {
-        return Entity;
+        return entity;
     }
 
     public void setFusionVersion(String FusionVersion) {
-        this.FusionVersion = FusionVersion;
+        this.fusionVersion = FusionVersion;
     }
 
     public String getFusionVersion() {
-        return FusionVersion;
+        return fusionVersion;
     }
 
     public void setInfovityVersion(String InfovityVersion) {
-        this.InfovityVersion = InfovityVersion;
+        this.infovityVersion = InfovityVersion;
     }
 
     public String getInfovityVersion() {
-        return InfovityVersion;
+        return infovityVersion;
     }
 
     public void setTransMapping(String TransMapping) {
-        this.TransMapping = TransMapping;
+        this.transMapping = TransMapping;
     }
 
     public String getTransMapping() {
-        return TransMapping;
+        return transMapping;
     }
 
-    public void setFusionTemplFileLocation(String FusionTemplFileLocation) {
-        this.FusionTemplFileLocation = FusionTemplFileLocation;
+    public void setInputFileLocation(String FusionTemplFileLocation) {
+        this.inputFileLocation = FusionTemplFileLocation;
     }
 
-    public String getFusionTemplFileLocation() {
-        return FusionTemplFileLocation;
+    public String getInputFileLocation() {
+        return inputFileLocation;
     }
 
-    public void setFusionTemplFileName(String FusionTemplFileName) {
-        this.FusionTemplFileName = FusionTemplFileName;
+    public void setOutputFileLocation(String FusionTemplFileName) {
+        this.outputFileLocation = FusionTemplFileName;
     }
 
-    public String getFusionTemplFileName() {
-        return FusionTemplFileName;
+    public String getOutputFileLocation() {
+        return outputFileLocation;
     }
 
     public void setInfovityTemplFileLocation(String InfovityTemplFileLocation) {
-        this.InfovityTemplFileLocation = InfovityTemplFileLocation;
+        this.infovityTemplFileLocation = InfovityTemplFileLocation;
     }
 
     public String getInfovityTemplFileLocation() {
-        return InfovityTemplFileLocation;
+        return infovityTemplFileLocation;
     }
 
     public void setInfovityTemplFileName(String InfovityTemplFileName) {
-        this.InfovityTemplFileName = InfovityTemplFileName;
+        this.infovityTemplFileName = InfovityTemplFileName;
     }
 
     public String getInfovityTemplFileName() {
-        return InfovityTemplFileName;
+        return infovityTemplFileName;
     }
 
     public void setTransFileLocation(String TransFileLocation) {
-        this.TransFileLocation = TransFileLocation;
+        this.transFileLocation = TransFileLocation;
     }
 
     public String getTransFileLocation() {
-        return TransFileLocation;
+        return transFileLocation;
     }
 
     public void setTransFile(String TransFile) {
-        this.TransFile = TransFile;
+        this.transFile = TransFile;
     }
 
     public String getTransFile() {
-        return TransFile;
+        return transFile;
     }
     
     public static ArrayList <LoaderTransformation> getAllLoaderTransformations(String fileName) {
@@ -152,8 +175,8 @@ public class LoaderTransformation {
         sb.append("FusionVersion=" +            getFusionVersion()); 
         sb.append("InfovityVersion=" +          getInfovityVersion()); 
         sb.append("TransMapping=" +             getTransMapping()); 
-        sb.append("FusionTemplFileLocation=" +   getFusionTemplFileLocation()); 
-        sb.append("FusionTemplFileName=" +      getFusionTemplFileName()); 
+        sb.append("InputFileLocation=" +   getInputFileLocation()); 
+        sb.append("OutputFileLocation=" +      getOutputFileLocation()); 
         sb.append("InfovityTemplFileLocation=" + getInfovityTemplFileLocation()); 
         sb.append("InfovityTemplFileName=" +    getInfovityTemplFileName()); 
         sb.append("TransFileLocation=" +        getTransFileLocation()); 

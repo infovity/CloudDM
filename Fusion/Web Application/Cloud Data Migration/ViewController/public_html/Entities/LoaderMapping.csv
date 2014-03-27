@@ -1,3 +1,3 @@
-Customer ID,Customer Name,Entity,Fusion Version,Infovity Version,Transformation Mapping,Fusion Template File Location,Fusion Template File Name,Infovity Template File Location,Infovity Template File Name,Transformation file Location,Transformation file
-INFOVITY_COMMON,Common,LOCATION,Release 7,Work Structures V1,location.grf,/common/location/,FusionWorkStructuresV7,/common/location,InfovityWorkStructure,,
-INFOVITY_COMMON,Common,JOB,Release 7,Work Structures V1,location.grf,/common/location/,FusionWorkStructuresV7,/common/location,InfovityWorkStructure,,
+Customer ID,Customer Name,Entity,Fusion Version,Infovity Version,Transformation Mapping,Input File Location,Output File Location,Infovity Template File Location,Infovity Template File Name,Transformation file Location,Transformation file
+INFOVITY_COMMON,Common,LOCATION,Release 7,Work Structures V1,location.grf,/data-in/common/location/,/data-out/common/location/,InfovityTemplate,Location.xlsx,/Common/HCM/WorkStructuresMigration/WorkStructure_IFTY_V1_FUSN_R7/trans/,Locatons.trans
+INFOVITY_COMMON,Common,JOB,Release 7,Work Structures V1,location.grf,/data-in/common/job/,/data-out/common/job/,InfovityTemplate,Job.xlsx,/Common/HCM/WorkStructuresMigration/WorkStructure_IFTY_V1_FUSN_R7/trans/,Job.trans
